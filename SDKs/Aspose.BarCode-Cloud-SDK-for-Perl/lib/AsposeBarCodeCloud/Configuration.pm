@@ -18,6 +18,6 @@ our $debug = 0;
 # authenticaiton setting
 our $app_sid;
 our $api_key;
-our $api_server = 'http://api.aspose.com/v1.1';
+our $api_server = 'http://api.aspose.cloud/v1.1';
 #our $api_server = 'http://localhost:8080/v1.1';
 1;
