@@ -45,7 +45,7 @@ public class BarcodeApiTest {
     
     @Before
     public void setUp() {
-		barcode = new BarcodeApi("http://api.aspose.com/v1.1", apiKey, appSID);
+		barcode = new BarcodeApi("http://api.aspose.cloud/v1.1", apiKey, appSID);
     }
     
     @After

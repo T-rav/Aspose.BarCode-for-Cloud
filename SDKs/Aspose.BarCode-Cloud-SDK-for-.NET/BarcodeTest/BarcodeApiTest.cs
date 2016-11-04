@@ -17,7 +17,7 @@ namespace BarcodeTest
     {
         protected string APIKEY = "xxxxxx";
         protected string APPSID = "xxxxxx";
-        protected string BASEPATH = "http://api.aspose.com/v1.1";
+        protected string BASEPATH = "http://api.aspose.cloud/v1.1";
 
         private TestContext testContextInstance;
 
