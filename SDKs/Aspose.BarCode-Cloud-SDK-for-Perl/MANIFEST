@@ -29,9 +29,11 @@ lib/AsposeBarCodeCloud/Object/SectionStart.pm
 lib/AsposeBarCodeCloud/Object/StyleIdentifier.pm
 lib/AsposeBarCodeCloud/Object/TextEffect.pm
 lib/AsposeBarCodeCloud/Object/Underline.pm
+Makefile.PL
 MANIFEST
+META.json
+META.yml
 README
 t/01_barcode_api.t
 t/data/sample-barcode.jpeg
 t/data/sample.txt
-Makefile.PL
