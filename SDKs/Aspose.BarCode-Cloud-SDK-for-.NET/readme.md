@@ -8,7 +8,7 @@ This repository contains Aspose.Barcode Cloud SDK for .Net source code. This SDK
 </p>
 
 ##How to use the SDK?
-The complete source code is available in this repository folder, you can either directly use it in your project or use Composer. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
+The complete source code is available in this repository folder, you can either directly use it in your project or use Nuget package. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
 
 ##Contact Us
 Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
