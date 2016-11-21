@@ -12,15 +12,15 @@ Aspose.BarCode for Cloud is implemented as a REST API. If you use SDK, it hides 
 
 Directory | Description
 --------- | -----------
-[.NET SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-.NET) | Aspose.BarCode Cloud SDK for .NET.
-[Java SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Java)  |  Aspose.BarCode Cloud SDK for Java.
-[PHP SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-PHP)  | Aspose.BarCode Cloud SDK for PHP.
-[Ruby SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Ruby) | Aspose.BarCode Cloud SDK for Ruby.
-[Python SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Python)  | Aspose.BarCode Cloud SDK for Python.
-[Node.js SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-NodeJS) | Aspose.BarCode Cloud SDK for Node.js.
-[Android SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Android) | Aspose.BarCode Cloud SDK for Android.
-[iOS SDK](SDKs/Aspose.Barcode-Cloud-SDK-for-ObjectiveC) | Aspose.BarCode Cloud SDK for Objective C.
-[Perl SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Perl) | Aspose.BarCode Cloud SDK for Perl.
+[.NET SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-.NET) | Aspose.BarCode for Cloud .NET SDK
+[Java SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Java)  | Aspose.BarCode for Cloud Java SDK
+[PHP SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-PHP)  |  Aspose.BarCode for Cloud PHP SDK
+[Ruby SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Ruby) |  Aspose.BarCode for Cloud Ruby SDK
+[Python SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Python)  |  Aspose.BarCode for Cloud Python SDK
+[Node.js SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-NodeJS) |  Aspose.BarCode for Cloud Node.js SDK
+[Android SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Android) | Aspose.BarCode for Cloud Android SDK
+[iOS SDK](SDKs/Aspose.Barcode-Cloud-SDK-for-ObjectiveC) |  Aspose.BarCode for Cloud Objective C SDK
+[Perl SDK](SDKs/Aspose.BarCode-Cloud-SDK-for-Perl) |  Aspose.BarCode for Cloud Perl  SDK
 
 ## Resources
 
