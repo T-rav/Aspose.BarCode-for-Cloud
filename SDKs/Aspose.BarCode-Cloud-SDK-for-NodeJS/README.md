@@ -2,9 +2,11 @@
 
 This repository contains Aspose.BarCode Cloud SDK for Node.js source code. This SDK allows you to work with Aspose.BarCode Cloud REST APIs in your Node.js applications quickly and easily. 
 
-## How to use the SDK?
+##How to use the SDK?
+The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
 
-The complete source code is available in this repository folder. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/How+to+Setup+Aspose.BarCode+Cloud+SDK+for+Node.js).
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
 
 ## Quick SDK Tutorial
 ```javascript

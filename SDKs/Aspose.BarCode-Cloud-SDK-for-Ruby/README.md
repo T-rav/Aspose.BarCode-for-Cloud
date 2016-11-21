@@ -1,10 +1,8 @@
 # Aspose.BarCode Cloud SDK For Ruby
 This SDK lets you use [Aspose Cloud Barcode APIs](http://www.aspose.com/cloud/barcode-api.aspx) in your Ruby web apps.
 
-## Installing
-You can simply install Aspose Barcode Cloud SDK with gem:
-
-`gem install aspose_barcode_cloud`
+##How to use the SDK?
+The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
 
 ## Usage
 APIs of this SDK can be called as follows:
@@ -34,8 +32,5 @@ end
 ## Unit Tests
 Aspose Barcode SDK includes a suite of unit tests within the [test](https://github.com/asposebarcode/Aspose_BarCode_Cloud/blob/master/SDKs/Aspose.BarCode_Cloud_SDK_for_Ruby/test/barcode_tests.rb) subdirectory. These Unit Tests also serves as examples of how to use the Aspose Barcode SDK.
 
-## Contact
-Your feedback is very important to us. Please email us all your queries and feedback at marketplace@aspose.com.
-
-## License
-Aspose Barcode SDK is available under the MIT license. See the [LICENSE](https://github.com/asposebarcode/Aspose_BarCode_Cloud/blob/master/SDKs/Aspose.BarCode_Cloud_SDK_for_Ruby/LICENSE) file for more info.
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
