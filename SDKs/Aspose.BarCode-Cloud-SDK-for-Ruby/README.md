@@ -1,8 +1,14 @@
 # Aspose.BarCode Cloud SDK For Ruby
 This SDK lets you use [Aspose Cloud Barcode APIs](http://www.aspose.com/cloud/barcode-api.aspx) in your Ruby web apps.
 
+<p align="center">
+  <a title="Download complete Aspose.BarCode for Cloud source code" href="https://github.com/asposebarcode/Aspose_BarCode_Cloud/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
+
 ##How to use the SDK?
-The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
+The complete source code is available in this repository folder, you can either directly use it in your project or use RubyGems. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
 
 ## Usage
 APIs of this SDK can be called as follows:

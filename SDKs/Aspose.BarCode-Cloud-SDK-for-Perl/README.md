@@ -1,16 +1,19 @@
-Aspose.BarCode Cloud SDK for Perl
-================================
+# Aspose.BarCode Cloud SDK for Perl
 
 This repository contains Aspose.BarCode Cloud SDK for Perl source code. This SDK allows you to work with Aspose.BarCode Cloud REST APIs in your perl applications quickly and easily. 
+<p align="center">
+  <a title="Download complete Aspose.BarCode for Cloud source code" href="https://github.com/asposebarcode/Aspose_BarCode_Cloud/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 ##How to use the SDK?
-The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
+The complete source code is available in this repository folder. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/barcodecloud/Available+SDKs).
 
-##Contact Us
-Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
 
-Quick SDK Tutorial
-==================
+
+## Quick SDK Tutorial
+
 
 use lib 'lib';
 use strict;
@@ -26,12 +29,12 @@ $AsposeBarCodeCloud::Configuration::api_key = 'XXX';
 
 $AsposeBarCodeCloud::Configuration::debug = 1;
 
-#Instantiate Aspose.BarCode API SDK
+
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
 my $data_path = '../data/';
 
-#set input file name
+
 my $name = 'sample-barcode';
 my $text = 'Aspose.BarCode for Cloud';
 my $type = 'datamatrix';
@@ -45,3 +48,7 @@ if($response->{'Status'} eq 'OK'){
 	my $output_file = 'C:/temp/'. $name . '.' . $format;	
 	write_file($output_file, { binmode => ":raw" }, $response->{'Content'});
 }
+
+
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
