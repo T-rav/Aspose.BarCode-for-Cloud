@@ -3,7 +3,7 @@
 namespace Aspose\Barcode;
 
 use Aspose\Barcode\ApiException as Exception;
-use Aspose\Barcode\ApiClient;
+use Aspose\Barcode\APIClient;
 
 class BarcodeApi {
 
