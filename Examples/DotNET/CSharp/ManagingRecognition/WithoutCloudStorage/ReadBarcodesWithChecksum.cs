@@ -17,11 +17,10 @@ namespace CSharp.ManagingRecognition.WithoutCloudStorage
             // Instantiate Aspose BarCode Cloud API SDK
             BarcodeApi barcodeApi = new BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            // set input file name
+            // Set input file name
             String name = "sample-barcode.jpeg";
 
-            //The barcode type.
-            //If this parameter is empty, autodetection of all supported types is used.
+            // The barcode type. If this parameter is empty, autodetection of all supported types is used.
             String type = "";
 
             // Set folder location at cloud storage
@@ -40,10 +39,10 @@ namespace CSharp.ManagingRecognition.WithoutCloudStorage
 
             try
             {
-                //upload source file to aspose cloud storage
+                // Upload source file to aspose cloud storage
                  BarcodeResponseList apiResponse = barcodeApi.PutBarcodeRecognizeFromBody(name, type, folder, body);
 
-                 // invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body
+                 // Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body
                  apiResponse = barcodeApi.PutBarcodeRecognizeFromBody(name, type, folder, body);
 
                 if (apiResponse != null)

@@ -11,39 +11,38 @@ Namespace ManagingRecognition.WithoutCloudStorage
 
             'ExStart:1
 
-            'Instantiate Aspose Storage Cloud API SDK
+            ' Instantiate Aspose Storage Cloud API SDK
             Dim storageApi As New StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH)
 
-            'Instantiate Aspose BarCode Cloud API SDK
+            ' Instantiate Aspose BarCode Cloud API SDK
             Dim barcodeApi As New BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH)
 
-            'Set input file name
+            ' Set input file name
             Dim name As [String] = "sample-barcode.jpeg"
 
-            'The barcode type.
-            'If this parameter is empty, autodetection of all supported types is used.
+            ' The barcode type. If this parameter is empty, autodetection of all supported types is used.
             Dim type As [String] = ""
 
-            'Set folder location at cloud storage
+            ' Set folder location at cloud storage
             Dim folder As [String] = ""
 
             Dim body As New BarcodeReader()
 
-            'Set if FNC symbol stripping should be performed.
+            ' Set if FNC symbol stripping should be performed.
             body.StripFNC = True
 
-            'Set mode for checksum validation during recognition
+            ' Set mode for checksum validation during recognition
             body.ChecksumValidation = "OFF"
 
-            'Set special mode of barcode binarization
+            ' Set special mode of barcode binarization
             body.BinarizationHints = BinarizationHints.ComplexBackground
 
             Try
 
-                'Upload files to aspose cloud storage
+                ' Upload files to aspose cloud storage
                 storageApi.PutCreate(name, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir + name))
 
-                'invoke Aspose.BarCode Cloud SDK API to recognition of a barcode by apply various available image processing algorithms
+                ' Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode by apply various available image processing algorithms
                 Dim apiResponse As BarcodeResponseList = barcodeApi.PutBarcodeRecognizeFromBody(name, type, folder, body)
 
                 If apiResponse IsNot Nothing Then

@@ -11,49 +11,48 @@ Namespace ManagingRecognition.CloudStorage
 
             'ExStart:1
 
-            'Instantiate Aspose Storage Cloud API SDK
+            ' Instantiate Aspose Storage Cloud API SDK
             Dim storageApi As New StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH)
 
-            'Instantiate Aspose BarCode Cloud API SDK
+            ' Instantiate Aspose BarCode Cloud API SDK
             Dim barcodeApi As New BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH)
 
-            'Set input file name
+            ' Set input file name
             Dim name As [String] = "sample-barcode.jpeg"
 
-            'The barcode type.
-            'If this parameter is empty, autodetection of all supported types is used.
+            ' The barcode type. If this parameter is empty, autodetection of all supported types is used.
             Dim type As [String] = ""
 
-            'Set mode for checksum validation during recognition
+            ' Set mode for checksum validation during recognition
             Dim checksumValidation As [String] = ""
 
-            'Set if FNC symbol stripping should be performed. 
+            ' Set if FNC symbol stripping should be performed. 
             Dim stripFnc As Boolean = True
 
-            'Set recognition of rotated barcode
+            ' Set recognition of rotated barcode
             Dim rotationAngle As System.Nullable(Of Integer) = Nothing
 
-            'Sets exact number of barcodes to recognize 
+            ' Sets exact number of barcodes to recognize 
             Dim barcodesCount As System.Nullable(Of Integer) = Nothing
 
-            'Set recognition of barcode inside specified Rectangle region
+            ' Set recognition of barcode inside specified Rectangle region
             Dim rectX As System.Nullable(Of Integer) = Nothing
             Dim rectY As System.Nullable(Of Integer) = Nothing
             Dim rectWidth As System.Nullable(Of Integer) = Nothing
             Dim rectHeight As System.Nullable(Of Integer) = Nothing
 
-            'Set 3rd party cloud storage server (if any)
+            ' Set 3rd party cloud storage server (if any)
             Dim storage As [String] = ""
 
-            'Set folder location at cloud storage
+            ' Set folder location at cloud storage
             Dim folder As [String] = ""
 
             Try
 
-                'Upload files to aspose cloud storage
+                ' Upload files to aspose cloud storage
                 storageApi.PutCreate(name, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir + name))
 
-                'invoke Aspose.BarCode Cloud SDK API to read barcode from Aspose Cloud Storage
+                ' Invoke Aspose.BarCode Cloud SDK API to read barcode from Aspose Cloud Storage
                 Dim apiResponse As BarcodeResponseList = barcodeApi.GetBarcodeRecognize(name, type, checksumValidation, stripFnc, rotationAngle, barcodesCount, _
                  rectX, rectY, rectWidth, rectHeight, storage, folder)
 

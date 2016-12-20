@@ -9,8 +9,8 @@ namespace CSharp
         public static string APP_KEY = "XXXX";
         public static string FOLDER = "";
         public static string STORAGE = "";
-        public static string BASEPATH = "http://api.aspose.com/v1.1";
-        //public static string BASEPATH = "http://localhost:8080/v1.1";
+        public static string BASEPATH = "http://api.aspose.cloud/v1.1";
+        // public static string BASEPATH = "http://localhost:8080/v1.1";
         public static string OUTFOLDER = "C://temp/";
 
         public static string GetDataDir()

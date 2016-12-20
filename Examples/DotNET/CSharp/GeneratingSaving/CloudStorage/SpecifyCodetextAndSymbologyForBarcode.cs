@@ -33,11 +33,11 @@ namespace CSharp.GeneratingSaving.CloudStorage
             float? resolutionX = 0.0f;
             float? resolutionY = 0.0f;
 
-            //Set Width and Height of barcode unit
+            // Set Width and Height of barcode unit
             float? dimensionX = 0.0f;
             float? dimensionY = 0.0f;
 
-            //Set Location, Measurement  of the code
+            // Set Location, Measurement  of the code
             String codeLocation = "Above";
             String grUnit = "mm";
 
@@ -47,7 +47,7 @@ namespace CSharp.GeneratingSaving.CloudStorage
             // Height of the bar.
             float? barHeight = 0.0f;
 
-            //Set height, Width and quality of the image.
+            // Set height, Width and quality of the image.
             float? imageHeight = 0.0f;
             float? imageWidth = 0.0f;
             String imageQuality = "default";
@@ -64,7 +64,7 @@ namespace CSharp.GeneratingSaving.CloudStorage
             // Sets if checksum will be added to barcode image.
             String enableChecksum = "Yes";
 
-            //Set 3rd party cloud storage server (if any)
+            // Set 3rd party cloud storage server (if any)
             String storage = "";
             String folder = "";
 
@@ -73,14 +73,14 @@ namespace CSharp.GeneratingSaving.CloudStorage
 
             try
             {
-                // invoke Aspose.BarCode Cloud SDK API to generate image with specify code text and symbology for barcode
+                // Invoke Aspose.BarCode Cloud SDK API to generate image with specify code text and symbology for barcode
                 SaaSposeResponse apiResponse = barcodeApi.PutBarcodeGenerateFile(name, text, type, format, resolutionX, resolutionY, dimensionX, dimensionY, codeLocation, grUnit, autoSize, barHeight, imageHeight, imageWidth, imageQuality, rotAngle, topMargin, bottomMargin, leftMargin, rightMargin, enableChecksum, storage, folder, file);
                 if (apiResponse != null)
                 {
-                    // download generated barcode from cloud storage
+                    // Download generated barcode from cloud storage
                     Com.Aspose.Storage.Model.ResponseMessage storageRes = storageApi.GetDownload(name, null, null);
 
-                    //Save response stream to a file 
+                    // Save response stream to a file 
                     System.IO.File.WriteAllBytes(Common.OUTFOLDER + name + "." + format, storageRes.ResponseStream);
                     Console.WriteLine("Specify Codetext and Symbology for barcode, Done!");
                 }

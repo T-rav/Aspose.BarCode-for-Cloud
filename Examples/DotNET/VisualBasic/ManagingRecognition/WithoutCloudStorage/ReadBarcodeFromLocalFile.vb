@@ -10,32 +10,31 @@ Namespace ManagingRecognition.WithoutCloudStorage
 
             'ExStart:1
 
-            'Instantiate Aspose BarCode Cloud API SDK
+            ' Instantiate Aspose BarCode Cloud API SDK
             Dim barcodeApi As New BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH)
 
-            'Set input file name
+            ' Set input file name
             Dim name As [String] = "sample-barcode.jpeg"
 
-            'The barcode type.
-            'If this parameter is empty, autodetection of all supported types is used.
+            ' The barcode type. If this parameter is empty, autodetection of all supported types is used.
             Dim type As [String] = ""
 
-            'Set mode for checksum validation during recognition
+            ' Set mode for checksum validation during recognition
             Dim checksumValidation As [String] = ""
 
-            'Set if FNC symbol stripping should be performed. 
+            ' Set if FNC symbol stripping should be performed. 
             Dim stripFnc As Boolean = True
 
-            'Set recognition of rotated barcode
+            ' Set recognition of rotated barcode
             Dim rotationAngle As System.Nullable(Of Integer) = Nothing
 
-            'Set the image file url 
+            ' Set the image file url 
             Dim url As [String] = Nothing
 
             Dim file As Byte() = System.IO.File.ReadAllBytes(Common.GetDataDir + name)
             Try
 
-                'invoke Aspose.BarCode Cloud SDK API to read barcode from local image
+                ' Invoke Aspose.BarCode Cloud SDK API to read barcode from local image
                 Dim apiResponse As BarcodeResponseList = barcodeApi.PostBarcodeRecognizeFromUrlorContent(type, checksumValidation, stripFnc, rotationAngle, url, file)
 
                 If apiResponse IsNot Nothing Then

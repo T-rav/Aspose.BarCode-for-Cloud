@@ -10,7 +10,7 @@ Imports VisualBasic.ManagingRecognition.WithoutCloudStorage
 Module RunExamples
 
     Sub Main()
-        Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run")
+        Console.WriteLine("Open RunExamples.cs. " & vbLf & "In Main() method uncomment the example that you want to run.")
         Console.WriteLine("=====================================================")
 
         ' Un-comment the one you want to try out

@@ -17,32 +17,31 @@ namespace CSharp.ManagingRecognition.CloudStorage
             // Instantiate Aspose BarCode Cloud API SDK
             BarcodeApi barcodeApi = new BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            // set input file name
+            // Set input file name
             String name = "sample-barcode.jpeg";
 
-            //The barcode type.
-            //If this parameter is empty, autodetection of all supported types is used.
+            // The barcode type. If this parameter is empty, autodetection of all supported types is used.
             String type = "";
 
-            //Sets mode for checksum validation during recognition
+            // Sets mode for checksum validation during recognition
             String checksumValidation = "";
 
-            //Sets if FNC symbol stripping should be performed. 
+            // Sets if FNC symbol stripping should be performed. 
             bool stripFnc = true;
 
-            //Sets recognition of rotated barcode
+            // Sets recognition of rotated barcode
             int? rotationAngle = null;
 
-            //Sets exact number of barcodes to recognize 
+            // Sets exact number of barcodes to recognize 
             int? barcodesCount = null;
 
-            //Set recognition of barcode inside specified Rectangle region
+            // Set recognition of barcode inside specified Rectangle region
             int? rectX = null;
             int? rectY = null;
             int? rectWidth = null;
             int? rectHeight = null;
             
-            //Set 3rd party cloud storage server (if any)
+            // Set 3rd party cloud storage server (if any)
             String storage = "";
 
             // Set folder location at cloud storage
@@ -50,10 +49,10 @@ namespace CSharp.ManagingRecognition.CloudStorage
 
             try
             {
-                //upload source file to aspose cloud storage
+                // Upload source file to aspose cloud storage
                 storageApi.PutCreate(name, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
 
-                // invoke Aspose.BarCode Cloud SDK API to read barcode from Aspose Cloud Storage
+                // Invoke Aspose.BarCode Cloud SDK API to read barcode from Aspose Cloud Storage
                 BarcodeResponseList apiResponse = barcodeApi.GetBarcodeRecognize(name, type, checksumValidation, stripFnc, rotationAngle, barcodesCount, rectX, rectY, rectWidth, rectHeight, storage, folder);
 
 

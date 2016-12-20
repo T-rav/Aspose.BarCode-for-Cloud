@@ -5,7 +5,7 @@ Class Common
     Public Shared APP_KEY As String = "XXXX"
     Public Shared FOLDER As String = ""
     Public Shared STORAGE As String = ""
-    Public Shared BASEPATH As String = "http://api.aspose.com/v1.1"
+    Public Shared BASEPATH As String = "http://api.aspose.cloud/v1.1"
     Public Shared OUTFOLDER As String = "C://temp/"
 
 

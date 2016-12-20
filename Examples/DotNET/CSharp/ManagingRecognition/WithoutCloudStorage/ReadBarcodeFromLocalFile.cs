@@ -13,30 +13,29 @@ namespace CSharp.ManagingRecognition.WithoutCloudStorage
             // Instantiate Aspose BarCode Cloud API SDK
             BarcodeApi barcodeApi = new BarcodeApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            // set input file name
+            // Set input file name
             String name = "sample-barcode.jpeg";
 
-            //The barcode type.
-            //If this parameter is empty, autodetection of all supported types is used.
+            // The barcode type. If this parameter is empty, autodetection of all supported types is used.
             String type = "";
 
-            //Set mode for checksum validation during recognition
+            // Set mode for checksum validation during recognition
             String checksumValidation = "";
 
-            //Set if FNC symbol stripping should be performed
+            // Set if FNC symbol stripping should be performed
             bool stripFnc = false;
 
-            //Set recognition of rotated barcode
+            // Set recognition of rotated barcode
             int rotationAngle = 0;
 
-            //Set the image file url 
+            // Set the image file url 
             String url = null;
 
             byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + name);
 
             try
             {
-                //invoke Aspose.BarCode Cloud SDK API to read barcode from local file
+                // Invoke Aspose.BarCode Cloud SDK API to read barcode from local file
                 BarcodeResponseList apiResponse = barcodeApi.PostBarcodeRecognizeFromUrlorContent(type, checksumValidation, stripFnc, rotationAngle, url, file);
 
                 if (apiResponse != null)
