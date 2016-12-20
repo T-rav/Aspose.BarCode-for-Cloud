@@ -12,7 +12,7 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
-//Instantiate Aspose.BarCode API SDK
+// Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
 // Set Filename of image
@@ -24,14 +24,14 @@ var text = "Aspose.BarCode for Cloud";
 // Set Barcode Symbology
 var type = "QR";
 
-//Set Barcode Image Format
+// Set Barcode Image Format
 var format = "PNG";
 
 // Set Resolution along X and Y in dpi.
 var resolutionX = 96.0;
 var resolutionY = 96.0;
 
-//Set Width and Height of barcode unit
+// Set Width and Height of barcode unit
 var dimensionX = 0.7;
 var dimensionY = 2.0;
 
@@ -39,10 +39,10 @@ var dimensionY = 2.0;
 var enableChecksum = "NO";
 
 try {
-	//invoke Aspose.BarCode Cloud SDK API to create barcode and get barcode image as a stream        
+	// Invoke Aspose.BarCode Cloud SDK API to create barcode and get barcode image as a stream        
 	barcodeApi.GetBarcodeGenerate(text, type, format, resolutionX, resolutionY, dimensionX, dimensionY, enableChecksum, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
-			//download generated barcode from api response
+			// Download generated barcode from api response
 			var outfilename = name + "." + format;
 			var writeStream = fs.createWriteStream(outFolder + outfilename);
 			writeStream.write(responseMessage.body);			      

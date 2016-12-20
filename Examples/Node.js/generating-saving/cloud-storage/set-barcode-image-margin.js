@@ -13,35 +13,35 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
-//Instantiate Aspose.Storage API SDK
+// Instantiate Aspose.Storage API SDK
 var storageApi = new StorageApi(config);
 
-//Instantiate Aspose.BarCode API SDK
+// Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
-//Set the barcode file name created on server
+// Set the barcode file name created on server
 var name = "sample-barcode";
 
-//Set Text to encode inside barcode
+// Set Text to encode inside barcode
 var text = "Aspose.BarCode";
 
-//Set Barcode Symbology
+// Set Barcode Symbology
 var type = "Code128";
 
-//Set Generated Barcode Image Format
+// Set Generated Barcode Image Format
 var format = "PNG";
 
-//Set Margin of image border
+// Set Margin of image border
 var topMargin = 2.0;
 var bottomMargin = 2.0;
 var leftMargin = 2.0;
 var rightMargin = 2.0;
 
 try {
-	//invoke Aspose.BarCode Cloud SDK API to generate image with specific image margins        
+	// Invoke Aspose.BarCode Cloud SDK API to generate image with specific image margins        
 	barcodeApi.PutBarcodeGenerateFile(name, text, type, format, null, null, null, null, null, null, null, null, null, null, null, null, topMargin, bottomMargin, leftMargin, rightMargin, null, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
-			//download generated barcode from storage server
+			// Download generated barcode from storage server
 			storageApi.GetDownload(name, null, null, function(responseMessage) {
 				assert.equal(responseMessage.status, 'OK');
 				var outfilename = name + "." + format;

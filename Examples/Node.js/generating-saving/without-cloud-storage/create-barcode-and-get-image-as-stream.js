@@ -12,7 +12,7 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
-//Instantiate Aspose.BarCode API SDK
+// Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
 // Set Filename of image
@@ -28,10 +28,10 @@ var type = "datamatrix";
 var format = "PNG";
 
 try {
-	//invoke Aspose.BarCode Cloud SDK API to create barcode and save image to a stream        
+	// Invoke Aspose.BarCode Cloud SDK API to create barcode and save image to a stream        
 	barcodeApi.GetBarcodeGenerate(text, type, format, null, null, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
-			//download generated barcode from api response
+			// Download generated barcode from api response
 			var outfilename = name + "." + format;
 			var writeStream = fs.createWriteStream(outFolder + outfilename);
 			writeStream.write(responseMessage.body);

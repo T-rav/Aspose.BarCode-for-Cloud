@@ -13,17 +13,17 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
-//Instantiate Aspose.Storage API SDK
+// Instantiate Aspose.Storage API SDK
 var storageApi = new StorageApi(config);
 
-//Instantiate Aspose.BarCode API SDK
+// Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
-//set input file name
+// Set input file name
 var name = "sample-barcode.jpeg";
 
 
-//Set BarcodeReader object with special mode of barcode binarization
+// Set BarcodeReader object with special mode of barcode binarization
 var barcodeReaderBody = {
 		'StripFNC' : true,
 		'BinarizationHints' : 'ComplexBackground',
@@ -31,11 +31,11 @@ var barcodeReaderBody = {
 };
 
 try {
-	//upload file to aspose cloud storage
+	// Upload file to aspose cloud storage
 	storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {	
 		assert.equal(responseMessage.status, 'OK');
 		
-		//invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body        
+		// Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body        
 		barcodeApi.PutBarcodeRecognizeFromBody(name, null, null, barcodeReaderBody, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
 			responseMessage.body.Barcodes.forEach(function(barcode) {

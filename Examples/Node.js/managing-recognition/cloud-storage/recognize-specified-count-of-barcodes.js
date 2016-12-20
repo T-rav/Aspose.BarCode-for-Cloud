@@ -13,24 +13,24 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
-//Instantiate Aspose Storage API SDK
+// Instantiate Aspose Storage API SDK
 var storageApi = new StorageApi(config);
 
-//Instantiate Aspose.BarCode API SDK
+// Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
-//Set the barcode file name
+// Set the barcode file name
 var name = "sample-barcode.jpeg";
 
-//Set exact number of barcodes to recognize
+// Set exact number of barcodes to recognize
 var barcodesCount = 0;
 
 try {
-	//upload file to aspose cloud storage
+	// Upload file to aspose cloud storage
 	storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {	
 		assert.equal(responseMessage.status, 'OK');
 		
-		//invoke Aspose.BarCode Cloud SDK API to read barcode        
+		// Invoke Aspose.BarCode Cloud SDK API to read barcode        
 		barcodeApi.GetBarcodeRecognize(name, null, null, null, null, barcodesCount, null, null, null, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
 			responseMessage.body.Barcodes.forEach(function(barcode) {
