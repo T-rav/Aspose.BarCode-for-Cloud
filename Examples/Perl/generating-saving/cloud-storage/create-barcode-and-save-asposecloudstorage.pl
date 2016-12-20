@@ -27,29 +27,29 @@ $AsposeBarCodeCloud::Configuration::debug = 1;
 $AsposeStorageCloud::Configuration::app_sid = $AsposeBarCodeCloud::Configuration::app_sid;
 $AsposeStorageCloud::Configuration::api_key = $AsposeBarCodeCloud::Configuration::api_key;
 
-#Instantiate Aspose.Storage API SDK 
+# Instantiate Aspose.Storage API SDK 
 my $storageApi = AsposeStorageCloud::StorageApi->new();
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set Filename of image
+# Set Filename of image
 my $name = 'sample-barcode';
 
-#Set Text to encode inside barcode
+# Set Text to encode inside barcode
 my $text = 'Aspose.BarCode for Cloud';
 
-#Set Barcode Symbology
+# Set Barcode Symbology
 my $type = 'Code128';
 
-#Set Barcode Image Format
+# Set Barcode Image Format
 my $format = 'jpeg';
 
-#invoke Aspose.BarCode Cloud SDK API to create barcode and put in cloud storage                   
+# Invoke Aspose.BarCode Cloud SDK API to create barcode and put in cloud storage                   
 my $response = $barcodeApi->PutBarcodeGenerateFile(name => $name, text => $text, type => $type, format => $format);
 
 if($response->{'Status'} eq 'OK'){
-	#download barcode from cloud storage
+	# Download barcode from cloud storage
 	my $output_file = $out_path. $name . '.' . $format;
 	$response = $storageApi->GetDownload(Path => $name);
 	write_file($output_file, { binmode => ":raw" }, $response->{'Content'});

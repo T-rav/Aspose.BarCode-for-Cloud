@@ -29,32 +29,32 @@ $AsposeBarCodeCloud::Configuration::debug = 1;
 $AsposeStorageCloud::Configuration::app_sid = $AsposeBarCodeCloud::Configuration::app_sid;
 $AsposeStorageCloud::Configuration::api_key = $AsposeBarCodeCloud::Configuration::api_key;
 
-#Instantiate Aspose.Storage API SDK 
+# Instantiate Aspose.Storage API SDK 
 my $storageApi = AsposeStorageCloud::StorageApi->new();
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set input file name
+# Set input file name
 my $name = 'sample-barcode.jpeg';
 
-#Set mode for checksum validation during recognition
+# Set mode for checksum validation during recognition
 my $checksumValidation = "On";
 
-#Set if FNC symbol stripping should be performed.
+# Set if FNC symbol stripping should be performed.
 my $stripFnc = 'True';
 
-#Set recognition of barcode inside specified Rectangle region
+# Set recognition of barcode inside specified Rectangle region
 my $rectX = 10;
 my $rectY = 10;
 my $rectWidth = 200;
 my $rectHeight = 200;
 
 
-#upload file to aspose cloud storage 
+# Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
 
-#invoke Aspose.BarCode Cloud SDK API to read barcode with specific region of image                                   
+# Invoke Aspose.BarCode Cloud SDK API to read barcode with specific region of image                                   
 $response = $barcodeApi->GetBarcodeRecognize(name => $name, checksumValidation => $checksumValidation, 
 				stripFnc => $stripFnc, rectX => $rectX, rectY => $rectY, rectWidth => $rectWidth, rectHeight => $rectHeight);
 

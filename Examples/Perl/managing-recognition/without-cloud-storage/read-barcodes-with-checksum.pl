@@ -28,22 +28,22 @@ $AsposeBarCodeCloud::Configuration::debug = 1;
 $AsposeStorageCloud::Configuration::app_sid = $AsposeBarCodeCloud::Configuration::app_sid;
 $AsposeStorageCloud::Configuration::api_key = $AsposeBarCodeCloud::Configuration::api_key;
 
-#Instantiate Aspose.Storage API SDK 
+# Instantiate Aspose.Storage API SDK 
 my $storageApi = AsposeStorageCloud::StorageApi->new();
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#set input file name
+# Set input file name
 my $name = 'sample-barcode.jpeg';
 
-#Set BarcodeReader object with mode for checksum validation during recognition
+# Set BarcodeReader object with mode for checksum validation during recognition
 my @barcodeReaderBody = AsposeBarCodeCloud::Object::BarcodeReader->new('StripFNC' => 'TRUE', 'BinarizationHints' => 'ComplexBackground', 'checksumValidation' => 'On');
 
-#upload file to aspose cloud storage 
+# Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
 
-#invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body                                                   
+# Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body                                                   
 $response = $barcodeApi->PutBarcodeRecognizeFromBody(name => $name, body =>@barcodeReaderBody);
 
 if($response->{'Status'} eq 'OK'){

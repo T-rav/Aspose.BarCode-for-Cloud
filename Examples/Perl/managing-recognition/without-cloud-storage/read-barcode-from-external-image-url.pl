@@ -21,13 +21,13 @@ $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
 $AsposeBarCodeCloud::Configuration::api_key = $configProps->{'api_key'};
 $AsposeBarCodeCloud::Configuration::debug = 1;
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set the image file url
+# Set the image file url
 my $url = 'http://www.barcoding.com/images/Barcodes/code93.gif';
 
-#Invoke Aspose.BarCode Cloud SDK API to read barcode from external image URL                                   
+# Invoke Aspose.BarCode Cloud SDK API to read barcode from external image URL                                   
 my $response = $barcodeApi->PostBarcodeRecognizeFromUrlorContent(url => $url);
 
 if($response->{'Status'} eq 'OK'){

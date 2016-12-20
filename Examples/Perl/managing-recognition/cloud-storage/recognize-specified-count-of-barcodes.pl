@@ -27,22 +27,22 @@ $AsposeBarCodeCloud::Configuration::debug = 1;
 $AsposeStorageCloud::Configuration::app_sid = $AsposeBarCodeCloud::Configuration::app_sid;
 $AsposeStorageCloud::Configuration::api_key = $AsposeBarCodeCloud::Configuration::api_key;
 
-#Instantiate Aspose.Storage API SDK 
+# Instantiate Aspose.Storage API SDK 
 my $storageApi = AsposeStorageCloud::StorageApi->new();
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set input file name
+# Set input file name
 my $name = 'sample-barcode.jpeg';
 
-#Set exact number of barcodes to recognize
+# Set exact number of barcodes to recognize
 my $barcodesCount = 0;
 
-#Upload file to aspose cloud storage 
+# Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
 
-#Invoke Aspose.BarCode Cloud SDK API to read barcode                                                           
+# Invoke Aspose.BarCode Cloud SDK API to read barcode                                                           
 $response = $barcodeApi->GetBarcodeRecognize(name => $name, barcodesCount =>$barcodesCount);
 
 if($response->{'Status'} eq 'OK'){

@@ -21,13 +21,13 @@ $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
 $AsposeBarCodeCloud::Configuration::api_key = $configProps->{'api_key'};
 $AsposeBarCodeCloud::Configuration::debug = 1;
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set input file name
+# Set input file name
 my $name = 'sample-barcode.jpeg';
 
-#Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body                                   
+# Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body                                   
 my $response = $barcodeApi->PostBarcodeRecognizeFromUrlorContent(file => $data_path.$name);
 
 if($response->{'Status'} eq 'OK'){

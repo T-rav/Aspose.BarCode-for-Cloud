@@ -21,38 +21,38 @@ $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
 $AsposeBarCodeCloud::Configuration::api_key = $configProps->{'api_key'};
 $AsposeBarCodeCloud::Configuration::debug = 1;
 
-#Instantiate Aspose.BarCode API SDK
+# Instantiate Aspose.BarCode API SDK
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-#Set Filename of image
+# Set Filename of image
 my $name = 'sample-barcode';
 
-#Set Text to encode inside barcode
+# Set Text to encode inside barcode
 my $text = 'Aspose.BarCode for Cloud';
 
-#Set Barcode Symbology
+# Set Barcode Symbology
 my $type = 'QR';
 
-#Set Barcode Image Format
+# Set Barcode Image Format
 my $format = 'PNG';
 
-#Set Resolution along X and Y in dpi
+# Set Resolution along X and Y in dpi
 my $resolutionX = 96.0;
 my $resolutionY = 96.0;
 
-#Set Width and Height of barcode unit
+# Set Width and Height of barcode unit
 my $dimensionX = 0.7;
 my $dimensionY = 2.0;
 
-#Sets if checksum will be added to barcode image
+# Sets if checksum will be added to barcode image
 my $enableChecksum = 'NO';
 
-#invoke Aspose.BarCode Cloud SDK API to create barcode and get barcode image as a stream                                   
+# Invoke Aspose.BarCode Cloud SDK API to create barcode and get barcode image as a stream                                   
 my $response = $barcodeApi->GetBarcodeGenerate(name => $name, text => $text, type => $type, format => $format,
 								resolutionX => $resolutionX, resolutionY => $resolutionY, dimensionX => $dimensionX, dimensionY => $dimensionY, enableChecksum => $enableChecksum);
 
 if($response->{'Status'} eq 'OK'){
-	#download barcode from api response
+	# Download barcode from api response
 	my $output_file = $out_path . $name . '.' . $format;
 	write_file($output_file, { binmode => ":raw" }, $response->{'Content'});
 }
