@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.vb" />
+    <Compile Include="GeneratingSaving\CloudStorage\CreateBarcodeAndSaveAsposeCloudStorage.vb" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithAppropriateCodeTextLocation.vb" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithChecksumOption.vb" />
     <Compile Include="GeneratingSaving\CloudStorage\RotateBarcodeImagewithSuitableAngle.vb" />
