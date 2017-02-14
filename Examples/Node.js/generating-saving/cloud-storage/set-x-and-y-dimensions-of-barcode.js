@@ -3,8 +3,8 @@ var assert = require('assert');
 var BarcodeApi = require('asposebarcodecloud');
 var StorageApi = require('asposestoragecloud');
 
-var configProps = require('../../data/config.json');
-var data_path = '../../data/';
+var configProps = require('../../Config/config.json');
+var data_path = '../../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;
@@ -20,7 +20,7 @@ var storageApi = new StorageApi(config);
 var barcodeApi = new BarcodeApi(config);
 
 // Set the barcode file name created on server
-var name = "sample-barcode";
+var name = "sample-barcode.png";
 
 // Set Text to encode inside barcode
 var text = "Aspose.BarCode";
@@ -36,6 +36,10 @@ var dimensionX = 1.0;
 var dimensionY = 0.5;
 
 try {
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name , null, null, data_path + name  , function(responseMessage) {
+		assert.equal(responseMessage.status, 'OK');
+
 	// Invoke Aspose.BarCode Cloud SDK API to generate image with specific X and Y dimensions of a barcode        
 	barcodeApi.PutBarcodeGenerateFile(name, text, type, format, null, null, dimensionX, dimensionY, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
@@ -46,6 +50,7 @@ try {
 				var writeStream = fs.createWriteStream(outFolder + outfilename);
 				writeStream.write(responseMessage.body);
 				});      
+	});
 	});
 
 }catch (e) {

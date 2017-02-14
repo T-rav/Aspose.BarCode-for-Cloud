@@ -3,8 +3,8 @@ var assert = require('assert');
 var BarcodeApi = require('asposebarcodecloud');
 var StorageApi = require('asposestoragecloud');
 
-var configProps = require('../../data/config.json');
-var data_path = '../../data/';
+var configProps = require('../../Config/config.json');
+var data_path = '../../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;
@@ -19,7 +19,7 @@ var storageApi = new StorageApi(config);
 var barcodeApi = new BarcodeApi(config);
 
 // Set the barcode file name created on server
-var name = "sample-barcode";
+var name = "sample-barcode.png";
 
 // Set Text to encode inside barcode
 var text = "Aspose.BarCode";
@@ -40,6 +40,10 @@ var enableChecksum = "Yes";
 var rotAngle = 90;
 
 try {
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name  , null, null, data_path + name  , function(responseMessage) {
+		assert.equal(responseMessage.status, 'OK');
+
 	// Invoke Aspose.BarCode Cloud SDK API to generate barcode with suitable angle and save in cloud storage        
 	barcodeApi.PutBarcodeGenerateFile(name, text, type, format, null, null, null, null, codeLocation, null, null, null, null, null, null, rotAngle, null, null, null, null, enableChecksum, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
@@ -51,6 +55,7 @@ try {
 				writeStream.write(responseMessage.body);
 				});      
 	});
+});
 
 }catch (e) {
   console.log("exception in example");

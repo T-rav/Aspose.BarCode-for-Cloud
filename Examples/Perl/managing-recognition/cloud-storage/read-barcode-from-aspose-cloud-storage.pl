@@ -13,11 +13,11 @@ use AsposeBarCodeCloud::BarcodeApi;
 use AsposeBarCodeCloud::ApiClient;
 use AsposeBarCodeCloud::Configuration;
 
-my $configFile = '../../data/config.json';
+my $configFile = '../../config/config.json';
 my $configPropsText = read_file($configFile);
 my $configProps = decode_json($configPropsText);
 
-my $data_path = '../../data/';
+my $data_path = '../../../../Data/';
 my $out_path = $configProps->{'out_folder'};;
 
 #ExStart:1

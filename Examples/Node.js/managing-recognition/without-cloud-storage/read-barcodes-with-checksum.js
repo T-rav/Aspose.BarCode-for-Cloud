@@ -3,8 +3,8 @@ var assert = require('assert');
 var BarcodeApi = require('asposebarcodecloud');
 var StorageApi = require('asposestoragecloud');
 
-var configProps = require('../../data/config.json');
-var data_path = '../../data/';
+var configProps = require('../../Config/config.json');
+var data_path = '../../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;

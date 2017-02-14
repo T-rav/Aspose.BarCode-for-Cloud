@@ -21,7 +21,7 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
 
-        'CreateBarcodeAndSaveAsposeCloudStorage.Run()
+        CreateBarcodeAndSaveAsposeCloudStorage.Run()
         'GenerateBarcodewithAppropriateCodeTextLocation.Run()
         'GenerateBarcodewithChecksumOption.Run()
         'RotateBarcodeImagewithSuitableAngle.Run()

@@ -3,8 +3,8 @@ var assert = require('assert');
 var BarcodeApi = require('asposebarcodecloud');
 var StorageApi = require('asposestoragecloud');
 
-var configProps = require('../../data/config.json');
-var data_path = '../../data/';
+var configProps = require('../../Config/config.json');
+var data_path = '../../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;
@@ -23,6 +23,10 @@ var barcodeApi = new BarcodeApi(config);
 var name = "sample-barcode.jpeg";
 
 try {
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name  , null, null, data_path + name  , function(responseMessage) {
+		assert.equal(responseMessage.status, 'OK');
+
 	// Upload file to aspose cloud storage
 	storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {	
 		assert.equal(responseMessage.status, 'OK');
@@ -36,6 +40,7 @@ try {
 					});
 		});		
 	});
+});
 
 }catch (e) {
   console.log("exception in example");

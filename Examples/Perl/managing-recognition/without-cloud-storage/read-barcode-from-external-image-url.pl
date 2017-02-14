@@ -13,9 +13,6 @@ my $configFile = '../../data/config.json';
 my $configPropsText = read_file($configFile);
 my $configProps = decode_json($configPropsText);
 
-my $data_path = '../../data/';
-my $out_path = $configProps->{'out_folder'};
-
 #ExStart:1
 $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
 $AsposeBarCodeCloud::Configuration::api_key = $configProps->{'api_key'};

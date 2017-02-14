@@ -13,19 +13,21 @@ use AsposeBarCodeCloud::BarcodeApi;
 use AsposeBarCodeCloud::ApiClient;
 use AsposeBarCodeCloud::Configuration;
 
-my $configFile = '../../data/config.json';
+my $configFile = '../../config/config.json';
 my $configPropsText = read_file($configFile);
 my $configProps = decode_json($configPropsText);
 
-my $data_path = '../../data/';
+my $data_path = '../../../../Data/';
 my $out_path = $configProps->{'out_folder'};;
 
 #ExStart:1
 $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
 $AsposeBarCodeCloud::Configuration::api_key = $configProps->{'api_key'};
 $AsposeBarCodeCloud::Configuration::debug = 1;
-$AsposeStorageCloud::Configuration::app_sid = $AsposeBarCodeCloud::Configuration::app_sid;
-$AsposeStorageCloud::Configuration::api_key = $AsposeBarCodeCloud::Configuration::api_key;
+
+$AsposeStorageCloud::Configuration::app_sid = $configProps->{'app_sid'};
+$AsposeStorageCloud::Configuration::api_key = $configProps->{'api_key'};
+$AsposeStorageCloud::Configuration::debug = 1;
 
 # Instantiate Aspose.Storage API SDK 
 my $storageApi = AsposeStorageCloud::StorageApi->new();
@@ -34,7 +36,7 @@ my $storageApi = AsposeStorageCloud::StorageApi->new();
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
 # Set Filename of image
-my $name = 'sample-barcode';
+my $name = 'sample-barcode.jpeg';
 
 # Set Text to encode inside barcode
 my $text = 'Aspose.BarCode for Cloud';
@@ -45,8 +47,13 @@ my $type = 'Code128';
 # Set Barcode Image Format
 my $format = 'jpeg';
 
+# Upload file to aspose cloud storage 
+my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
+ 	isa_ok($response, 'AsposeStorageCloud::Object::ResponseMessage');
+ 	is($response->{'Status'}, "OK"); 
+
 # Invoke Aspose.BarCode Cloud SDK API to create barcode and put in cloud storage                   
-my $response = $barcodeApi->PutBarcodeGenerateFile(name => $name, text => $text, type => $type, format => $format);
+$response = $barcodeApi->PutBarcodeGenerateFile(name => $name, text => $text, type => $type, format => $format);
 
 if($response->{'Status'} eq 'OK'){
 	# Download barcode from cloud storage

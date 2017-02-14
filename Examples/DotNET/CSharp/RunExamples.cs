@@ -24,7 +24,7 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            //CreateBarcodeAndSaveAsposeCloudStorage.Run();
+            CreateBarcodeAndSaveAsposeCloudStorage.Run();
             //GenerateBarcodewithAppropriateCodeTextLocation.Run();
             //GenerateBarcodewithChecksumOption.Run();
             //RotateBarcodeImagewithSuitableAngle.Run();

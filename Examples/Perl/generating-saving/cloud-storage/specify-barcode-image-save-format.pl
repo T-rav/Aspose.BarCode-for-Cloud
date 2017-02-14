@@ -14,12 +14,12 @@ use AsposeBarCodeCloud::ApiClient;
 use AsposeBarCodeCloud::Configuration;
 
 
-my $configFile = '../../data/config.json';
+my $configFile = '../../config/config.json';
 my $configPropsText = read_file($configFile);
 
 my $configProps = decode_json($configPropsText);
 
-my $data_path = '../../data/';
+my $data_path = '../../../../Data/';
 my $out_path = $configProps->{'out_folder'};;
 
 #ExStart:1
@@ -36,7 +36,7 @@ my $storageApi = AsposeStorageCloud::StorageApi->new();
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
 # Set the barcode file name created on server
-my $name = 'sample-barcode';
+my $name = 'sample-barcode.png';
 
 # Set Text to encode inside barcode
 my $text = 'Aspose.BarCode for Cloud';
@@ -47,8 +47,11 @@ my $type = 'Code128';
 # Set Generated Barcode Image Format
 my $format = 'PNG';
 
+# Upload file to aspose cloud storage 
+my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
+
 # Invoke Aspose.BarCode Cloud SDK API to generate image with specific barcode image format                                                                           
-my $response = $barcodeApi->PutBarcodeGenerateFile(name => $name, text => $text, type => $type, format => $format);
+$response = $barcodeApi->PutBarcodeGenerateFile(name => $name, text => $text, type => $type, format => $format);
 
 if($response->{'Status'} eq 'OK'){
 	# Download barcode from cloud storage

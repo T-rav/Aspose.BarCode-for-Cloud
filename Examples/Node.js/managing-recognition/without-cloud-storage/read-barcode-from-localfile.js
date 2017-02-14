@@ -3,8 +3,9 @@ var assert = require('assert');
 var BarcodeApi = require('asposebarcodecloud');
 var StorageApi = require('asposestoragecloud');
 
-var configProps = require('../../data/config.json');
-var data_path = '../../data/';
+var configProps = require('../../Config/config.json');
+
+var data_path = '../../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;
@@ -13,6 +14,9 @@ var outFolder = configProps.out_folder;
 // ExStart:1
 var config = {'appSid':AppSID,'apiKey':AppKey , 'debug' : true};
 
+// Instantiate Aspose.Storage API SDK
+var storageApi = new StorageApi(config);
+
 // Instantiate Aspose.BarCode API SDK
 var barcodeApi = new BarcodeApi(config);
 
@@ -20,6 +24,9 @@ var barcodeApi = new BarcodeApi(config);
 var name = "sample-barcode.jpeg";
 
 try {
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name  , null, null, data_path + name  , function(responseMessage) {
+		assert.equal(responseMessage.status, 'OK');
 		
 	// Invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body        
 	barcodeApi.PostBarcodeRecognizeFromUrlorContent(null, null, null, null, null, data_path + name, function(responseMessage) {		
@@ -29,6 +36,7 @@ try {
 			console.log("Codetext :: " + barcode.BarcodeValue);
 		});
 	});
+});
 
 }catch (e) {
   console.log("exception in example");
