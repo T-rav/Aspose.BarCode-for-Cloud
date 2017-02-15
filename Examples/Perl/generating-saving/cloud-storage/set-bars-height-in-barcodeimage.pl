@@ -19,7 +19,7 @@ my $configPropsText = read_file($configFile);
 my $configProps = decode_json($configPropsText);
 
 my $data_path = '../../../../Data/';
-my $out_path = $configProps->{'out_folder'};;
+my $out_path = $configProps->{'out_folder'};
 
 #ExStart:1
 $AsposeBarCodeCloud::Configuration::app_sid = $configProps->{'app_sid'};
