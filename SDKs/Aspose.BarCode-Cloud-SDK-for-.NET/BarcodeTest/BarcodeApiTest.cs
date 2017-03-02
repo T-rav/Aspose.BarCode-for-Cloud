@@ -115,7 +115,7 @@ namespace BarcodeTest
             string storage = "";
             string folder = "";
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\barcode\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             BarcodeResponseList actual;
             actual = target.GetBarcodeRecognize(name, type, checksumValidation, stripFnc, rotationAngle, barcodesCount, rectX, rectY, rectWidth, rectHeight, storage, folder);
@@ -230,7 +230,7 @@ namespace BarcodeTest
             body.StripFNC = true;
             body.ChecksumValidation = "OFF";
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\barcode\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             BarcodeResponseList actual;
             actual = target.PutBarcodeRecognizeFromBody(name, type, folder, body);
