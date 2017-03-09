@@ -15,7 +15,7 @@ class GenerateBarcode {
 		$this->barcodeApi = new BarcodeApi();
 	}
 
-	public function generateABarcodeAndGetAsImageStream() {
+	public function generateBarcodeAndSaveImageToLocalDisk() {
 
 		// Set Filename of image
 		$name = "sample-barcode";
@@ -24,7 +24,7 @@ class GenerateBarcode {
 		$text = "Aspose.BarCode";
 
 		// Set Barcode Symbology
-		$type = "datamatrix";
+		$type = "QR";
 
 		// Set Barcode Image Format
 		$format = "PNG";
@@ -33,12 +33,12 @@ class GenerateBarcode {
 		$enableChecksum = null;
 
 		// Set optional params (if any)
-		$resolutionX = null;
-		$resolutionY = null;
-		$dimensionX = null;
-		$dimensionY = null;
+		$resolutionX = 96.0;
+		$resolutionY = 96.0;
+		$dimensionX = 0.7;
+		$dimensionY = 2.0;
 
-		// invoke Aspose.BarCode Cloud SDK API to create barcode and save image to a stream
+		// invoke Aspose.BarCode Cloud SDK API to create barcode and get barcode image as a stream
 		$response = $this->barcodeApi->GetBarcodeGenerate ( $name, $type, $format, $resolutionX, $resolutionY, $dimensionX, $dimensionY, $enableChecksum );
 		if ($response != null) {
 			// Save response stream to a file
@@ -51,6 +51,6 @@ class GenerateBarcode {
 }
 
 $generateBarcode = new GenerateBarcode();
-$generateBarcode->generateABarcodeAndGetAsImageStream();
+$generateBarcode->generateBarcodeAndSaveImageToLocalDisk();
 
 ?>

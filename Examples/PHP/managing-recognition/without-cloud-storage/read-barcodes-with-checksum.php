@@ -1,64 +1,49 @@
 <?php
+require_once realpath(__DIR__ . '/../..') . '/vendor/autoload.php';
+require_once realpath(__DIR__ . '/../..') . '/Utils.php';
 
-/**
- * Include the SDK by using the autoloader from Composer.
- */
-require __DIR__ . '/../../vendor/autoload.php';
-
-/**
- * Include the configuration values.
- *
- * Ensure that you have edited the configuration.php file
- * to include your application keys.
- */
-$config = require __DIR__ . '/../../configuration.php';
-
-$apiKey = $config ['apiKey'];
-$appSid = $config ['appSid'];
-$out_folder = $config ['outFolder'];
-$data_folder = '../../data/'; // resouece data folder
-
-/**
- * The namespaces provided by the SDK.
- */
 use Aspose\Barcode\BarcodeApi;
-use Aspose\Barcode\APIClient;
+use Aspose\Barcode\AsposeApp;
 
-// ExStart:1
+class RecognizeBarcode {
 
-\Aspose\Barcode\AsposeApp::$apiKey = $apiKey;
-\Aspose\Barcode\AsposeApp::$appSID = $appSid;
-;
+	public $barcodeApi;
 
-// Instantiate Aspose BarCode Cloud API SDK
-$barcodeApi = new BarcodeApi ();
-
-// Set input file name
-$name = "sample-barcode.jpeg";
-
-// The barcode type.
-// If this parameter is empty, autodetection of all supported types is used.
-$type = "";
-
-// Set BarcodeReader object with mode for checksum validation during recognition
-$body = array (
-		"StripFNC" => "true",
-		"ChecksumValidation" => "OFF",
-		"BinarizationHints" => "ComplexBackground" 
-);
-
-// Set folder location at cloud storage
-$folder = "";
-
-try {
-	
-	// invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body
-	$response = $barcodeApi->PutBarcodeRecognizeFromBody ( $name, $type, $folder, $body );
-	
-	if ($response != null && $response->Status = "OK") {
-		print_r ( $response );
+	public function __construct() {
+		AsposeApp::$appSID = Utils::appSID;
+		AsposeApp::$apiKey = Utils::apiKey;
+		$this->barcodeApi = new BarcodeApi();
 	}
-} catch ( \Aspose\Barcode\ApiException $exp ) {
-	echo "Exception:" . $exp->getMessage ();
+
+	public function recogniseBarcodeWithChecksumOption() {
+
+		// Set input file name
+		$name = "sample-barcode.jpeg";
+
+		// The barcode type.
+		// If this parameter is empty, autodetection of all supported types is used.
+		$type = "";
+
+		// Set BarcodeReader object with mode for checksum validation during recognition
+		$body = array (
+				"StripFNC" => true,
+				"ChecksumValidation" => "ON",
+				"BinarizationHints" => "ComplexBackground" 
+		);
+
+		// Set folder location at cloud storage
+		$folder = "";
+
+		// Upload file to Aspose Cloud Storage
+		Utils::uploadFile($name);
+
+		// invoke Aspose.BarCode Cloud SDK API to recognition of a barcode from file on server with parameters in body
+		$response = $this->barcodeApi->PutBarcodeRecognizeFromBody($name, $type, $folder, $body);
+		print_r ( $response );	
+	}
 }
-//ExEnd:1
+
+$recognizeBarcode = new RecognizeBarcode();
+$recognizeBarcode->recogniseBarcodeWithChecksumOption();
+
+?>
