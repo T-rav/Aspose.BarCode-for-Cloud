@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C3E79C1E75568B00414EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E79B1E75568B00414EBF /* main.m */; };
+		30C3E79F1E75568B00414EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E79E1E75568B00414EBF /* AppDelegate.m */; };
+		30C3E7A51E75568B00414EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E7A31E75568B00414EBF /* Main.storyboard */; };
+		30C3E7A71E75568B00414EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E7A61E75568B00414EBF /* Assets.xcassets */; };
+		30C3E7AA1E75568B00414EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E7A81E75568B00414EBF /* LaunchScreen.storyboard */; };
+		30C3E7C21E75677500414EBF /* GenerateBarcodeWithCloudStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E7C11E75677500414EBF /* GenerateBarcodeWithCloudStorage.m */; };
+		30C3E7C51E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E7C41E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.m */; };
+		30C3E7C81E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E7C71E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.m */; };
+		30C3E7CE1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E7CD1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.m */; };
+		30C3E7D11E75AC5000414EBF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E7D01E75AC5000414EBF /* Utils.m */; };
+		30C3E7D71E75B15F00414EBF /* sample-barcode.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E7D31E75B15F00414EBF /* sample-barcode.jpeg */; };
+		44B2C925A0104B19235EC126 /* libPods-Aspose.Barcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF9354A3CA8D7773FCD0338 /* libPods-Aspose.Barcode.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30C3E7971E75568B00414EBF /* Aspose.Barcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspose.Barcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C3E79B1E75568B00414EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30C3E79D1E75568B00414EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30C3E79E1E75568B00414EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30C3E7A41E75568B00414EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C3E7A61E75568B00414EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C3E7A91E75568B00414EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C3E7AB1E75568B00414EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C3E7C01E75677500414EBF /* GenerateBarcodeWithCloudStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenerateBarcodeWithCloudStorage.h; path = GeneratingSaving/GenerateBarcodeWithCloudStorage.h; sourceTree = "<group>"; };
+		30C3E7C11E75677500414EBF /* GenerateBarcodeWithCloudStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenerateBarcodeWithCloudStorage.m; path = GeneratingSaving/GenerateBarcodeWithCloudStorage.m; sourceTree = "<group>"; };
+		30C3E7C31E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenerateBarcodeWithoutCloudStorage.h; path = GeneratingSaving/GenerateBarcodeWithoutCloudStorage.h; sourceTree = "<group>"; };
+		30C3E7C41E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenerateBarcodeWithoutCloudStorage.m; path = GeneratingSaving/GenerateBarcodeWithoutCloudStorage.m; sourceTree = "<group>"; };
+		30C3E7C61E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecognizeBarcodeWithCloudStorage.h; path = RecognizeBarcode/RecognizeBarcodeWithCloudStorage.h; sourceTree = "<group>"; };
+		30C3E7C71E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecognizeBarcodeWithCloudStorage.m; path = RecognizeBarcode/RecognizeBarcodeWithCloudStorage.m; sourceTree = "<group>"; };
+		30C3E7CC1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecognizeBarcodeWithoutCloudStorage.h; path = RecognizeBarcode/RecognizeBarcodeWithoutCloudStorage.h; sourceTree = "<group>"; };
+		30C3E7CD1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecognizeBarcodeWithoutCloudStorage.m; path = RecognizeBarcode/RecognizeBarcodeWithoutCloudStorage.m; sourceTree = "<group>"; };
+		30C3E7CF1E75AC5000414EBF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		30C3E7D01E75AC5000414EBF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		30C3E7D31E75B15F00414EBF /* sample-barcode.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sample-barcode.jpeg"; sourceTree = "<group>"; };
+		73446D5E66F634C5C15C3512 /* Pods-Aspose.Barcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Barcode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Barcode/Pods-Aspose.Barcode.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF9354A3CA8D7773FCD0338 /* libPods-Aspose.Barcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aspose.Barcode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEA0895655EE30BDF9D200E /* Pods-Aspose.Barcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Barcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Barcode/Pods-Aspose.Barcode.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C3E7941E75568B00414EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B2C925A0104B19235EC126 /* libPods-Aspose.Barcode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C3E78E1E75568B00414EBF = {
+			isa = PBXGroup;
+			children = (
+				30C3E7991E75568B00414EBF /* Aspose.Barcode */,
+				30C3E7981E75568B00414EBF /* Products */,
+				FDA2C1D099AF6E3DF992105A /* Pods */,
+				4F86C80DF8470A895DCF3D70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30C3E7981E75568B00414EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E7971E75568B00414EBF /* Aspose.Barcode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C3E7991E75568B00414EBF /* Aspose.Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E7CF1E75AC5000414EBF /* Utils.h */,
+				30C3E7D01E75AC5000414EBF /* Utils.m */,
+				30C3E7B21E75575100414EBF /* ManagingRecognition */,
+				30C3E7B11E75573C00414EBF /* GeneratingSaving */,
+				30C3E79D1E75568B00414EBF /* AppDelegate.h */,
+				30C3E79E1E75568B00414EBF /* AppDelegate.m */,
+				30C3E7A31E75568B00414EBF /* Main.storyboard */,
+				30C3E7A61E75568B00414EBF /* Assets.xcassets */,
+				30C3E7A81E75568B00414EBF /* LaunchScreen.storyboard */,
+				30C3E7AB1E75568B00414EBF /* Info.plist */,
+				30C3E79A1E75568B00414EBF /* Supporting Files */,
+				30C3E7C91E759D8E00414EBF /* Data */,
+			);
+			path = Aspose.Barcode;
+			sourceTree = "<group>";
+		};
+		30C3E79A1E75568B00414EBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E79B1E75568B00414EBF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30C3E7B11E75573C00414EBF /* GeneratingSaving */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E7C01E75677500414EBF /* GenerateBarcodeWithCloudStorage.h */,
+				30C3E7C11E75677500414EBF /* GenerateBarcodeWithCloudStorage.m */,
+				30C3E7C31E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.h */,
+				30C3E7C41E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.m */,
+			);
+			name = GeneratingSaving;
+			sourceTree = "<group>";
+		};
+		30C3E7B21E75575100414EBF /* ManagingRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E7C61E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.h */,
+				30C3E7C71E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.m */,
+				30C3E7CC1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.h */,
+				30C3E7CD1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.m */,
+			);
+			name = ManagingRecognition;
+			sourceTree = "<group>";
+		};
+		30C3E7C91E759D8E00414EBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E7D31E75B15F00414EBF /* sample-barcode.jpeg */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		4F86C80DF8470A895DCF3D70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF9354A3CA8D7773FCD0338 /* libPods-Aspose.Barcode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDA2C1D099AF6E3DF992105A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73446D5E66F634C5C15C3512 /* Pods-Aspose.Barcode.debug.xcconfig */,
+				DBEA0895655EE30BDF9D200E /* Pods-Aspose.Barcode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C3E7961E75568B00414EBF /* Aspose.Barcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C3E7AE1E75568B00414EBF /* Build configuration list for PBXNativeTarget "Aspose.Barcode" */;
+			buildPhases = (
+				9E0C36C4917CA183AA59FC95 /* [CP] Check Pods Manifest.lock */,
+				30C3E7931E75568B00414EBF /* Sources */,
+				30C3E7941E75568B00414EBF /* Frameworks */,
+				30C3E7951E75568B00414EBF /* Resources */,
+				612CE8EF09BB0C04E9C87AEC /* [CP] Embed Pods Frameworks */,
+				029C980AD00BE1922182FB79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aspose.Barcode;
+			productName = Aspose.Barcode;
+			productReference = 30C3E7971E75568B00414EBF /* Aspose.Barcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C3E78F1E75568B00414EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Aspose;
+				TargetAttributes = {
+					30C3E7961E75568B00414EBF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30C3E7921E75568B00414EBF /* Build configuration list for PBXProject "Aspose.Barcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C3E78E1E75568B00414EBF;
+			productRefGroup = 30C3E7981E75568B00414EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C3E7961E75568B00414EBF /* Aspose.Barcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C3E7951E75568B00414EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C3E7AA1E75568B00414EBF /* LaunchScreen.storyboard in Resources */,
+				30C3E7D71E75B15F00414EBF /* sample-barcode.jpeg in Resources */,
+				30C3E7A71E75568B00414EBF /* Assets.xcassets in Resources */,
+				30C3E7A51E75568B00414EBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		029C980AD00BE1922182FB79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Barcode/Pods-Aspose.Barcode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		612CE8EF09BB0C04E9C87AEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Barcode/Pods-Aspose.Barcode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0C36C4917CA183AA59FC95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C3E7931E75568B00414EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C3E7CE1E75AAC000414EBF /* RecognizeBarcodeWithoutCloudStorage.m in Sources */,
+				30C3E7C51E757DBE00414EBF /* GenerateBarcodeWithoutCloudStorage.m in Sources */,
+				30C3E7D11E75AC5000414EBF /* Utils.m in Sources */,
+				30C3E7C21E75677500414EBF /* GenerateBarcodeWithCloudStorage.m in Sources */,
+				30C3E79F1E75568B00414EBF /* AppDelegate.m in Sources */,
+				30C3E79C1E75568B00414EBF /* main.m in Sources */,
+				30C3E7C81E75983D00414EBF /* RecognizeBarcodeWithCloudStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30C3E7A31E75568B00414EBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C3E7A41E75568B00414EBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30C3E7A81E75568B00414EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C3E7A91E75568B00414EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C3E7AC1E75568B00414EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30C3E7AD1E75568B00414EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C3E7AF1E75568B00414EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73446D5E66F634C5C15C3512 /* Pods-Aspose.Barcode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aspose.Barcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aspose.Aspose-Barcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30C3E7B01E75568B00414EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEA0895655EE30BDF9D200E /* Pods-Aspose.Barcode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aspose.Barcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aspose.Aspose-Barcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C3E7921E75568B00414EBF /* Build configuration list for PBXProject "Aspose.Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C3E7AC1E75568B00414EBF /* Debug */,
+				30C3E7AD1E75568B00414EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C3E7AE1E75568B00414EBF /* Build configuration list for PBXNativeTarget "Aspose.Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C3E7AF1E75568B00414EBF /* Debug */,
+				30C3E7B01E75568B00414EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C3E78F1E75568B00414EBF /* Project object */;
+}

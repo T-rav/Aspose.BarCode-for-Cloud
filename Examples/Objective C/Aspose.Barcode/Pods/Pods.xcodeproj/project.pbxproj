@@ -1,0 +1,1652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B96195D84908C6714169A4E910586F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		03169F85B3BEED9B13155A467F5B9812 /* ASPStorageApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA165575C5A74A16EAB2F5186A5633C /* ASPStorageApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		088394DC15B67DFAD49A1664E939C153 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F35AC2950AF23483486F0E7CFF4DBAB4 /* JSONAPI.m */; };
+		091FF028003ECD124DA336C4B45E284E /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ABAD5D014CBF12D89F8CFACFB7D40B /* JSONModel.m */; };
+		0AD883F972FC32B345A98F1CBD204CAD /* ISO8601-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489AE3B1E1C22DD5C23DD161FBE04EC /* ISO8601-dummy.m */; };
+		121C6756A416DFB6CBE63B6CD70464BD /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 310BEBE9D9072E811B5166CA4BF4EDF7 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1401D9F99179125C9010258700B74A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		1C212260425D8A29EE460107D35142B5 /* ASPObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AEB9DCAED8D788CC35E7758377E9D3 /* ASPObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D4BE02975D404D5308B6B35D55AB10E /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8F3495611948CCB06EBAD6F759C660 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		231BD26C72967B645B8F72F65A8BADC0 /* ASPBarcodeResponseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 525DAE436A85BB783608FCD3B432C2ED /* ASPBarcodeResponseList.m */; };
+		23C436DE9C0C031BED7900EB41C1B587 /* ASPBarcodeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C3B40A986B43457D9EC56C92BF6096 /* ASPBarcodeApi.m */; };
+		24FFBD68936FD64C01FDED573BA5721D /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = FB108A40B9C05DC7554E5AA40EF304E2 /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		285DB948C361839A61FCDEDA6D2A089D /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE54A03000063FABA43F46A81E2B70C /* JSONModelError.m */; };
+		2A15612698778DBFB97B2187A639BB30 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9131CDA362117E69E67E1186113BCB /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BC1B5F5D50F83191EA5BFCA1B6334CE /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D744DC10B61EC0859FD82105ED45B25 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CD39B18B0468A95149783FB7130C0B9 /* ASPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC44C1C7F70B9A7ABD8C0839A9425B2 /* ASPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9E7D0DEB85F1798E31DAA291B79ED9 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB05F4B2E754D3C360B1F67E30C4A8E /* AFURLConnectionOperation.m */; };
+		2E372266BB25B57CBCF72A0418359484 /* ASPBarcodeBuildersList.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FD9E2379D654DB04C772C6DAADF6FF /* ASPBarcodeBuildersList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3340CC678D65EE67BEFC2F1DF02820FD /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0958C1ED2EF63742CE7D6B89469BF86 /* AFURLRequestSerialization.m */; };
+		33E80E31893D5D2FA4D4A070B6799E5C /* AsposeStorageCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B8B2121D9D98FD8F3DD3347CFF778D /* AsposeStorageCloud-dummy.m */; };
+		33EF294F3F89AF009930D3D438D69E13 /* ISO8601Serialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF4FC124A193692DC86F0DD45F6C5BB /* ISO8601Serialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369AFC95F7DFC585C068EAA75107088D /* ASPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 347AF3407237BE06E2CE3B078B88D2CB /* ASPObject.m */; };
+		3AB5D9C39898BE6F799456FAB7E5918D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B8563503B0B61046F17B4746759D1B /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1A279E09DEE552292633C440BA55FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		3EA182CF9A2551F2F847553467295640 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72254C1655E2D82CAB221982641860C6 /* JSONKeyMapper.m */; };
+		3EF46D160259E488645A9CCBEB2DC786 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B3098B4C7BB4D28F433D3F6875165 /* JSONHTTPClient.m */; };
+		4115664E56615027C8011C5607252042 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3076143126055C32B4622C7091B768 /* Security.framework */; };
+		43277400A1BAEE81C20CEF9675E98FE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		4576BAED1893CD87956B6EA636BCF3EE /* ASPMargins.m in Sources */ = {isa = PBXBuildFile; fileRef = E7311D6C82338C1635196DD21788E041 /* ASPMargins.m */; };
+		4685B3112AF1D85B36D891C7B62835A4 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = D00146E44C20A2C4E025FC245B8BCF88 /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484F3C793BFD7C599B9103F596FECEAD /* ASPQueryParamCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C70ECFBDA786A8DFFBC716CE9F216A /* ASPQueryParamCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		490F19F987DF94D5D00F5BE5C4201EB6 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2490B68F364263B10C3CC15F006BC4 /* JSONValueTransformer.m */; };
+		4C1473396AAF80D3FA41407AAAA7786C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A6D5365EE92C52CAD530AB76E0E2B /* AFHTTPRequestOperationManager.m */; };
+		4F3C96551C275452BEE3EBFBE6A32B41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CB4FD24578B35484925C4D9A27FC62 /* CoreGraphics.framework */; };
+		505D4102AD829E5DBA772DAB5B98097C /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B820D64C1B421DE02A20FF20646937 /* UIActivityIndicatorView+AFNetworking.m */; };
+		50FB17E51BC52608C024FA625D0C7ACF /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BFFF9A228EE6A6D8CD2547ADAC0E17 /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50FCFC462E334810F87779085324CF74 /* ASPStorageApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DBBD726A2906E77B0A9102A9002720 /* ASPStorageApi.m */; };
+		541DA3518B9DEFF71969BF199FEFE1DC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EAAEEEE44185FF717D4417B48C3B2 /* AFURLSessionManager.m */; };
+		542F832006266587987A67F8683FD1A1 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 70727CB798252AF08BA2AF0C72BC96C5 /* JSONModel+networking.m */; };
+		55001F1B63EA5EA7399C62B5A272C180 /* ASPFileExist.h in Headers */ = {isa = PBXBuildFile; fileRef = 81346717CBF9CCF16F891746ED8920E8 /* ASPFileExist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		571F6C86BA143101FC561A185E5E91D8 /* ASPBarcodeResponseList.h in Headers */ = {isa = PBXBuildFile; fileRef = D4FCC1E10CC9143E55CBB33A24D28900 /* ASPBarcodeResponseList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573748530F9B64A6D6D6BE578E6B9E22 /* ASPFolderResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C7E63FC040E0D7D846629ED4BA5D5C /* ASPFolderResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C75CD507CA88CDEF51971F536596E49 /* ASPMargins.h in Headers */ = {isa = PBXBuildFile; fileRef = 82960A0B67303461026647D2F614FDD4 /* ASPMargins.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D51708267189F748101247F5D9CB714 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 297E7E295D1AF8149DBD6CAA3CB60B07 /* JSONModelClassProperty.m */; };
+		6124A9ACBE7271BF17B090BC91A2A47F /* ASPApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6E8D542800B1BF7EA35B2943E38030 /* ASPApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B6FA64F76655C88B2E657F81AB49B2 /* AsposeBarCodeCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BEABD8781BA8BF4FB68636370068F9 /* AsposeBarCodeCloud-dummy.m */; };
+		64069FB70D22080B7AF859C9E65923AC /* ASPJSONResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 379C86EA8F44CE174EF9A8F46902DA06 /* ASPJSONResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		641513C38DC73BF82142E5F710F84A81 /* ASPStorageExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F91960D6EA5381DBCC9C5B52E9DFEB /* ASPStorageExistResponse.m */; };
+		6473866FE426D8746E525A7F5760F4E3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A987D5D2CFFA72EDD934DEE2DF4C0657 /* UIWebView+AFNetworking.m */; };
+		65AD1C4574C6D03361600B107DD176E3 /* ASPResolution.h in Headers */ = {isa = PBXBuildFile; fileRef = 40743BBD412C5397F285C9A3B4A49970 /* ASPResolution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65E52C5BFA909D07C319CB6502C595AE /* ASPBarcodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B7C5E9F9849BD03C4CCFDD82E84A8 /* ASPBarcodeReader.m */; };
+		6705544C048B0D6DBAC7F402292E722C /* ASPFolderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B52B7735E2994425818596EA2BC326 /* ASPFolderResponse.m */; };
+		701DB6F144AC4E1402FD1162DFDE2016 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D9114CD891E2AC7C79031CC85CAC1A9D /* UIAlertView+AFNetworking.m */; };
+		710FE5EAB34D5493289B642EA019DD7E /* ASPBarcodeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7B9811373523D7B50E87DDB0FCB9DE /* ASPBarcodeResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		732A3DCAA9CB270F1290A62672F64DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		77EEEEAC969D85DB9B7850D348B5CB46 /* ASPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FEC1257EE93DFFFCDCD59306F0C5F /* ASPFileResponse.m */; };
+		793B54AC3EF1C5271D842DF683A0E080 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBC56A21133B8B2EABE7F76F8EF428A /* AFNetworking-dummy.m */; };
+		7B2FA1AC9BFCB78F441BCC251593BFEB /* ASPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EF195E05839B5C75930EC43FF249FEB4 /* ASPConfiguration.m */; };
+		7C99192E9205F7D392F99DBA1F3CDAF5 /* JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6AD246AD7FB34A30C3E3749A78E4FC /* JSONModel-dummy.m */; };
+		7CB088F4DEE664FD70F78A5C3BD51B3F /* ASPFileExist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF08C56967A860227928367E43F6E02 /* ASPFileExist.m */; };
+		7E3F52A47CC7DF98B847DA73F920B324 /* ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = EF38C9EE9F6B1ACB19B2B109EC7058EC /* ISO8601.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F200592154B35D4B24C576FD2470E06 /* ASPStorageExistResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B8AEC9157AC20378BAFC75250486ED /* ASPStorageExistResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82DC73BB2E5B60EC8DE64E76065F2D7A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 46673021DE9AEF805B021CDB668E0059 /* UIRefreshControl+AFNetworking.m */; };
+		84EE9047CC285672BF54EBA1C924FD58 /* ASPFileVersionsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AB03209E49ACD3127733D6A3EDE403CC /* ASPFileVersionsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85F1F72928AD9456F7B09ADE2B068946 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E132EF0A85570CBC9A757FC7BD53256 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8903BE6A5309E4A5B12B526E26CD3DBF /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C568054297E1F68154FDA40F171AAEA /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CDB3FDD727BDE6CA0696A60BE8C618A /* ASPDiscUsageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D23AD227457E561964796484348777D /* ASPDiscUsageResponse.m */; };
+		8D74F83A71B283D19C87B5A843C6EEC4 /* ASPBarcodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0FFDBBA2E625DFA36510A94D423210 /* ASPBarcodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D8B95E894EA773D98DF25BC47928CC5 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BE714056CB3E821183DF2C5C2C164383 /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E463EF9CFEA4FAF8A35761E61426B78 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1C358736F3756971937CB17E2D086 /* AFHTTPSessionManager.m */; };
+		917C9F9A300A08BFAA8C0FD7A29A15A3 /* ASPJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB83C2784349229E9021E5BF4BEFAE9 /* ASPJSONRequestSerializer.m */; };
+		93A5441C9EE1F54D204DE8B8A7B50C9D /* ASPJSONRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D181FA5FFDE6BF659FB905E067975C88 /* ASPJSONRequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9995A0D6BF7042105C1EDFC40E2C4453 /* ASPFileVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = C35F8C58221FE24D79B6F9CE65CBCFF8 /* ASPFileVersion.m */; };
+		9A30F4D87576CA33B0BC7B982F67E13E /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE8830FEB4990508FABDB766DD0C513 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C74C3C017DE3839221E27D8E9D23780 /* ASPBarcodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D337633CECC7DE07875842DFC6781A /* ASPBarcodeResponse.m */; };
+		9CD2C5482C2CFD9B4653F1E2D383E6C1 /* ISO8601Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A308AD70AF9624890193DA9468A2DE /* ISO8601Serialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D371FB852068DD4D3A31DE9930C1470 /* ASPBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF14E320134A8DFB08A332663D637D8 /* ASPBaseResponse.m */; };
+		9E9FE8CF4FC567C2A12C287D79FACCA3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C8D786B719F78D19C1FBDDA1A7AA2F /* AFNetworkReachabilityManager.m */; };
+		9F4B6632233C9035F6A1011EB1036B41 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 604A34E60EA5868470D68BD574103E3D /* UIProgressView+AFNetworking.m */; };
+		A03E6416404C2E78D9114DB606EF225D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */; };
+		A3487DF63AD5F64EB9BF2175AC6D35C3 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 81AC0F7BE2009DE1889B4E63A66E452D /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A387B2392B7815EDA0E8276BD34EE1E5 /* ASPBarcodeApi.h in Headers */ = {isa = PBXBuildFile; fileRef = A7CDC87A195DFA45AAF9DAB89CD24DB7 /* ASPBarcodeApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6E75340C122150D50C3336033B2CC25 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 69BB1BDBB5A0E660DEE0E29173C65046 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7890C3960B2566BFA89985867D531A0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0728E984DBD17DC976120F8ED97C6B7 /* AFSecurityPolicy.m */; };
+		A893A517553E71A44CA906B7807C4358 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8048E3A5842E0ECDA90FA1CE191E571B /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADCF315B92B77714A04F4470A5CC3397 /* ASPBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A971946543749F48D2ACFBC3806DD704 /* ASPBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF978F0A887EB75FC6812BF32D214D16 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 67319685008E1749BAD5C6B12D034B76 /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B012775C4167C30A88901F3AC24B48C4 /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = A0099A7607E85AF6BCCCFA2BA561F4B9 /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1F746ADDBC5CFAAF7EF9394BE77D04F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C0401EB32B36C2D6ECDD75E3B8BE1D /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7BE87673C9EB1B632DDD832207C2E23 /* ASPBarcodeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B9161B3A5A601145C63A9CED0ECC7 /* ASPBarcodeBuilder.m */; };
+		B8272969D21641239B21403A451F0D66 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1A11031F3A7C20A12257FF7449CD16 /* AFURLResponseSerialization.m */; };
+		BA7E2CF3136FB89422C8310556A9AB4A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E497A3C4283E341361BA5DFDEE87E0 /* AFHTTPRequestOperation.m */; };
+		BBF3B889957D2483B44490BFD97906B3 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5A961D0D3CEF317A26790DD7C8A812 /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC20F86BBA2F7CBC40DED78B0391D2E3 /* ASPFileExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC95163ADE2FFFDFD2ACFCA44376 /* ASPFileExistResponse.m */; };
+		BDEB6ECAF76250DAF5D18413EB454AF4 /* ASPBarcodeBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE8B6AD83FEBCC2C19A073E438059A2 /* ASPBarcodeBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17EF71C7EC2E1E03D6518135B1ACF27 /* ASPResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D89B82AE304993E48A893EC1595483 /* ASPResolution.m */; };
+		C951353A8420887151787368F9D6CE0F /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A893B119E9D2195DA697D0D62FEF55DC /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8412423D1E48B9A69C6EE444986AFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CDEAF9A7B094320750DE7B89E4EC5B /* SystemConfiguration.framework */; };
+		D048014EC44F770F051BE38B7742F1F9 /* ASPFileVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D7F269EC0FE959C8943CB4C2C1D77E /* ASPFileVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5FAEF13A67A7FBE3D7FF76FD1F18EAE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8887B60B15582021C0B460DD0C4B2B /* AFNetworkActivityIndicatorManager.m */; };
+		D62E5108269E40E08D2472E095E94CDB /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E389998CFC560450ACD4BB33AC9E67D8 /* UIImageView+AFNetworking.m */; };
+		D8EE830D94B6F86F25EF490933642370 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF7A7A6E138919E27D37070BBEC152BD /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCB971C10D923F38E3A98340095C70A7 /* Pods-Aspose.Barcode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B6C5F4AA661E4ECE7C790317B8080D /* Pods-Aspose.Barcode-dummy.m */; };
+		DCF1AB5886707A2C218E095AFC03E028 /* ASPJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7268BD79CFFCA2BE9C6E71449473EEB6 /* ASPJSONResponseSerializer.m */; };
+		E2BA6A4C9802BEDAEDB6FD7B164E3B92 /* ASPFileVersionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB1D3AA222A865DA9C4DEE1D74DC2BB /* ASPFileVersionsResponse.m */; };
+		E3A9152EA600F6FFD604A0B4B9258EFB /* ASPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B5F4F2A05A1ECB661A4ABDC51059F2 /* ASPApiClient.m */; };
+		E6C9AB9BD2CBC218E0003E3DB8CE21AB /* ASPDiscUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E19648AA68F368B799A6C6A05E49851 /* ASPDiscUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E71AFC61273494B32EC3A3ECCDC5EEC6 /* ASPDiscUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8759D0E8CFB4CF4514F0A5848FBED5CE /* ASPDiscUsage.m */; };
+		E7C773F369985517B0B7AA09F26F3549 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A6ACD2E17BB7BC6C372D4131F3D74FE9 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF26C040C50E072D65B699895D45D00A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268F47AC608D1CB011B9CAEAEA7B8824 /* MobileCoreServices.framework */; };
+		EF429519462916C7AA098340A55D207A /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8198E299CED74BD1B1C7D945996BFE12 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF4E9E8FC47EEAD69D6646F348561C74 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 286960568CDA16A685E45B822666809D /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0D921811AE432028F1ADC677A33EBCC /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F675D12F6BBFD08D696563602D509BA7 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F143C4672AED921D368B6CA693FD4B81 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BCAB813ADA2DA6EF4B77FD435D89D1C3 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F176C15F9E0787F2EE3A8900183D07BE /* ASPBarcodeBuildersList.m in Sources */ = {isa = PBXBuildFile; fileRef = 10508DD9780E31DE7ED4F2529E3F956F /* ASPBarcodeBuildersList.m */; };
+		F1CBDBF365D26FBDF9A5681130AC7AA6 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 536EC998CEE46C62B8E8820D0C37E696 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F25B0DEEFCF72171B6B22E06F961ABF1 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB14CD6FCC418197A3602B3D5591827 /* UIButton+AFNetworking.m */; };
+		F2A1BCB468B6DFE52AFB26F9F978F2EB /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 961CF105D29BCEDEF34E81902DCBAA59 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5088488BEA4EE355953C21381A7033E /* ASPQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 703507735645501826FACC9BDAC56A50 /* ASPQueryParamCollection.m */; };
+		F69805747C3AE1C560A7F4455867192C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 294D24B260E65BC2A8D42C629AC3A767 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F981BAADB4377448CEADDE541B5FF7E0 /* ASPDiscUsageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 95EB430F5D48F17606A93E84FA6CA001 /* ASPDiscUsageResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD177D78F42FBBDBC9166BB6177A035B /* ASPFileExistResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F1848B1C721D468E5259CEB1B3A1AD83 /* ASPFileExistResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA6BED1FF09E19EC0B20C123B9879A6 /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90B8921AF9898B86942E420E2033A7 /* NSDate+ISO8601.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FEC58EBF432528021CFB88BFCBEB9208 /* ASPConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E91E55F008ED940B4930CBF8C1AD6D1E /* ASPConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF90C6F559589F4B6E08C19581D0D649 /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 062A29D82D3A9F09B7B2A69AF38C39D5 /* NSDate+ISO8601.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A98F2394C3B0CFDE7A0231FCE812B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D143818D9B2F3458B84B26BAD291A51;
+			remoteInfo = JSONModel;
+		};
+		5ECEA5A42C614FDDB37C7D6C788D4219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAFB55453D161D2BB5CFB30C68A54D5;
+			remoteInfo = AFNetworking;
+		};
+		60E80F6D2D0484C5B26BF93631709852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAFB55453D161D2BB5CFB30C68A54D5;
+			remoteInfo = AFNetworking;
+		};
+		7CBADAC9AFD6567C455ED0A8456A8C59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D143818D9B2F3458B84B26BAD291A51;
+			remoteInfo = JSONModel;
+		};
+		9202B79B7C01BB6D70D42E597FB9ECEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBBD3CCBE751813774F6A28E5C777461;
+			remoteInfo = AsposeStorageCloud;
+		};
+		9597427E5F007CC10D93F5F832B3260A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0265E25CE8B61564F3AB2BCD892D74E;
+			remoteInfo = ISO8601;
+		};
+		AFFB9FA5DB1661B4CC92767A187CDD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0265E25CE8B61564F3AB2BCD892D74E;
+			remoteInfo = ISO8601;
+		};
+		CD3A25023CE82F6231A601566AA6E1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBBD3CCBE751813774F6A28E5C777461;
+			remoteInfo = AsposeStorageCloud;
+		};
+		E1FD4E07516289ECC8A71F3E068249A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAFB55453D161D2BB5CFB30C68A54D5;
+			remoteInfo = AFNetworking;
+		};
+		EAFF1EED094FC58CFCCB5609152098AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D143818D9B2F3458B84B26BAD291A51;
+			remoteInfo = JSONModel;
+		};
+		F7ECA68675D5FA9083FC4D8DCEE7DB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90FEB6BB3142467957C6470B9C754D3;
+			remoteInfo = AsposeBarCodeCloud;
+		};
+		F98A5114436087A064E33824FB6FF002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0265E25CE8B61564F3AB2BCD892D74E;
+			remoteInfo = ISO8601;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C8D786B719F78D19C1FBDDA1A7AA2F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		062A29D82D3A9F09B7B2A69AF38C39D5 /* NSDate+ISO8601.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+ISO8601.h"; path = "Sources/NSDate+ISO8601.h"; sourceTree = "<group>"; };
+		08CF9C0F7733E8419323C0151D196C66 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJSONModel.a; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E9EDAB988259A244FD9B3ACA83D9FF /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4EAAEEEE44185FF717D4417B48C3B2 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		0C5FEC1257EE93DFFFCDCD59306F0C5F /* ASPFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFileResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileResponse.m"; sourceTree = "<group>"; };
+		0C9D909B422AC265B2ABCEB6143DF373 /* JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		10508DD9780E31DE7ED4F2529E3F956F /* ASPBarcodeBuildersList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeBuildersList.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeBuildersList.m; sourceTree = "<group>"; };
+		12F91960D6EA5381DBCC9C5B52E9DFEB /* ASPStorageExistResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPStorageExistResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPStorageExistResponse.m"; sourceTree = "<group>"; };
+		13B8563503B0B61046F17B4746759D1B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		15D89B82AE304993E48A893EC1595483 /* ASPResolution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPResolution.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPResolution.m; sourceTree = "<group>"; };
+		1C568054297E1F68154FDA40F171AAEA /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		1C7B9811373523D7B50E87DDB0FCB9DE /* ASPBarcodeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeResponse.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeResponse.h; sourceTree = "<group>"; };
+		1D23AD227457E561964796484348777D /* ASPDiscUsageResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPDiscUsageResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPDiscUsageResponse.m"; sourceTree = "<group>"; };
+		20BFFF9A228EE6A6D8CD2547ADAC0E17 /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
+		20CB4FD24578B35484925C4D9A27FC62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		268F47AC608D1CB011B9CAEAEA7B8824 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		286960568CDA16A685E45B822666809D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		294D24B260E65BC2A8D42C629AC3A767 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		297E7E295D1AF8149DBD6CAA3CB60B07 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
+		29ABAD5D014CBF12D89F8CFACFB7D40B /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
+		2B6AD246AD7FB34A30C3E3749A78E4FC /* JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONModel-dummy.m"; sourceTree = "<group>"; };
+		2BA165575C5A74A16EAB2F5186A5633C /* ASPStorageApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPStorageApi.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/api/ASPStorageApi.h"; sourceTree = "<group>"; };
+		2EF4FC124A193692DC86F0DD45F6C5BB /* ISO8601Serialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISO8601Serialization.h; path = Sources/ISO8601Serialization.h; sourceTree = "<group>"; };
+		2FC44C1C7F70B9A7ABD8C0839A9425B2 /* ASPFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFileResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileResponse.h"; sourceTree = "<group>"; };
+		310BEBE9D9072E811B5166CA4BF4EDF7 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		343CF0B831CD21D05913305402A08379 /* Pods-Aspose.Barcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aspose.Barcode.debug.xcconfig"; sourceTree = "<group>"; };
+		347AF3407237BE06E2CE3B078B88D2CB /* ASPObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPObject.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPObject.m"; sourceTree = "<group>"; };
+		350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		379C86EA8F44CE174EF9A8F46902DA06 /* ASPJSONResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPJSONResponseSerializer.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPJSONResponseSerializer.h"; sourceTree = "<group>"; };
+		3A93DC95163ADE2FFFDFD2ACFCA44376 /* ASPFileExistResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFileExistResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileExistResponse.m"; sourceTree = "<group>"; };
+		3AE8B6AD83FEBCC2C19A073E438059A2 /* ASPBarcodeBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeBuilder.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeBuilder.h; sourceTree = "<group>"; };
+		3BD1C358736F3756971937CB17E2D086 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3E132EF0A85570CBC9A757FC7BD53256 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		3F9345A9EDEED3AD34F8F349B22078DE /* Pods-Aspose.Barcode-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aspose.Barcode-resources.sh"; sourceTree = "<group>"; };
+		4023F78FA1507D24D8FABAA8F13D6A5E /* AsposeBarCodeCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsposeBarCodeCloud.xcconfig; sourceTree = "<group>"; };
+		40743BBD412C5397F285C9A3B4A49970 /* ASPResolution.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPResolution.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPResolution.h; sourceTree = "<group>"; };
+		44C7E63FC040E0D7D846629ED4BA5D5C /* ASPFolderResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFolderResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFolderResponse.h"; sourceTree = "<group>"; };
+		46673021DE9AEF805B021CDB668E0059 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		4A90B8921AF9898B86942E420E2033A7 /* NSDate+ISO8601.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+ISO8601.m"; path = "Sources/NSDate+ISO8601.m"; sourceTree = "<group>"; };
+		51D7F269EC0FE959C8943CB4C2C1D77E /* ASPFileVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFileVersion.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileVersion.h"; sourceTree = "<group>"; };
+		525DAE436A85BB783608FCD3B432C2ED /* ASPBarcodeResponseList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeResponseList.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeResponseList.m; sourceTree = "<group>"; };
+		536EC998CEE46C62B8E8820D0C37E696 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		54F23AE146107213B843441F6F2BD0DE /* AsposeStorageCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsposeStorageCloud-prefix.pch"; sourceTree = "<group>"; };
+		5B5A961D0D3CEF317A26790DD7C8A812 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		5C3076143126055C32B4622C7091B768 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5E9B3098B4C7BB4D28F433D3F6875165 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
+		604A34E60EA5868470D68BD574103E3D /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		62B52B7735E2994425818596EA2BC326 /* ASPFolderResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFolderResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFolderResponse.m"; sourceTree = "<group>"; };
+		64BEABD8781BA8BF4FB68636370068F9 /* AsposeBarCodeCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsposeBarCodeCloud-dummy.m"; sourceTree = "<group>"; };
+		64E497A3C4283E341361BA5DFDEE87E0 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		67319685008E1749BAD5C6B12D034B76 /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
+		69BB1BDBB5A0E660DEE0E29173C65046 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		6C2490B68F364263B10C3CC15F006BC4 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
+		6EF08C56967A860227928367E43F6E02 /* ASPFileExist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFileExist.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileExist.m"; sourceTree = "<group>"; };
+		6F8F3495611948CCB06EBAD6F759C660 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
+		702E647AE48A54F3C4B0BC0C12B49B00 /* Pods-Aspose.Barcode-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aspose.Barcode-acknowledgements.plist"; sourceTree = "<group>"; };
+		703507735645501826FACC9BDAC56A50 /* ASPQueryParamCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPQueryParamCollection.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPQueryParamCollection.m"; sourceTree = "<group>"; };
+		70727CB798252AF08BA2AF0C72BC96C5 /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		72254C1655E2D82CAB221982641860C6 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
+		7268BD79CFFCA2BE9C6E71449473EEB6 /* ASPJSONResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPJSONResponseSerializer.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPJSONResponseSerializer.m"; sourceTree = "<group>"; };
+		77A308AD70AF9624890193DA9468A2DE /* ISO8601Serialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISO8601Serialization.m; path = Sources/ISO8601Serialization.m; sourceTree = "<group>"; };
+		7AF14E320134A8DFB08A332663D637D8 /* ASPBaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBaseResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPBaseResponse.m"; sourceTree = "<group>"; };
+		7CE54A03000063FABA43F46A81E2B70C /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
+		7E19648AA68F368B799A6C6A05E49851 /* ASPDiscUsage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPDiscUsage.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPDiscUsage.h"; sourceTree = "<group>"; };
+		8048E3A5842E0ECDA90FA1CE191E571B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		81346717CBF9CCF16F891746ED8920E8 /* ASPFileExist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFileExist.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileExist.h"; sourceTree = "<group>"; };
+		8198E299CED74BD1B1C7D945996BFE12 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		81AC0F7BE2009DE1889B4E63A66E452D /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
+		82960A0B67303461026647D2F614FDD4 /* ASPMargins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPMargins.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPMargins.h; sourceTree = "<group>"; };
+		8489AE3B1E1C22DD5C23DD161FBE04EC /* ISO8601-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISO8601-dummy.m"; sourceTree = "<group>"; };
+		8759D0E8CFB4CF4514F0A5848FBED5CE /* ASPDiscUsage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPDiscUsage.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPDiscUsage.m"; sourceTree = "<group>"; };
+		89C70ECFBDA786A8DFFBC716CE9F216A /* ASPQueryParamCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPQueryParamCollection.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPQueryParamCollection.h"; sourceTree = "<group>"; };
+		8BE8830FEB4990508FABDB766DD0C513 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		8C8887B60B15582021C0B460DD0C4B2B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		8FBC56A21133B8B2EABE7F76F8EF428A /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		90D337633CECC7DE07875842DFC6781A /* ASPBarcodeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeResponse.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeResponse.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95EB430F5D48F17606A93E84FA6CA001 /* ASPDiscUsageResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPDiscUsageResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPDiscUsageResponse.h"; sourceTree = "<group>"; };
+		961CF105D29BCEDEF34E81902DCBAA59 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		96B8B2121D9D98FD8F3DD3347CFF778D /* AsposeStorageCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AsposeStorageCloud-dummy.m"; sourceTree = "<group>"; };
+		9CCF6CED202BBE0B53D2F7E4FAD5BDC6 /* Pods-Aspose.Barcode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aspose.Barcode-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D6B7C5E9F9849BD03C4CCFDD82E84A8 /* ASPBarcodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeReader.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeReader.m; sourceTree = "<group>"; };
+		9D744DC10B61EC0859FD82105ED45B25 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A0099A7607E85AF6BCCCFA2BA561F4B9 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		A1FD9E2379D654DB04C772C6DAADF6FF /* ASPBarcodeBuildersList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeBuildersList.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeBuildersList.h; sourceTree = "<group>"; };
+		A358993A2289DA8A8B0CBBD8F69F219D /* libAsposeStorageCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAsposeStorageCloud.a; path = libAsposeStorageCloud.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6ACD2E17BB7BC6C372D4131F3D74FE9 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		A7CDC87A195DFA45AAF9DAB89CD24DB7 /* ASPBarcodeApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeApi.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/api/ASPBarcodeApi.h; sourceTree = "<group>"; };
+		A893B119E9D2195DA697D0D62FEF55DC /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
+		A971946543749F48D2ACFBC3806DD704 /* ASPBaseResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBaseResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPBaseResponse.h"; sourceTree = "<group>"; };
+		A987D5D2CFFA72EDD934DEE2DF4C0657 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		AA6C89C470AF233FEDCE54EA5AB1BA1E /* ISO8601-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISO8601-prefix.pch"; sourceTree = "<group>"; };
+		AAFBA5E3E11A18F45C4F6631840C206C /* ISO8601.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISO8601.xcconfig; sourceTree = "<group>"; };
+		AB03209E49ACD3127733D6A3EDE403CC /* ASPFileVersionsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFileVersionsResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileVersionsResponse.h"; sourceTree = "<group>"; };
+		AC848613D8766C87BB19791CF7BA9E10 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		AEB14CD6FCC418197A3602B3D5591827 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		AF1A11031F3A7C20A12257FF7449CD16 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		AF9131CDA362117E69E67E1186113BCB /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B2FDD5E19DEA6D5073FC3CA9D25AE846 /* libISO8601.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libISO8601.a; path = libISO8601.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2BE88B4D87F73D0295BB4C41C0D3FC /* libPods-Aspose.Barcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Aspose.Barcode.a"; path = "libPods-Aspose.Barcode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB83C2784349229E9021E5BF4BEFAE9 /* ASPJSONRequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPJSONRequestSerializer.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPJSONRequestSerializer.m"; sourceTree = "<group>"; };
+		BB8A6D5365EE92C52CAD530AB76E0E2B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BC0FFDBBA2E625DFA36510A94D423210 /* ASPBarcodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeReader.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeReader.h; sourceTree = "<group>"; };
+		BCAB813ADA2DA6EF4B77FD435D89D1C3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		BE714056CB3E821183DF2C5C2C164383 /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
+		C35F8C58221FE24D79B6F9CE65CBCFF8 /* ASPFileVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFileVersion.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileVersion.m"; sourceTree = "<group>"; };
+		C3B6C5F4AA661E4ECE7C790317B8080D /* Pods-Aspose.Barcode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aspose.Barcode-dummy.m"; sourceTree = "<group>"; };
+		C3C3B40A986B43457D9EC56C92BF6096 /* ASPBarcodeApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeApi.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/api/ASPBarcodeApi.m; sourceTree = "<group>"; };
+		C5B820D64C1B421DE02A20FF20646937 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		C67A1D88EECD58626CF6EC2127BCB362 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		CEA6F49D921F93F14C63EAAF7E3041E9 /* libAsposeBarCodeCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAsposeBarCodeCloud.a; path = libAsposeBarCodeCloud.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00146E44C20A2C4E025FC245B8BCF88 /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
+		D0CDEAF9A7B094320750DE7B89E4EC5B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D181FA5FFDE6BF659FB905E067975C88 /* ASPJSONRequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPJSONRequestSerializer.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPJSONRequestSerializer.h"; sourceTree = "<group>"; };
+		D3B5F4F2A05A1ECB661A4ABDC51059F2 /* ASPApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPApiClient.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPApiClient.m"; sourceTree = "<group>"; };
+		D4DBBD726A2906E77B0A9102A9002720 /* ASPStorageApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPStorageApi.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/api/ASPStorageApi.m"; sourceTree = "<group>"; };
+		D4FCC1E10CC9143E55CBB33A24D28900 /* ASPBarcodeResponseList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPBarcodeResponseList.h; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeResponseList.h; sourceTree = "<group>"; };
+		D7AEB9DCAED8D788CC35E7758377E9D3 /* ASPObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPObject.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPObject.h"; sourceTree = "<group>"; };
+		D9114CD891E2AC7C79031CC85CAC1A9D /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD3711B6CD3FEEFA59EE8A2B395A1A7C /* JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.xcconfig; sourceTree = "<group>"; };
+		DF7A7A6E138919E27D37070BBEC152BD /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DFB05F4B2E754D3C360B1F67E30C4A8E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		E0728E984DBD17DC976120F8ED97C6B7 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		E389998CFC560450ACD4BB33AC9E67D8 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		E7311D6C82338C1635196DD21788E041 /* ASPMargins.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPMargins.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPMargins.m; sourceTree = "<group>"; };
+		E91E55F008ED940B4930CBF8C1AD6D1E /* ASPConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPConfiguration.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPConfiguration.h"; sourceTree = "<group>"; };
+		EA5B9161B3A5A601145C63A9CED0ECC7 /* ASPBarcodeBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPBarcodeBuilder.m; path = SDKs/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/Aspose.Barcode_Cloud_SDK_For_ObjectiveC/barcode/model/ASPBarcodeBuilder.m; sourceTree = "<group>"; };
+		EB26696026DD2464D8E22EA05ED57B0B /* Pods-Aspose.Barcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aspose.Barcode.release.xcconfig"; sourceTree = "<group>"; };
+		EB6E8D542800B1BF7EA35B2943E38030 /* ASPApiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPApiClient.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPApiClient.h"; sourceTree = "<group>"; };
+		EBB1D3AA222A865DA9C4DEE1D74DC2BB /* ASPFileVersionsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPFileVersionsResponse.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileVersionsResponse.m"; sourceTree = "<group>"; };
+		EF195E05839B5C75930EC43FF249FEB4 /* ASPConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASPConfiguration.m; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/client/ASPConfiguration.m"; sourceTree = "<group>"; };
+		EF38C9EE9F6B1ACB19B2B109EC7058EC /* ISO8601.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISO8601.h; path = Support/ISO8601.h; sourceTree = "<group>"; };
+		F0958C1ED2EF63742CE7D6B89469BF86 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F0C0401EB32B36C2D6ECDD75E3B8BE1D /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		F1848B1C721D468E5259CEB1B3A1AD83 /* ASPFileExistResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPFileExistResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPFileExistResponse.h"; sourceTree = "<group>"; };
+		F35AC2950AF23483486F0E7CFF4DBAB4 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
+		F3AC1333B252D98C55F8B5AC740866CF /* AsposeStorageCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsposeStorageCloud.xcconfig; sourceTree = "<group>"; };
+		F47B1A543190D8B086DE3A7CCAE4BBC3 /* AsposeBarCodeCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AsposeBarCodeCloud-prefix.pch"; sourceTree = "<group>"; };
+		F675D12F6BBFD08D696563602D509BA7 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F7B8AEC9157AC20378BAFC75250486ED /* ASPStorageExistResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASPStorageExistResponse.h; path = "SDKs/Aspose.Storage-Cloud-SDK-for-Objective-C/Aspose.Storage_Cloud_SDK_For_Objective_C/storage/model/ASPStorageExistResponse.h"; sourceTree = "<group>"; };
+		FB108A40B9C05DC7554E5AA40EF304E2 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		FFA7A3DE85B85EA57521D4E75A1568E6 /* Pods-Aspose.Barcode-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aspose.Barcode-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020B1E3E75A5394615709067A6B3AE58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43277400A1BAEE81C20CEF9675E98FE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0A335B7DCA177473187E9DD86244A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732A3DCAA9CB270F1290A62672F64DB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69543CA29C2FFE5D3D535FF0673F6660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A03E6416404C2E78D9114DB606EF225D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695814B82E858BD796C2AFBB86144E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B96195D84908C6714169A4E910586F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C787F8317C6729D4B3F17A63B5782048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1A279E09DEE552292633C440BA55FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A6CBEA006ED8388AB09D29CC61CFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3C96551C275452BEE3EBFBE6A32B41 /* CoreGraphics.framework in Frameworks */,
+				1401D9F99179125C9010258700B74A19 /* Foundation.framework in Frameworks */,
+				EF26C040C50E072D65B699895D45D00A /* MobileCoreServices.framework in Frameworks */,
+				4115664E56615027C8011C5607252042 /* Security.framework in Frameworks */,
+				CB8412423D1E48B9A69C6EE444986AFA /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B55DFFACCD9F333E86E2EF446DD015 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				20CB4FD24578B35484925C4D9A27FC62 /* CoreGraphics.framework */,
+				350C35CE98CADF9A34D2C30568D2C89C /* Foundation.framework */,
+				268F47AC608D1CB011B9CAEAEA7B8824 /* MobileCoreServices.framework */,
+				5C3076143126055C32B4622C7091B768 /* Security.framework */,
+				D0CDEAF9A7B094320750DE7B89E4EC5B /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		17B55AD152E3031C8C3DC33B83678827 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDC87A195DFA45AAF9DAB89CD24DB7 /* ASPBarcodeApi.h */,
+				C3C3B40A986B43457D9EC56C92BF6096 /* ASPBarcodeApi.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		1ACFD61948242400A455373EAF09EF6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09E9EDAB988259A244FD9B3ACA83D9FF /* libAFNetworking.a */,
+				CEA6F49D921F93F14C63EAAF7E3041E9 /* libAsposeBarCodeCloud.a */,
+				A358993A2289DA8A8B0CBBD8F69F219D /* libAsposeStorageCloud.a */,
+				B2FDD5E19DEA6D5073FC3CA9D25AE846 /* libISO8601.a */,
+				08CF9C0F7733E8419323C0151D196C66 /* libJSONModel.a */,
+				BA2BE88B4D87F73D0295BB4C41C0D3FC /* libPods-Aspose.Barcode.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D3E2CCE5C1D166B3DA494CB17A4BF15 /* ISO8601 */ = {
+			isa = PBXGroup;
+			children = (
+				EF38C9EE9F6B1ACB19B2B109EC7058EC /* ISO8601.h */,
+				2EF4FC124A193692DC86F0DD45F6C5BB /* ISO8601Serialization.h */,
+				77A308AD70AF9624890193DA9468A2DE /* ISO8601Serialization.m */,
+				062A29D82D3A9F09B7B2A69AF38C39D5 /* NSDate+ISO8601.h */,
+				4A90B8921AF9898B86942E420E2033A7 /* NSDate+ISO8601.m */,
+				A2E089FA958421CDB16C69563F16D4E0 /* Support Files */,
+			);
+			name = ISO8601;
+			path = ISO8601;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B55DFFACCD9F333E86E2EF446DD015 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		239E0925C1A79ADB99C16C93BD37F297 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A971946543749F48D2ACFBC3806DD704 /* ASPBaseResponse.h */,
+				7AF14E320134A8DFB08A332663D637D8 /* ASPBaseResponse.m */,
+				7E19648AA68F368B799A6C6A05E49851 /* ASPDiscUsage.h */,
+				8759D0E8CFB4CF4514F0A5848FBED5CE /* ASPDiscUsage.m */,
+				95EB430F5D48F17606A93E84FA6CA001 /* ASPDiscUsageResponse.h */,
+				1D23AD227457E561964796484348777D /* ASPDiscUsageResponse.m */,
+				81346717CBF9CCF16F891746ED8920E8 /* ASPFileExist.h */,
+				6EF08C56967A860227928367E43F6E02 /* ASPFileExist.m */,
+				F1848B1C721D468E5259CEB1B3A1AD83 /* ASPFileExistResponse.h */,
+				3A93DC95163ADE2FFFDFD2ACFCA44376 /* ASPFileExistResponse.m */,
+				2FC44C1C7F70B9A7ABD8C0839A9425B2 /* ASPFileResponse.h */,
+				0C5FEC1257EE93DFFFCDCD59306F0C5F /* ASPFileResponse.m */,
+				51D7F269EC0FE959C8943CB4C2C1D77E /* ASPFileVersion.h */,
+				C35F8C58221FE24D79B6F9CE65CBCFF8 /* ASPFileVersion.m */,
+				AB03209E49ACD3127733D6A3EDE403CC /* ASPFileVersionsResponse.h */,
+				EBB1D3AA222A865DA9C4DEE1D74DC2BB /* ASPFileVersionsResponse.m */,
+				44C7E63FC040E0D7D846629ED4BA5D5C /* ASPFolderResponse.h */,
+				62B52B7735E2994425818596EA2BC326 /* ASPFolderResponse.m */,
+				D7AEB9DCAED8D788CC35E7758377E9D3 /* ASPObject.h */,
+				347AF3407237BE06E2CE3B078B88D2CB /* ASPObject.m */,
+				F7B8AEC9157AC20378BAFC75250486ED /* ASPStorageExistResponse.h */,
+				12F91960D6EA5381DBCC9C5B52E9DFEB /* ASPStorageExistResponse.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		23D5365FAB4EEDE7E16931D2BF18D805 /* Pods-Aspose.Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				9CCF6CED202BBE0B53D2F7E4FAD5BDC6 /* Pods-Aspose.Barcode-acknowledgements.markdown */,
+				702E647AE48A54F3C4B0BC0C12B49B00 /* Pods-Aspose.Barcode-acknowledgements.plist */,
+				C3B6C5F4AA661E4ECE7C790317B8080D /* Pods-Aspose.Barcode-dummy.m */,
+				FFA7A3DE85B85EA57521D4E75A1568E6 /* Pods-Aspose.Barcode-frameworks.sh */,
+				3F9345A9EDEED3AD34F8F349B22078DE /* Pods-Aspose.Barcode-resources.sh */,
+				343CF0B831CD21D05913305402A08379 /* Pods-Aspose.Barcode.debug.xcconfig */,
+				EB26696026DD2464D8E22EA05ED57B0B /* Pods-Aspose.Barcode.release.xcconfig */,
+			);
+			name = "Pods-Aspose.Barcode";
+			path = "Target Support Files/Pods-Aspose.Barcode";
+			sourceTree = "<group>";
+		};
+		25BF1661E72E75B47F05E637D4ABFED1 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				69BB1BDBB5A0E660DEE0E29173C65046 /* AFHTTPRequestOperation.h */,
+				64E497A3C4283E341361BA5DFDEE87E0 /* AFHTTPRequestOperation.m */,
+				8048E3A5842E0ECDA90FA1CE191E571B /* AFHTTPRequestOperationManager.h */,
+				BB8A6D5365EE92C52CAD530AB76E0E2B /* AFHTTPRequestOperationManager.m */,
+				9D744DC10B61EC0859FD82105ED45B25 /* AFURLConnectionOperation.h */,
+				DFB05F4B2E754D3C360B1F67E30C4A8E /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		34357809770686547FF1AC8F7EA707AC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3E132EF0A85570CBC9A757FC7BD53256 /* AFNetworkActivityIndicatorManager.h */,
+				8C8887B60B15582021C0B460DD0C4B2B /* AFNetworkActivityIndicatorManager.m */,
+				1C568054297E1F68154FDA40F171AAEA /* UIActivityIndicatorView+AFNetworking.h */,
+				C5B820D64C1B421DE02A20FF20646937 /* UIActivityIndicatorView+AFNetworking.m */,
+				5B5A961D0D3CEF317A26790DD7C8A812 /* UIAlertView+AFNetworking.h */,
+				D9114CD891E2AC7C79031CC85CAC1A9D /* UIAlertView+AFNetworking.m */,
+				961CF105D29BCEDEF34E81902DCBAA59 /* UIButton+AFNetworking.h */,
+				AEB14CD6FCC418197A3602B3D5591827 /* UIButton+AFNetworking.m */,
+				F0C0401EB32B36C2D6ECDD75E3B8BE1D /* UIImage+AFNetworking.h */,
+				286960568CDA16A685E45B822666809D /* UIImageView+AFNetworking.h */,
+				E389998CFC560450ACD4BB33AC9E67D8 /* UIImageView+AFNetworking.m */,
+				536EC998CEE46C62B8E8820D0C37E696 /* UIKit+AFNetworking.h */,
+				BCAB813ADA2DA6EF4B77FD435D89D1C3 /* UIProgressView+AFNetworking.h */,
+				604A34E60EA5868470D68BD574103E3D /* UIProgressView+AFNetworking.m */,
+				A6ACD2E17BB7BC6C372D4131F3D74FE9 /* UIRefreshControl+AFNetworking.h */,
+				46673021DE9AEF805B021CDB668E0059 /* UIRefreshControl+AFNetworking.m */,
+				310BEBE9D9072E811B5166CA4BF4EDF7 /* UIWebView+AFNetworking.h */,
+				A987D5D2CFFA72EDD934DEE2DF4C0657 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		415F66B57CD7EA71E1EE5103021AAE07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23D5365FAB4EEDE7E16931D2BF18D805 /* Pods-Aspose.Barcode */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		41EC28F60A2AB56C76F29193C24A3E87 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8198E299CED74BD1B1C7D945996BFE12 /* AFNetworking.h */,
+				25BF1661E72E75B47F05E637D4ABFED1 /* NSURLConnection */,
+				FB7148D73C2C776813E95B7B34A5FC85 /* NSURLSession */,
+				44CA16294C7167D15908F47B8D9C1BF1 /* Reachability */,
+				F874F5455989CABD828BE6DFD2A82387 /* Security */,
+				58D0ACA79339901C991BFAF8F822E6EB /* Serialization */,
+				9DE10DD20288EF84A4CC7DB4506C7290 /* Support Files */,
+				34357809770686547FF1AC8F7EA707AC /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		44CA16294C7167D15908F47B8D9C1BF1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A7A6E138919E27D37070BBEC152BD /* AFNetworkReachabilityManager.h */,
+				03C8D786B719F78D19C1FBDDA1A7AA2F /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		462CA3614C67350AB48D64E240CB8BFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3AC1333B252D98C55F8B5AC740866CF /* AsposeStorageCloud.xcconfig */,
+				96B8B2121D9D98FD8F3DD3347CFF778D /* AsposeStorageCloud-dummy.m */,
+				54F23AE146107213B843441F6F2BD0DE /* AsposeStorageCloud-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AsposeStorageCloud";
+			sourceTree = "<group>";
+		};
+		58D0ACA79339901C991BFAF8F822E6EB /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				F675D12F6BBFD08D696563602D509BA7 /* AFURLRequestSerialization.h */,
+				F0958C1ED2EF63742CE7D6B89469BF86 /* AFURLRequestSerialization.m */,
+				8BE8830FEB4990508FABDB766DD0C513 /* AFURLResponseSerialization.h */,
+				AF1A11031F3A7C20A12257FF7449CD16 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		61B07032FB67AA3703EA1C828B4E413B /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				A893B119E9D2195DA697D0D62FEF55DC /* JSONAPI.h */,
+				F35AC2950AF23483486F0E7CFF4DBAB4 /* JSONAPI.m */,
+				67319685008E1749BAD5C6B12D034B76 /* JSONHTTPClient.h */,
+				5E9B3098B4C7BB4D28F433D3F6875165 /* JSONHTTPClient.m */,
+				20BFFF9A228EE6A6D8CD2547ADAC0E17 /* JSONKeyMapper.h */,
+				72254C1655E2D82CAB221982641860C6 /* JSONKeyMapper.m */,
+				BE714056CB3E821183DF2C5C2C164383 /* JSONModel.h */,
+				29ABAD5D014CBF12D89F8CFACFB7D40B /* JSONModel.m */,
+				A0099A7607E85AF6BCCCFA2BA561F4B9 /* JSONModel+networking.h */,
+				70727CB798252AF08BA2AF0C72BC96C5 /* JSONModel+networking.m */,
+				81AC0F7BE2009DE1889B4E63A66E452D /* JSONModelClassProperty.h */,
+				297E7E295D1AF8149DBD6CAA3CB60B07 /* JSONModelClassProperty.m */,
+				D00146E44C20A2C4E025FC245B8BCF88 /* JSONModelError.h */,
+				7CE54A03000063FABA43F46A81E2B70C /* JSONModelError.m */,
+				FB108A40B9C05DC7554E5AA40EF304E2 /* JSONModelLib.h */,
+				6F8F3495611948CCB06EBAD6F759C660 /* JSONValueTransformer.h */,
+				6C2490B68F364263B10C3CC15F006BC4 /* JSONValueTransformer.m */,
+				F2CC60FF56EA812C32A763A479FD6DDE /* Support Files */,
+			);
+			name = JSONModel;
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		62D7B579077D04231A5D77C3CFADF398 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8B6AD83FEBCC2C19A073E438059A2 /* ASPBarcodeBuilder.h */,
+				EA5B9161B3A5A601145C63A9CED0ECC7 /* ASPBarcodeBuilder.m */,
+				A1FD9E2379D654DB04C772C6DAADF6FF /* ASPBarcodeBuildersList.h */,
+				10508DD9780E31DE7ED4F2529E3F956F /* ASPBarcodeBuildersList.m */,
+				BC0FFDBBA2E625DFA36510A94D423210 /* ASPBarcodeReader.h */,
+				9D6B7C5E9F9849BD03C4CCFDD82E84A8 /* ASPBarcodeReader.m */,
+				1C7B9811373523D7B50E87DDB0FCB9DE /* ASPBarcodeResponse.h */,
+				90D337633CECC7DE07875842DFC6781A /* ASPBarcodeResponse.m */,
+				D4FCC1E10CC9143E55CBB33A24D28900 /* ASPBarcodeResponseList.h */,
+				525DAE436A85BB783608FCD3B432C2ED /* ASPBarcodeResponseList.m */,
+				82960A0B67303461026647D2F614FDD4 /* ASPMargins.h */,
+				E7311D6C82338C1635196DD21788E041 /* ASPMargins.m */,
+				40743BBD412C5397F285C9A3B4A49970 /* ASPResolution.h */,
+				15D89B82AE304993E48A893EC1595483 /* ASPResolution.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		65F75AA8532F6538C7731F5DBAA0E7CF /* AsposeBarCodeCloud */ = {
+			isa = PBXGroup;
+			children = (
+				17B55AD152E3031C8C3DC33B83678827 /* api */,
+				62D7B579077D04231A5D77C3CFADF398 /* model */,
+				A499DA189544AEA29FCC6A0B04A81E00 /* Support Files */,
+			);
+			name = AsposeBarCodeCloud;
+			path = AsposeBarCodeCloud;
+			sourceTree = "<group>";
+		};
+		66EB87B168E15329C1226872D17EFA2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41EC28F60A2AB56C76F29193C24A3E87 /* AFNetworking */,
+				65F75AA8532F6538C7731F5DBAA0E7CF /* AsposeBarCodeCloud */,
+				E2B692201C94DA39DE5D128C994ACDD6 /* AsposeStorageCloud */,
+				1D3E2CCE5C1D166B3DA494CB17A4BF15 /* ISO8601 */,
+				61B07032FB67AA3703EA1C828B4E413B /* JSONModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				66EB87B168E15329C1226872D17EFA2D /* Pods */,
+				1ACFD61948242400A455373EAF09EF6C /* Products */,
+				415F66B57CD7EA71E1EE5103021AAE07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9DE10DD20288EF84A4CC7DB4506C7290 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C67A1D88EECD58626CF6EC2127BCB362 /* AFNetworking.xcconfig */,
+				8FBC56A21133B8B2EABE7F76F8EF428A /* AFNetworking-dummy.m */,
+				AC848613D8766C87BB19791CF7BA9E10 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		A2E089FA958421CDB16C69563F16D4E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAFBA5E3E11A18F45C4F6631840C206C /* ISO8601.xcconfig */,
+				8489AE3B1E1C22DD5C23DD161FBE04EC /* ISO8601-dummy.m */,
+				AA6C89C470AF233FEDCE54EA5AB1BA1E /* ISO8601-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ISO8601";
+			sourceTree = "<group>";
+		};
+		A499DA189544AEA29FCC6A0B04A81E00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4023F78FA1507D24D8FABAA8F13D6A5E /* AsposeBarCodeCloud.xcconfig */,
+				64BEABD8781BA8BF4FB68636370068F9 /* AsposeBarCodeCloud-dummy.m */,
+				F47B1A543190D8B086DE3A7CCAE4BBC3 /* AsposeBarCodeCloud-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AsposeBarCodeCloud";
+			sourceTree = "<group>";
+		};
+		B783FB07542C84893BEEC464E3B85E83 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E8D542800B1BF7EA35B2943E38030 /* ASPApiClient.h */,
+				D3B5F4F2A05A1ECB661A4ABDC51059F2 /* ASPApiClient.m */,
+				E91E55F008ED940B4930CBF8C1AD6D1E /* ASPConfiguration.h */,
+				EF195E05839B5C75930EC43FF249FEB4 /* ASPConfiguration.m */,
+				D181FA5FFDE6BF659FB905E067975C88 /* ASPJSONRequestSerializer.h */,
+				BAB83C2784349229E9021E5BF4BEFAE9 /* ASPJSONRequestSerializer.m */,
+				379C86EA8F44CE174EF9A8F46902DA06 /* ASPJSONResponseSerializer.h */,
+				7268BD79CFFCA2BE9C6E71449473EEB6 /* ASPJSONResponseSerializer.m */,
+				89C70ECFBDA786A8DFFBC716CE9F216A /* ASPQueryParamCollection.h */,
+				703507735645501826FACC9BDAC56A50 /* ASPQueryParamCollection.m */,
+			);
+			name = client;
+			sourceTree = "<group>";
+		};
+		CEEE106067A0067105E603090992DE10 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				2BA165575C5A74A16EAB2F5186A5633C /* ASPStorageApi.h */,
+				D4DBBD726A2906E77B0A9102A9002720 /* ASPStorageApi.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		E2B692201C94DA39DE5D128C994ACDD6 /* AsposeStorageCloud */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE106067A0067105E603090992DE10 /* api */,
+				B783FB07542C84893BEEC464E3B85E83 /* client */,
+				239E0925C1A79ADB99C16C93BD37F297 /* model */,
+				462CA3614C67350AB48D64E240CB8BFA /* Support Files */,
+			);
+			name = AsposeStorageCloud;
+			path = AsposeStorageCloud;
+			sourceTree = "<group>";
+		};
+		F2CC60FF56EA812C32A763A479FD6DDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD3711B6CD3FEEFA59EE8A2B395A1A7C /* JSONModel.xcconfig */,
+				2B6AD246AD7FB34A30C3E3749A78E4FC /* JSONModel-dummy.m */,
+				0C9D909B422AC265B2ABCEB6143DF373 /* JSONModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONModel";
+			sourceTree = "<group>";
+		};
+		F874F5455989CABD828BE6DFD2A82387 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				AF9131CDA362117E69E67E1186113BCB /* AFSecurityPolicy.h */,
+				E0728E984DBD17DC976120F8ED97C6B7 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		FB7148D73C2C776813E95B7B34A5FC85 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				13B8563503B0B61046F17B4746759D1B /* AFHTTPSessionManager.h */,
+				3BD1C358736F3756971937CB17E2D086 /* AFHTTPSessionManager.m */,
+				294D24B260E65BC2A8D42C629AC3A767 /* AFURLSessionManager.h */,
+				0B4EAAEEEE44185FF717D4417B48C3B2 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18928C54A582BF7F7EF23ACE69A9A5E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6124A9ACBE7271BF17B090BC91A2A47F /* ASPApiClient.h in Headers */,
+				ADCF315B92B77714A04F4470A5CC3397 /* ASPBaseResponse.h in Headers */,
+				FEC58EBF432528021CFB88BFCBEB9208 /* ASPConfiguration.h in Headers */,
+				E6C9AB9BD2CBC218E0003E3DB8CE21AB /* ASPDiscUsage.h in Headers */,
+				F981BAADB4377448CEADDE541B5FF7E0 /* ASPDiscUsageResponse.h in Headers */,
+				55001F1B63EA5EA7399C62B5A272C180 /* ASPFileExist.h in Headers */,
+				FD177D78F42FBBDBC9166BB6177A035B /* ASPFileExistResponse.h in Headers */,
+				2CD39B18B0468A95149783FB7130C0B9 /* ASPFileResponse.h in Headers */,
+				D048014EC44F770F051BE38B7742F1F9 /* ASPFileVersion.h in Headers */,
+				84EE9047CC285672BF54EBA1C924FD58 /* ASPFileVersionsResponse.h in Headers */,
+				573748530F9B64A6D6D6BE578E6B9E22 /* ASPFolderResponse.h in Headers */,
+				93A5441C9EE1F54D204DE8B8A7B50C9D /* ASPJSONRequestSerializer.h in Headers */,
+				64069FB70D22080B7AF859C9E65923AC /* ASPJSONResponseSerializer.h in Headers */,
+				1C212260425D8A29EE460107D35142B5 /* ASPObject.h in Headers */,
+				484F3C793BFD7C599B9103F596FECEAD /* ASPQueryParamCollection.h in Headers */,
+				03169F85B3BEED9B13155A467F5B9812 /* ASPStorageApi.h in Headers */,
+				7F200592154B35D4B24C576FD2470E06 /* ASPStorageExistResponse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B109C5F731EBDEF24EF0606A60C558C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F52A47CC7DF98B847DA73F920B324 /* ISO8601.h in Headers */,
+				33EF294F3F89AF009930D3D438D69E13 /* ISO8601Serialization.h in Headers */,
+				FF90C6F559589F4B6E08C19581D0D649 /* NSDate+ISO8601.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A087B6F0BF3AD3905355CC71D1A528E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C951353A8420887151787368F9D6CE0F /* JSONAPI.h in Headers */,
+				AF978F0A887EB75FC6812BF32D214D16 /* JSONHTTPClient.h in Headers */,
+				50FB17E51BC52608C024FA625D0C7ACF /* JSONKeyMapper.h in Headers */,
+				B012775C4167C30A88901F3AC24B48C4 /* JSONModel+networking.h in Headers */,
+				8D8B95E894EA773D98DF25BC47928CC5 /* JSONModel.h in Headers */,
+				A3487DF63AD5F64EB9BF2175AC6D35C3 /* JSONModelClassProperty.h in Headers */,
+				4685B3112AF1D85B36D891C7B62835A4 /* JSONModelError.h in Headers */,
+				24FFBD68936FD64C01FDED573BA5721D /* JSONModelLib.h in Headers */,
+				1D4BE02975D404D5308B6B35D55AB10E /* JSONValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F712106E3E36DEB7F9EC0521797F92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A387B2392B7815EDA0E8276BD34EE1E5 /* ASPBarcodeApi.h in Headers */,
+				BDEB6ECAF76250DAF5D18413EB454AF4 /* ASPBarcodeBuilder.h in Headers */,
+				2E372266BB25B57CBCF72A0418359484 /* ASPBarcodeBuildersList.h in Headers */,
+				8D74F83A71B283D19C87B5A843C6EEC4 /* ASPBarcodeReader.h in Headers */,
+				710FE5EAB34D5493289B642EA019DD7E /* ASPBarcodeResponse.h in Headers */,
+				571F6C86BA143101FC561A185E5E91D8 /* ASPBarcodeResponseList.h in Headers */,
+				5C75CD507CA88CDEF51971F536596E49 /* ASPMargins.h in Headers */,
+				65AD1C4574C6D03361600B107DD176E3 /* ASPResolution.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3415E8F3DAB863EEBFBA42B4C16739C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E75340C122150D50C3336033B2CC25 /* AFHTTPRequestOperation.h in Headers */,
+				A893A517553E71A44CA906B7807C4358 /* AFHTTPRequestOperationManager.h in Headers */,
+				3AB5D9C39898BE6F799456FAB7E5918D /* AFHTTPSessionManager.h in Headers */,
+				85F1F72928AD9456F7B09ADE2B068946 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				EF429519462916C7AA098340A55D207A /* AFNetworking.h in Headers */,
+				D8EE830D94B6F86F25EF490933642370 /* AFNetworkReachabilityManager.h in Headers */,
+				2A15612698778DBFB97B2187A639BB30 /* AFSecurityPolicy.h in Headers */,
+				2BC1B5F5D50F83191EA5BFCA1B6334CE /* AFURLConnectionOperation.h in Headers */,
+				F0D921811AE432028F1ADC677A33EBCC /* AFURLRequestSerialization.h in Headers */,
+				9A30F4D87576CA33B0BC7B982F67E13E /* AFURLResponseSerialization.h in Headers */,
+				F69805747C3AE1C560A7F4455867192C /* AFURLSessionManager.h in Headers */,
+				8903BE6A5309E4A5B12B526E26CD3DBF /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				BBF3B889957D2483B44490BFD97906B3 /* UIAlertView+AFNetworking.h in Headers */,
+				F2A1BCB468B6DFE52AFB26F9F978F2EB /* UIButton+AFNetworking.h in Headers */,
+				B1F746ADDBC5CFAAF7EF9394BE77D04F /* UIImage+AFNetworking.h in Headers */,
+				EF4E9E8FC47EEAD69D6646F348561C74 /* UIImageView+AFNetworking.h in Headers */,
+				F1CBDBF365D26FBDF9A5681130AC7AA6 /* UIKit+AFNetworking.h in Headers */,
+				F143C4672AED921D368B6CA693FD4B81 /* UIProgressView+AFNetworking.h in Headers */,
+				E7C773F369985517B0B7AA09F26F3549 /* UIRefreshControl+AFNetworking.h in Headers */,
+				121C6756A416DFB6CBE63B6CD70464BD /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		429DEA4A69F47F1F1DB7F5FA467EFE8C /* Pods-Aspose.Barcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910CEA831F011DF2888B78D519C8EBCB /* Build configuration list for PBXNativeTarget "Pods-Aspose.Barcode" */;
+			buildPhases = (
+				B08C7DE09DB580693514BEFBBE6839F9 /* Sources */,
+				695814B82E858BD796C2AFBB86144E64 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E2E0D683A8DDCADD340734A8C7FAB4B /* PBXTargetDependency */,
+				787D9C886B062F8DCCA511E9A199AE5C /* PBXTargetDependency */,
+				7B9A4989F2A54F6ED3411808705E3346 /* PBXTargetDependency */,
+				BC9C15D44616F93BEACDECD169876C49 /* PBXTargetDependency */,
+				2ECB293742F68C5A35D28D29AB010FC1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Aspose.Barcode";
+			productName = "Pods-Aspose.Barcode";
+			productReference = BA2BE88B4D87F73D0295BB4C41C0D3FC /* libPods-Aspose.Barcode.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8D143818D9B2F3458B84B26BAD291A51 /* JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E5E8C2319FC69F84A9E4253448316E /* Build configuration list for PBXNativeTarget "JSONModel" */;
+			buildPhases = (
+				C67777E25F3318B445A8363EC44D0384 /* Sources */,
+				C787F8317C6729D4B3F17A63B5782048 /* Frameworks */,
+				6A087B6F0BF3AD3905355CC71D1A528E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONModel;
+			productName = JSONModel;
+			productReference = 08CF9C0F7733E8419323C0151D196C66 /* libJSONModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFAFB55453D161D2BB5CFB30C68A54D5 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D41FB4251DE0D9B937C7735737B3FF /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				373AD3327AD2368D222F311009D48352 /* Sources */,
+				F3A6CBEA006ED8388AB09D29CC61CFF1 /* Frameworks */,
+				A3415E8F3DAB863EEBFBA42B4C16739C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 09E9EDAB988259A244FD9B3ACA83D9FF /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C0265E25CE8B61564F3AB2BCD892D74E /* ISO8601 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45447165CA9722B18CBEDBE3A94E2037 /* Build configuration list for PBXNativeTarget "ISO8601" */;
+			buildPhases = (
+				663E96869865B1DE8FE78CE5FE5089C2 /* Sources */,
+				69543CA29C2FFE5D3D535FF0673F6660 /* Frameworks */,
+				3B109C5F731EBDEF24EF0606A60C558C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISO8601;
+			productName = ISO8601;
+			productReference = B2FDD5E19DEA6D5073FC3CA9D25AE846 /* libISO8601.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C90FEB6BB3142467957C6470B9C754D3 /* AsposeBarCodeCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D239EA9E9B5E48AFCE74665D10A964 /* Build configuration list for PBXNativeTarget "AsposeBarCodeCloud" */;
+			buildPhases = (
+				701B5533E49F16229B9CB4681E36A396 /* Sources */,
+				4B0A335B7DCA177473187E9DD86244A9 /* Frameworks */,
+				A0F712106E3E36DEB7F9EC0521797F92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				277C29484AABDB43A64E35F322CEB6B3 /* PBXTargetDependency */,
+				E53B91BF2310296946475DD4065266C5 /* PBXTargetDependency */,
+				7ED8FB02819796471058C543775B2272 /* PBXTargetDependency */,
+				0BE5789FA29277874D495C1D0A5F600C /* PBXTargetDependency */,
+			);
+			name = AsposeBarCodeCloud;
+			productName = AsposeBarCodeCloud;
+			productReference = CEA6F49D921F93F14C63EAAF7E3041E9 /* libAsposeBarCodeCloud.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBBD3CCBE751813774F6A28E5C777461 /* AsposeStorageCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B111083EDBF9E196411628AC15E72FE5 /* Build configuration list for PBXNativeTarget "AsposeStorageCloud" */;
+			buildPhases = (
+				DDBABD282F3450DFF6A919E34CAD35DA /* Sources */,
+				020B1E3E75A5394615709067A6B3AE58 /* Frameworks */,
+				18928C54A582BF7F7EF23ACE69A9A5E2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				247E9C7D9E6B8CCECAC09C74A3837993 /* PBXTargetDependency */,
+				719FF5274912E35CAADBCF62C4434B1C /* PBXTargetDependency */,
+				0815DE4A889009AE07636C1909586546 /* PBXTargetDependency */,
+			);
+			name = AsposeStorageCloud;
+			productName = AsposeStorageCloud;
+			productReference = A358993A2289DA8A8B0CBBD8F69F219D /* libAsposeStorageCloud.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1ACFD61948242400A455373EAF09EF6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFAFB55453D161D2BB5CFB30C68A54D5 /* AFNetworking */,
+				C90FEB6BB3142467957C6470B9C754D3 /* AsposeBarCodeCloud */,
+				DBBD3CCBE751813774F6A28E5C777461 /* AsposeStorageCloud */,
+				C0265E25CE8B61564F3AB2BCD892D74E /* ISO8601 */,
+				8D143818D9B2F3458B84B26BAD291A51 /* JSONModel */,
+				429DEA4A69F47F1F1DB7F5FA467EFE8C /* Pods-Aspose.Barcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		373AD3327AD2368D222F311009D48352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7E2CF3136FB89422C8310556A9AB4A /* AFHTTPRequestOperation.m in Sources */,
+				4C1473396AAF80D3FA41407AAAA7786C /* AFHTTPRequestOperationManager.m in Sources */,
+				8E463EF9CFEA4FAF8A35761E61426B78 /* AFHTTPSessionManager.m in Sources */,
+				D5FAEF13A67A7FBE3D7FF76FD1F18EAE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				793B54AC3EF1C5271D842DF683A0E080 /* AFNetworking-dummy.m in Sources */,
+				9E9FE8CF4FC567C2A12C287D79FACCA3 /* AFNetworkReachabilityManager.m in Sources */,
+				A7890C3960B2566BFA89985867D531A0 /* AFSecurityPolicy.m in Sources */,
+				2D9E7D0DEB85F1798E31DAA291B79ED9 /* AFURLConnectionOperation.m in Sources */,
+				3340CC678D65EE67BEFC2F1DF02820FD /* AFURLRequestSerialization.m in Sources */,
+				B8272969D21641239B21403A451F0D66 /* AFURLResponseSerialization.m in Sources */,
+				541DA3518B9DEFF71969BF199FEFE1DC /* AFURLSessionManager.m in Sources */,
+				505D4102AD829E5DBA772DAB5B98097C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				701DB6F144AC4E1402FD1162DFDE2016 /* UIAlertView+AFNetworking.m in Sources */,
+				F25B0DEEFCF72171B6B22E06F961ABF1 /* UIButton+AFNetworking.m in Sources */,
+				D62E5108269E40E08D2472E095E94CDB /* UIImageView+AFNetworking.m in Sources */,
+				9F4B6632233C9035F6A1011EB1036B41 /* UIProgressView+AFNetworking.m in Sources */,
+				82DC73BB2E5B60EC8DE64E76065F2D7A /* UIRefreshControl+AFNetworking.m in Sources */,
+				6473866FE426D8746E525A7F5760F4E3 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663E96869865B1DE8FE78CE5FE5089C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD883F972FC32B345A98F1CBD204CAD /* ISO8601-dummy.m in Sources */,
+				9CD2C5482C2CFD9B4653F1E2D383E6C1 /* ISO8601Serialization.m in Sources */,
+				FDA6BED1FF09E19EC0B20C123B9879A6 /* NSDate+ISO8601.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		701B5533E49F16229B9CB4681E36A396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C436DE9C0C031BED7900EB41C1B587 /* ASPBarcodeApi.m in Sources */,
+				B7BE87673C9EB1B632DDD832207C2E23 /* ASPBarcodeBuilder.m in Sources */,
+				F176C15F9E0787F2EE3A8900183D07BE /* ASPBarcodeBuildersList.m in Sources */,
+				65E52C5BFA909D07C319CB6502C595AE /* ASPBarcodeReader.m in Sources */,
+				9C74C3C017DE3839221E27D8E9D23780 /* ASPBarcodeResponse.m in Sources */,
+				231BD26C72967B645B8F72F65A8BADC0 /* ASPBarcodeResponseList.m in Sources */,
+				4576BAED1893CD87956B6EA636BCF3EE /* ASPMargins.m in Sources */,
+				62B6FA64F76655C88B2E657F81AB49B2 /* AsposeBarCodeCloud-dummy.m in Sources */,
+				C17EF71C7EC2E1E03D6518135B1ACF27 /* ASPResolution.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08C7DE09DB580693514BEFBBE6839F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB971C10D923F38E3A98340095C70A7 /* Pods-Aspose.Barcode-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67777E25F3318B445A8363EC44D0384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088394DC15B67DFAD49A1664E939C153 /* JSONAPI.m in Sources */,
+				3EF46D160259E488645A9CCBEB2DC786 /* JSONHTTPClient.m in Sources */,
+				3EA182CF9A2551F2F847553467295640 /* JSONKeyMapper.m in Sources */,
+				542F832006266587987A67F8683FD1A1 /* JSONModel+networking.m in Sources */,
+				7C99192E9205F7D392F99DBA1F3CDAF5 /* JSONModel-dummy.m in Sources */,
+				091FF028003ECD124DA336C4B45E284E /* JSONModel.m in Sources */,
+				5D51708267189F748101247F5D9CB714 /* JSONModelClassProperty.m in Sources */,
+				285DB948C361839A61FCDEDA6D2A089D /* JSONModelError.m in Sources */,
+				490F19F987DF94D5D00F5BE5C4201EB6 /* JSONValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBABD282F3450DFF6A919E34CAD35DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A9152EA600F6FFD604A0B4B9258EFB /* ASPApiClient.m in Sources */,
+				9D371FB852068DD4D3A31DE9930C1470 /* ASPBaseResponse.m in Sources */,
+				7B2FA1AC9BFCB78F441BCC251593BFEB /* ASPConfiguration.m in Sources */,
+				E71AFC61273494B32EC3A3ECCDC5EEC6 /* ASPDiscUsage.m in Sources */,
+				8CDB3FDD727BDE6CA0696A60BE8C618A /* ASPDiscUsageResponse.m in Sources */,
+				7CB088F4DEE664FD70F78A5C3BD51B3F /* ASPFileExist.m in Sources */,
+				BC20F86BBA2F7CBC40DED78B0391D2E3 /* ASPFileExistResponse.m in Sources */,
+				77EEEEAC969D85DB9B7850D348B5CB46 /* ASPFileResponse.m in Sources */,
+				9995A0D6BF7042105C1EDFC40E2C4453 /* ASPFileVersion.m in Sources */,
+				E2BA6A4C9802BEDAEDB6FD7B164E3B92 /* ASPFileVersionsResponse.m in Sources */,
+				6705544C048B0D6DBAC7F402292E722C /* ASPFolderResponse.m in Sources */,
+				917C9F9A300A08BFAA8C0FD7A29A15A3 /* ASPJSONRequestSerializer.m in Sources */,
+				DCF1AB5886707A2C218E095AFC03E028 /* ASPJSONResponseSerializer.m in Sources */,
+				369AFC95F7DFC585C068EAA75107088D /* ASPObject.m in Sources */,
+				33E80E31893D5D2FA4D4A070B6799E5C /* AsposeStorageCloud-dummy.m in Sources */,
+				F5088488BEA4EE355953C21381A7033E /* ASPQueryParamCollection.m in Sources */,
+				50FCFC462E334810F87779085324CF74 /* ASPStorageApi.m in Sources */,
+				641513C38DC73BF82142E5F710F84A81 /* ASPStorageExistResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0815DE4A889009AE07636C1909586546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = 8D143818D9B2F3458B84B26BAD291A51 /* JSONModel */;
+			targetProxy = 7CBADAC9AFD6567C455ED0A8456A8C59 /* PBXContainerItemProxy */;
+		};
+		0BE5789FA29277874D495C1D0A5F600C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = 8D143818D9B2F3458B84B26BAD291A51 /* JSONModel */;
+			targetProxy = EAFF1EED094FC58CFCCB5609152098AA /* PBXContainerItemProxy */;
+		};
+		247E9C7D9E6B8CCECAC09C74A3837993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = AFAFB55453D161D2BB5CFB30C68A54D5 /* AFNetworking */;
+			targetProxy = E1FD4E07516289ECC8A71F3E068249A2 /* PBXContainerItemProxy */;
+		};
+		277C29484AABDB43A64E35F322CEB6B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = AFAFB55453D161D2BB5CFB30C68A54D5 /* AFNetworking */;
+			targetProxy = 5ECEA5A42C614FDDB37C7D6C788D4219 /* PBXContainerItemProxy */;
+		};
+		2E2E0D683A8DDCADD340734A8C7FAB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = AFAFB55453D161D2BB5CFB30C68A54D5 /* AFNetworking */;
+			targetProxy = 60E80F6D2D0484C5B26BF93631709852 /* PBXContainerItemProxy */;
+		};
+		2ECB293742F68C5A35D28D29AB010FC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONModel;
+			target = 8D143818D9B2F3458B84B26BAD291A51 /* JSONModel */;
+			targetProxy = 5A98F2394C3B0CFDE7A0231FCE812B41 /* PBXContainerItemProxy */;
+		};
+		719FF5274912E35CAADBCF62C4434B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ISO8601;
+			target = C0265E25CE8B61564F3AB2BCD892D74E /* ISO8601 */;
+			targetProxy = AFFB9FA5DB1661B4CC92767A187CDD58 /* PBXContainerItemProxy */;
+		};
+		787D9C886B062F8DCCA511E9A199AE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AsposeBarCodeCloud;
+			target = C90FEB6BB3142467957C6470B9C754D3 /* AsposeBarCodeCloud */;
+			targetProxy = F7ECA68675D5FA9083FC4D8DCEE7DB8A /* PBXContainerItemProxy */;
+		};
+		7B9A4989F2A54F6ED3411808705E3346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AsposeStorageCloud;
+			target = DBBD3CCBE751813774F6A28E5C777461 /* AsposeStorageCloud */;
+			targetProxy = CD3A25023CE82F6231A601566AA6E1A1 /* PBXContainerItemProxy */;
+		};
+		7ED8FB02819796471058C543775B2272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ISO8601;
+			target = C0265E25CE8B61564F3AB2BCD892D74E /* ISO8601 */;
+			targetProxy = F98A5114436087A064E33824FB6FF002 /* PBXContainerItemProxy */;
+		};
+		BC9C15D44616F93BEACDECD169876C49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ISO8601;
+			target = C0265E25CE8B61564F3AB2BCD892D74E /* ISO8601 */;
+			targetProxy = 9597427E5F007CC10D93F5F832B3260A /* PBXContainerItemProxy */;
+		};
+		E53B91BF2310296946475DD4065266C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AsposeStorageCloud;
+			target = DBBD3CCBE751813774F6A28E5C777461 /* AsposeStorageCloud */;
+			targetProxy = 9202B79B7C01BB6D70D42E597FB9ECEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ADED6D593A7CD38CB84C9F46A9533D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3711B6CD3FEEFA59EE8A2B395A1A7C /* JSONModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2BAB042C107159AFC55F090BC55C16D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4023F78FA1507D24D8FABAA8F13D6A5E /* AsposeBarCodeCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AsposeBarCodeCloud/AsposeBarCodeCloud-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E7C323E4B857AAA2235F6A34BF923B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFBA5E3E11A18F45C4F6631840C206C /* ISO8601.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601/ISO8601-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3F5F3712CEE3B91970ADB6B581264F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67A1D88EECD58626CF6EC2127BCB362 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4F158A4E508D42AF938897CA29402469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3711B6CD3FEEFA59EE8A2B395A1A7C /* JSONModel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B4951CE9EAEB7520492D9511F372303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB26696026DD2464D8E22EA05ED57B0B /* Pods-Aspose.Barcode.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8E7D12708D408580C790028AE069EE19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4023F78FA1507D24D8FABAA8F13D6A5E /* AsposeBarCodeCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AsposeBarCodeCloud/AsposeBarCodeCloud-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA17F3BA55290926B096A7269B9B017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AC1333B252D98C55F8B5AC740866CF /* AsposeStorageCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AsposeStorageCloud/AsposeStorageCloud-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C10AD6E44D596F89897F1A431D867C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AC1333B252D98C55F8B5AC740866CF /* AsposeStorageCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AsposeStorageCloud/AsposeStorageCloud-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E104D863E9874CA2854D00200C8A07F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343CF0B831CD21D05913305402A08379 /* Pods-Aspose.Barcode.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8B8AAEB560A306B00821282347BF3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFBA5E3E11A18F45C4F6631840C206C /* ISO8601.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601/ISO8601-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC33FDDDD1176121682168C731470846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67A1D88EECD58626CF6EC2127BCB362 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45447165CA9722B18CBEDBE3A94E2037 /* Build configuration list for PBXNativeTarget "ISO8601" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B8AAEB560A306B00821282347BF3C9 /* Debug */,
+				2E7C323E4B857AAA2235F6A34BF923B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D239EA9E9B5E48AFCE74665D10A964 /* Build configuration list for PBXNativeTarget "AsposeBarCodeCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAB042C107159AFC55F090BC55C16D4 /* Debug */,
+				8E7D12708D408580C790028AE069EE19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910CEA831F011DF2888B78D519C8EBCB /* Build configuration list for PBXNativeTarget "Pods-Aspose.Barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E104D863E9874CA2854D00200C8A07F4 /* Debug */,
+				8B4951CE9EAEB7520492D9511F372303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B111083EDBF9E196411628AC15E72FE5 /* Build configuration list for PBXNativeTarget "AsposeStorageCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA17F3BA55290926B096A7269B9B017 /* Debug */,
+				C10AD6E44D596F89897F1A431D867C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E5E8C2319FC69F84A9E4253448316E /* Build configuration list for PBXNativeTarget "JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F158A4E508D42AF938897CA29402469 /* Debug */,
+				0ADED6D593A7CD38CB84C9F46A9533D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D41FB4251DE0D9B937C7735737B3FF /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC33FDDDD1176121682168C731470846 /* Debug */,
+				3F5F3712CEE3B91970ADB6B581264F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
