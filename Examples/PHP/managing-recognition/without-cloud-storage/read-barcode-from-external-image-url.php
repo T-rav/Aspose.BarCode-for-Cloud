@@ -1,3 +1,4 @@
+//ExStart:
 <?php
 require_once realpath(__DIR__ . '/../..') . '/vendor/autoload.php';
 require_once realpath(__DIR__ . '/../..') . '/Utils.php';
@@ -61,3 +62,4 @@ $recognizeBarcode = new RecognizeBarcode();
 $recognizeBarcode->readBarcodeFromExternalImageURL();
 
 ?>
+//ExEnd:

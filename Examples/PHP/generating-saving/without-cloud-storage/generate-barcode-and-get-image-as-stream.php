@@ -1,3 +1,4 @@
+//ExStart:
 <?php
 require_once realpath(__DIR__ . '/../..') . '/vendor/autoload.php';
 require_once realpath(__DIR__ . '/../..') . '/Utils.php';
@@ -54,3 +55,4 @@ $generateBarcode = new GenerateBarcode();
 $generateBarcode->generateABarcodeAndGetAsImageStream();
 
 ?>
+//ExEnd:
