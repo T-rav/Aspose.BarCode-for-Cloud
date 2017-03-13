@@ -11,7 +11,7 @@ This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for
 Aspose.BarCode for Cloud is implemented as a REST API. If you use SDK, it hides the REST API calls and lets you use Aspose.BarCode features in a native way for your preferred language.
 <p align="center">
 
-  <a title="Download complete Aspose.Words for .NET source code" href="https://github.com/asposebarcode/Aspose_BarCode_Cloud/archive/master.zip">
+  <a title="Download complete Aspose.BarCode for Cloud source code" href="https://github.com/asposebarcode/Aspose_BarCode_Cloud/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
