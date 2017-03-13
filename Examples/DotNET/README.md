@@ -1,6 +1,6 @@
 ##Aspose.BarCode for Cloud - .NET Examples
 
-This repository contains C# and VB.NET Example Projects for [Aspose.BarCode for Cloud](http://www.aspose.com/products/barcode/cloud) which will help you learn Aspose.Words for .NET and write your own applications.
+This repository contains C# and VB.NET Example Projects for [Aspose.BarCode for Cloud](http://www.aspose.com/products/barcode/cloud) which will help you learn Aspose.BarCode for Cloud and write your own applications.
 
 
 <p align="center">
