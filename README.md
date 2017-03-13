@@ -5,7 +5,7 @@ Being a REST API, it can be used with any language such as .NET, Java, PHP, Ruby
 
 This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for [Aspose.BarCode for Cloud](https://www.aspose.com/products/barcode/cloud) to help you learn and write your own applications.
 
-*Data* folder at the root contains input files which both Examples and SDKs (Unit test case project) used. It is mandatory that you download the Data folder.
+[Data](Data) folder at the root contains input files which both Examples and SDKs (Unit test case project) used. It is mandatory that you download the Data folder.
 
 ## Why SDKs?
 Aspose.BarCode for Cloud is implemented as a REST API. If you use SDK, it hides the REST API calls and lets you use Aspose.BarCode features in a native way for your preferred language.
