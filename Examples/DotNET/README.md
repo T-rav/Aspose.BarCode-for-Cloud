@@ -11,8 +11,7 @@ This repository contains C# and VB.NET Example Projects for [Aspose.BarCode for 
 
 ## How to Run the Examples?
 
-After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. C# and VB.NET examples are located in the [Examples/DotNET/](DotNET) folder. 
-
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. 
 Please follow the steps below to run the examples
 <ul>
 <li>There are two Visual Studio solution files, one for C# and other for Visual Basic.</li>
