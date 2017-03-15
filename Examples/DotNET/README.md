@@ -17,7 +17,8 @@ Please follow the steps below to run the examples
 <ul>
 <li>There are two Visual Studio solution files, one for C# and other for Visual Basic.</li>
 <li>The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher.</li>
-<li>Update Common.cs for C# and Common.vb for VB.NET examples with App SID and App key (secret key). You can get App SID and APP Key [by creating an API client app](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). You can also set output folder path to save post processed files.</li>
+<li>Update Common.cs for C# and Common.vb for VB.NET examples with App SID and App key (secret key). You can get App SID and APP Key 
+[by creating an API client app](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). You can also set output folder path to save post processed files.</li>
 <li>Open the solution file in Visual Studio and build the project.</li>
 <li>On first run the dependencies will automatically be downloaded via NuGet.</li>
 <li>Open RunExamples.cs or RunExamples.vb file, all the examples are called from here.</li>
