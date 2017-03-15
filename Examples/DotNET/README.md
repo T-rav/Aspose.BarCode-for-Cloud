@@ -15,7 +15,7 @@ After you have downloaded the ZIP file from the [Download ZIP](https://github.co
 
 There are two Visual Studio solution files, one for C# and other for Visual Basic. The projects are created in Visual Studio 2010 SP1 but support higher version as well.
 
-Update Common.cs for C# or Common.vb for VB.NET examples with App SID and App key (secret key) as get by creating an API client app. You can also set output folder path to save post processed files.
+Update Common.cs for C# or Common.vb for VB.NET examples with App SID and App key (secret key) as get [by creating an API client app](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). You can also set output folder path to save post processed files.
 
 Open the solution file in Visual Studio and build the project. On first time, dependencies will be automatically downloaded via NuGet. Open RunExamples.cs or RunExamples.vb file, all the examples are called from here. Uncomment the ones you want to run from within the project.
 
