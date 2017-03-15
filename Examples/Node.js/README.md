@@ -9,21 +9,28 @@ This repository contains Node.js examples for [Aspose.BarCode for Cloud](http://
   </a>
 </p>
 
+
 ## How to Run the Examples?
 
-After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer.
 
-Aspose.BarCode for Cloud SDK examples for Node.js are located in the Examples/Node.js/ folder.
 
-Update config.json under Config directory with App SID and App key (secret key) as get by [creating an API client app](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). You can also set output folder path for post processed files.
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-words/Aspose.Words-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. 
 
-The example project uses Aspose.BarCode for Cloud SDK package for Node.js. Before running any example, make sure you have installed that package on your machine.
 
-You can install the project dependencies using npm package manager.
-npm install asposebarcodecloud
+Please follow the steps below to run the examples
 
-To run an example from the command line use the node command followed by the name of the example file.
-node Examples/Node.js/generating-saving/cloud-storage/create-barcode-and-save-asposecloudstorage.js
+<ul>
+
+<li>Before running any example, please install the project dependencies using npm package manager. 
+<ul><li>npm install asposebarcodecloud</li></ul></li>
+<li>Update config.json with App SID and App key (secret key). For details on how to get App SID and APP Key please check https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID.</li>
+<li>To run an example from the command line use the node command followed by the name of the example file.
+<ul><li>
+
+node Examples/Node.js/generating-saving/cloud-storage/create-barcode-and-save-asposecloudstorage.js</li></ul>
+</li>
+
+</ul>
 
 Please feel free to contact us if you have any question, issue or suggestion.
 
