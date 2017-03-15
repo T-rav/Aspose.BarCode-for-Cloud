@@ -11,7 +11,7 @@ This repository contains Node.js examples for [Aspose.BarCode for Cloud](http://
 
 ## How to Run the Examples?
 
-After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, Extract the contents of ZIP file to any folder on your computer.
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer.
 
 Aspose.BarCode for Cloud SDK examples for Node.js are located in the Examples/Node.js/ folder.
 
