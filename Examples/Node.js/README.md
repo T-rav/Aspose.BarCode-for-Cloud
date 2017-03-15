@@ -14,7 +14,7 @@ This repository contains Node.js examples for [Aspose.BarCode for Cloud](http://
 
 
 
-After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-words/Aspose.Words-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. 
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. 
 
 
 Please follow the steps below to run the examples
