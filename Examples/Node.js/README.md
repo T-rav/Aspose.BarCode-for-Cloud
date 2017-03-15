@@ -27,7 +27,7 @@ Please follow the steps below to run the examples
 <li>To run an example from the command line use the node command followed by the name of the example file.
 <ul><li>
 
-node Examples/Node.js/generating-saving/cloud-storage/create-barcode-and-save-asposecloudstorage.js</li></ul>
+node Examples/Node.js/generating-saving/cloud-storage/set-x-and-y-dimensions-of-barcode.js</li></ul>
 </li>
 
 </ul>
