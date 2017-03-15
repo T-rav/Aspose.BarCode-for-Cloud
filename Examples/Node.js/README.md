@@ -17,7 +17,7 @@ Aspose.BarCode for Cloud SDK examples for Node.js are located in the Examples/No
 
 Update config.json under Config directory with App SID and App key (secret key) as get by [creating an API client app](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). You can also set output folder path for post processed files.
 
-The example project uses Aspose.BarCode for Cloud SDK package for Node.js. So, before running any example, make sure you have installed that package on your machine.
+The example project uses Aspose.BarCode for Cloud SDK package for Node.js. Before running any example, make sure you have installed that package on your machine.
 
 You can install the project dependencies using npm package manager.
 npm install asposebarcodecloud
