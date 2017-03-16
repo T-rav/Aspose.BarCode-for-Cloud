@@ -53,6 +53,6 @@ pom.xml
 http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-words/
 - [x] Source Code
 Complete source code of Aspose.Words Cloud SDK for Jave is freely available on your favorite GitHub and Codeplex repositories.
-- [x]Examples
+- [x] Examples
 Please see the Aspose.Words Cloud SDK for Java Examples here.
 
