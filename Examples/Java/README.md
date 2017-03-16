@@ -1,8 +1,10 @@
+##Aspose.Words Cloud SDK for Java
 Aspose.Words Cloud SDK for Java allows you to incorporate Aspose.Words Cloud services in your Java applications quickly and easily.
 Installation
 You can directly include the source code of Aspose.Words Cloud SDK for Java in your own project, the source code is available from https://github.com/aspose-words/Aspose.Words-for-Cloud.
 Alternatively, you can use Maven to include in your Java project. Below are the steps for Maven.
 Aspose Maven Repository
+'''xml
 <repositories>
     <repository>
         <id>aspose-maven-repository</id>
@@ -10,12 +12,16 @@ Aspose Maven Repository
         <url>http://maven.aspose.com/artifactory/simple/ext-release-local/</url>
     </repository>
 </repositories>
+'''xml
 Maven Dependency
+'''xml
 <dependency>
       <groupId>com.aspose</groupId>
       <artifactId>aspose-cloud-words</artifactId>
       <version>1.0.0</version>
 </dependency>
+'''
+<br/>
 Get Sources and Javadocs
 Maven
 $ mvn dependency:sources
@@ -24,6 +30,7 @@ Eclipse IDE
 $ mvn eclipse:eclipse -DdownloadSources=true
 $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
 pom.xml
+'''xml
 <build>
   <plugins>
     <plugin>
@@ -36,6 +43,8 @@ pom.xml
     </plugin>
   </plugins>
  </build>
+'''
+<br/>
 Direct Download
 http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-words/
 Source Code
