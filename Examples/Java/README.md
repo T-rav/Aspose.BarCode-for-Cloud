@@ -49,10 +49,10 @@ pom.xml
  </build>
 ```
 
-- [x] *Direct Download*
+1. **Direct Download**
 http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-words/
-- [x] *Source Code*
+1. **Source Code**
 Complete source code of Aspose.Words Cloud SDK for Jave is freely available on your favorite GitHub and Codeplex repositories.
-- [x] *Examples*
+1. **Examples**
 Please see the Aspose.Words Cloud SDK for Java Examples here.
 
