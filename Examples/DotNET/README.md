@@ -23,7 +23,7 @@ Please follow the steps below to run the examples
 <li> Open RunExamples.cs or RunExamples.vb file, all the examples are called from here. </li>
 <li> Uncomment the examples you want to run from within the project. </li>
 
-
+</ul>
 
 Please feel free to contact us if you have any question, issue or suggestion.
 
