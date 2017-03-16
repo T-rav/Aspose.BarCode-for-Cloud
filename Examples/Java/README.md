@@ -21,7 +21,6 @@ Aspose Maven Repository
       <version>1.0.0</version>
 </dependency>
 ```
-<br/>
 
 ## Get Sources and Javadocs
 
