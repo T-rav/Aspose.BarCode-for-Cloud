@@ -22,9 +22,9 @@ Aspose Maven Repository
 </dependency>
 ```
 <br/>
-Get Sources and Javadocs
+## Get Sources and Javadocs
 
-## Maven
+**Maven**
 ```
 mvn dependency:sources
 mvn dependency:resolve -Dclassifier=javadoc
