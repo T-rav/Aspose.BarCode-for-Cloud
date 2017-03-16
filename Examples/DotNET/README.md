@@ -14,14 +14,14 @@ This repository contains C# and VB.NET Example Projects for [Aspose.BarCode for 
 After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip) link above, extract the contents of ZIP file to any folder on your computer. 
 
 Please follow the steps below to run the examples
-
-1. There are two Visual Studio solution files, one for C# and other for Visual Basic.
-2. The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher.
-3. Update Common.cs for C# and Common.vb for VB.NET examples with App SID and App key (secret key). For details on how to get App SID and APP Key please check  [Create New App and Get App Key and SID](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID).
-4. Open the solution file in Visual Studio and build the project.
-5. On first run the dependencies will automatically be downloaded via NuGet.
-6. Open RunExamples.cs or RunExamples.vb file, all the examples are called from here.
-7. Uncomment the examples you want to run from within the project.
+<ul>
+<li> There are two Visual Studio solution files, one for C# and other for Visual Basic. </li>
+<li> The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher. </li>
+<li> Update Common.cs for C# and Common.vb for VB.NET examples with App SID and App key (secret key). For details on how to get App SID and APP Key please check  [Create New App and Get App Key and SID](https://docs.asposeptyltd.com/display/totalcloud/Create+New+App+and+Get+App+Key+and+SID). </li>
+<li> Open the solution file in Visual Studio and build the project. </li>
+<li> On first run the dependencies will automatically be downloaded via NuGet. </li>
+<li> Open RunExamples.cs or RunExamples.vb file, all the examples are called from here. </li>
+<li> Uncomment the examples you want to run from within the project. </li>
 
 
 
