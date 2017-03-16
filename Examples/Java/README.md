@@ -25,13 +25,13 @@ Aspose Maven Repository
 Get Sources and Javadocs
 
 ## Maven
-
+```
 $ mvn dependency:sources
 $ mvn dependency:resolve -Dclassifier=javadoc
 Eclipse IDE
 $ mvn eclipse:eclipse -DdownloadSources=true
 $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
-
+```
 
 ```
 pom.xml
