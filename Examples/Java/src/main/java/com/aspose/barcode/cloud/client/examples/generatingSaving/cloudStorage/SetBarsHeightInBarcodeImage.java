@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class SetBarsHeightInBarcodeImage {
 
 	public static void main(String[] args) {
+		//ExStart: SetBarsHeightInBarcodeImage
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -140,7 +141,7 @@ public class SetBarsHeightInBarcodeImage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: SetBarsHeightInBarcodeImage
 	}
 
 }

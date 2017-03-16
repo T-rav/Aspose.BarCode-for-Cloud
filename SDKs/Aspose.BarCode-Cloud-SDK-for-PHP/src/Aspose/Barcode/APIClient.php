@@ -94,7 +94,8 @@ class APIClient {
 
         // Create a signature using the private key and the URL-encoded
         // string using HMAC SHA1. This signature will be binary.
-        $signature = hash_hmac('sha1', $urlPartToSign, $this->apiKey, true);
+ 
+        $signature = hash_hmac('sha1', $urlPartToSign, self::decodeBase64UrlSafe($this->apiKey), true);
 
         $encodedSignature = self::encodeBase64UrlSafe($signature);
         $encodedSignature = str_replace(array('=', '-', '_'), array('', '%2b', '%2f'), $encodedSignature);

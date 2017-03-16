@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class SpecifyBarcodeImageSaveFormat {
 
 	public static void main(String[] args) {
+		//ExStart: SpecifyBarcodeImageSaveFormat
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -140,7 +141,7 @@ public class SpecifyBarcodeImageSaveFormat {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: SpecifyBarcodeImageSaveFormat
 	}
 
 }

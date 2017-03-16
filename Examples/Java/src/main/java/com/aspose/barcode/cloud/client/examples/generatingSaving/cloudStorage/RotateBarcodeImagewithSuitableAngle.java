@@ -19,6 +19,7 @@ import com.aspose.storage.api.StorageApi;
  * 
  */
 public class RotateBarcodeImagewithSuitableAngle {
+	//ExStart: RotateBarcodeImagewithSuitableAngle
 
 	public static void main(String[] args) {
 
@@ -141,7 +142,7 @@ public class RotateBarcodeImagewithSuitableAngle {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: RotateBarcodeImagewithSuitableAngle
 	}
 
 }

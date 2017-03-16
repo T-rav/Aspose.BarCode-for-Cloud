@@ -17,6 +17,7 @@ import com.aspose.barcode.model.BarcodeResponseList;
 public class ReadBarcodeFromExternalImageURL {
 
 	public static void main(String[] args) {
+		//ExStart: ReadBarcodeFromExternalImageURL
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -91,7 +92,7 @@ public class ReadBarcodeFromExternalImageURL {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: ReadBarcodeFromExternalImageURL
 	}
 
 }

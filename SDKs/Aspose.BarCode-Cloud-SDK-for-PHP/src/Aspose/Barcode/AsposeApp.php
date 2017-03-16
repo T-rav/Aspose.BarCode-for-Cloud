@@ -13,16 +13,16 @@ class AsposeApp
     /**
      * Represents AppSID for the app.
      */
-    public static $appSID = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
+    public static $appSID = '1c7a12ca-efa8-466e-b83d-234d9d5e2309';
 
     /**
      * Represents ApiKey for the app.
      */
-    public static $apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+    public static $apiKey = 'a165298dc077f8852d5eb6e5bf49310d';
 
     /**
      * Location where files get stored
      */
-    public static $outPutLocation = 'C:\\';
+    public static $outPutLocation = '/home/mateen/';
 
 }

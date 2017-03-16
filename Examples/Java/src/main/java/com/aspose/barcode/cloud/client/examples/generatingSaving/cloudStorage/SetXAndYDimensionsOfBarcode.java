@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class SetXAndYDimensionsOfBarcode {
 
 	public static void main(String[] args) {
+		//ExStart: SetXAndYDimensionsOfBarcode
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -140,7 +141,7 @@ public class SetXAndYDimensionsOfBarcode {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: SetXAndYDimensionsOfBarcode
 	}
 
 }

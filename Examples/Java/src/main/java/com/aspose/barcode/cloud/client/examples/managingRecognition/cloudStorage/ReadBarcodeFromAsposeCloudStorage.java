@@ -17,7 +17,7 @@ import com.aspose.storage.api.StorageApi;
 public class ReadBarcodeFromAsposeCloudStorage {
 
 	public static void main(String[] args) {
-
+		//ExStart: ReadBarcodeFromAsposeCloudStorage
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
 		// App SID
@@ -112,7 +112,7 @@ public class ReadBarcodeFromAsposeCloudStorage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: ReadBarcodeFromAsposeCloudStorage
 	}
 
 }

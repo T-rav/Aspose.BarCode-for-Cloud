@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class CreateBarcodeAndSaveAsposeCloudStorage {
 
 	public static void main(String[] args) {
+		//ExStart: CreateBarcodeAndSaveAsposeCloudStorage
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -142,7 +143,7 @@ public class CreateBarcodeAndSaveAsposeCloudStorage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: CreateBarcodeAndSaveAsposeCloudStorage
 	}
 
 }

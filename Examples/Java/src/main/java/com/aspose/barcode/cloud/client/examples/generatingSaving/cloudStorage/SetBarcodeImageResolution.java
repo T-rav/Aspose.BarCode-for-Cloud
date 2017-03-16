@@ -19,7 +19,7 @@ import com.aspose.storage.api.StorageApi;
  * 
  */
 public class SetBarcodeImageResolution {
-
+	//ExStart: SetBarcodeImageResolution
 	public static void main(String[] args) {
 
 		Properties prop = new Properties();
@@ -141,7 +141,7 @@ public class SetBarcodeImageResolution {
 			e.printStackTrace();
 		}
 
-		// ExEnd:1
+		//ExEnd: SetBarcodeImageResolution
 	}
 
 }

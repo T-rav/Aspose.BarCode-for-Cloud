@@ -19,6 +19,7 @@ import com.aspose.barcode.model.ResponseMessage;
 public class GenerateBarcodeAndGetImageAsStream {
 
 	public static void main(String[] args) {
+		//ExStart: GenerateBarcodeAndGetImageAsStream
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -97,7 +98,7 @@ public class GenerateBarcodeAndGetImageAsStream {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: GenerateBarcodeAndGetImageAsStream
 	}
 
 }
