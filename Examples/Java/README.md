@@ -13,7 +13,7 @@ Aspose Maven Repository
     </repository>
 </repositories>
 ```
-Maven Dependency
+## Maven Dependency
 ```
 <dependency>
       <groupId>com.aspose</groupId>
@@ -23,14 +23,18 @@ Maven Dependency
 ```
 <br/>
 Get Sources and Javadocs
-Maven
+
+## Maven
+
 $ mvn dependency:sources
 $ mvn dependency:resolve -Dclassifier=javadoc
 Eclipse IDE
 $ mvn eclipse:eclipse -DdownloadSources=true
 $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
-pom.xml
+
+
 ```
+pom.xml
 <build>
   <plugins>
     <plugin>
@@ -44,8 +48,8 @@ pom.xml
   </plugins>
  </build>
 ```
-<br/>
-Direct Download
+
+## Direct Download
 http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-words/
 Source Code
 Complete source code of Aspose.Words Cloud SDK for Jave is freely available on your favorite GitHub and Codeplex repositories.
