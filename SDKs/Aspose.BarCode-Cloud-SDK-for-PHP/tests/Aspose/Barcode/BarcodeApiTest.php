@@ -29,7 +29,7 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $enableChecksum = "";
 	
         $result = $this->barcode->GetBarcodeGenerate($text, $type, $format, $resolutionX, $resolutionY, $dimensionX, $dimensionY, $enableChecksum);
-	$this->assertInternalType('string',$result );
+	    $this->assertInternalType('string',$result );
     }
              
     public function testGetBarcodeRecognize()
