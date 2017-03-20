@@ -9,8 +9,8 @@ class BarcodeTests < Minitest::Test
 	include AsposeStorageCloud
 	
 	def setup
-            #Get App key and App SID from https://cloud.aspose.com
-            AsposeApp.app_key_and_sid("", "")
+        #Get App key and App SID from https://cloud.aspose.com
+        AsposeApp.app_key_and_sid("", "")
 	    @barcode_api = BarcodeApi.new
 	end
 
@@ -18,32 +18,32 @@ class BarcodeTests < Minitest::Test
 	end
 
 	def upload_file(file_name)
-            @storage_api = StorageApi.new
+        @storage_api = StorageApi.new
 	    response = @storage_api.put_create(file_name, File.open("data/" << file_name,"r") { |io| io.read } )
 	    assert(response, message="Failed to upload {file_name} file.")
 	end
 
 	def test_get_barcode_generate
-            opts = {text: "Dairy Products", type: "qr", format: "png"}
+        opts = {text: "Dairy Products", type: "qr", format: "png"}
 
-            response = @barcode_api.get_barcode_generate(opts)
+        response = @barcode_api.get_barcode_generate(opts)
 	    assert(response, message="Failed to generate barcode")
 	end
 
 	def test_post_generate_multiple
-            barcode_builders_list = BarcodeBuildersList.new
-    	    barcode_builders_list.x_step = 1
-    	    barcode_builders_list.y_step = 2
-    	    barcode_builder_1 = BarcodeBuilder.new
-    	    barcode_builder_1.type_of_barcode = "qr"
-    	    barcode_builder_1.text = "Aspose Your File Format APIs"
-    	    barcode_builder_2 = BarcodeBuilder.new
-    	    barcode_builder_2.type_of_barcode = "qr"
-    	    barcode_builder_2.text = "Aspose.Barcode for Cloud"
-    	    barcode_builders_list.barcode_builders = [barcode_builder_1, barcode_builder_2]
-    	    opts = {format: "png"}
+        barcode_builders_list = BarcodeBuildersList.new
+        barcode_builders_list.x_step = 1
+    	barcode_builders_list.y_step = 2
+    	barcode_builder_1 = BarcodeBuilder.new
+    	barcode_builder_1.type_of_barcode = "qr"
+    	barcode_builder_1.text = "Aspose Your File Format APIs"
+    	barcode_builder_2 = BarcodeBuilder.new
+    	barcode_builder_2.type_of_barcode = "qr"
+    	barcode_builder_2.text = "Aspose.Barcode for Cloud"
+    	barcode_builders_list.barcode_builders = [barcode_builder_1, barcode_builder_2]
+    	opts = {format: "png"}
 
-            response = @barcode_api.post_generate_multiple(barcode_builders_list, opts)
+        response = @barcode_api.post_generate_multiple(barcode_builders_list, opts)
 	    assert(response, message="Failed to generate multiple barcodes and return in response stream")
 	end
 	
