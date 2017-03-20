@@ -19,7 +19,7 @@ import com.aspose.storage.api.StorageApi;
 public class RecognizeSpecifiedcountOfBarcodes {
 
 	public static void main(String[] args) {
-
+		//ExStart: RecognizeSpecifiedcountOfBarcodes
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
 		// App SID
@@ -114,7 +114,7 @@ public class RecognizeSpecifiedcountOfBarcodes {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: RecognizeSpecifiedcountOfBarcodes
 	}
 
 }

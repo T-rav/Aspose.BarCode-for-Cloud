@@ -18,7 +18,7 @@ import com.aspose.barcode.model.ChecksumValidation;
 public class ReadBarcodeFromLocalFile {
 
 	public static void main(String[] args) {
-
+		//ExStart: ReadBarcodeFromLocalFile
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
 		// App SID
@@ -90,7 +90,7 @@ public class ReadBarcodeFromLocalFile {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: ReadBarcodeFromLocalFile
 	}
 
 }

@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class GenerateBarcodewithAppropriateCodeTextLocation {
 
 	public static void main(String[] args) {
+		//ExStart: GenerateBarcodewithAppropriateCodeTextLocation
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -141,7 +142,7 @@ public class GenerateBarcodewithAppropriateCodeTextLocation {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: GenerateBarcodewithAppropriateCodeTextLocation
 
 	}
 

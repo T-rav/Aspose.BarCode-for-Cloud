@@ -20,6 +20,7 @@ import com.aspose.storage.api.StorageApi;
 public class SpecifyCodetextAndSymbologyForBarcode {
 
 	public static void main(String[] args) {
+		//ExStart: SpecifyCodetextAndSymbologyForBarcode
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -139,7 +140,7 @@ public class SpecifyCodetextAndSymbologyForBarcode {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: SpecifyCodetextAndSymbologyForBarcode
 	}
 
 }

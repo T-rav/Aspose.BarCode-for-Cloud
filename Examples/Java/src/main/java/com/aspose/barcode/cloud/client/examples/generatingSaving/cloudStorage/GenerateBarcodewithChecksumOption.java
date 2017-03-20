@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class GenerateBarcodewithChecksumOption {
 
 	public static void main(String[] args) {
+		//ExStart: GenerateBarcodewithChecksumOption
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -140,7 +141,7 @@ public class GenerateBarcodewithChecksumOption {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: GenerateBarcodewithChecksumOption
 	}
 
 }

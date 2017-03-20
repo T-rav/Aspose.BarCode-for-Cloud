@@ -18,7 +18,7 @@ import com.aspose.storage.api.StorageApi;
 public class ReadBarcodeFromSpecificRegionOfImage {
 
 	public static void main(String[] args) {
-
+		//ExStart: ReadBarcodeFromSpecificRegionOfImage
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
 		// App SID
@@ -113,7 +113,7 @@ public class ReadBarcodeFromSpecificRegionOfImage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: ReadBarcodeFromSpecificRegionOfImage
 	}
 
 }

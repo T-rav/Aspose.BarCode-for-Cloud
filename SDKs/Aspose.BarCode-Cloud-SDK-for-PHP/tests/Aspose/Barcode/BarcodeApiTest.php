@@ -12,6 +12,9 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
     {        
         $this->barcode = new BarcodeApi();
 	$this->storageApi = new StorageApi();
+
+	print_r(self::decodeBase64UrlSafe(a165298dc077f8852d5eb6e5bf49310d));
+	print_r(a165298dc077f8852d5eb6e5bf49310d);
     }
     
     public function testGetBarcodeGenerate()

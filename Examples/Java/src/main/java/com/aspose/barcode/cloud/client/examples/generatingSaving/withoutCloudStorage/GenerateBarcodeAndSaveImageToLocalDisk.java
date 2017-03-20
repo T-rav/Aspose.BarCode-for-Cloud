@@ -19,6 +19,7 @@ import com.aspose.barcode.model.ResponseMessage;
 public class GenerateBarcodeAndSaveImageToLocalDisk {
 
 	public static void main(String[] args) {
+		//ExStart: GenerateBarcodeAndSaveImageToLocalDisk
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -98,7 +99,6 @@ public class GenerateBarcodeAndSaveImageToLocalDisk {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: GenerateBarcodeAndSaveImageToLocalDisk
 	}
-
 }

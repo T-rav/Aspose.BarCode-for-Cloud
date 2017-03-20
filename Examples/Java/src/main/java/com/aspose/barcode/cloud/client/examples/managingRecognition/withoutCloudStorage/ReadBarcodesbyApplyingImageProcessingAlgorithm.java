@@ -22,7 +22,7 @@ import com.aspose.storage.api.StorageApi;
 public class ReadBarcodesbyApplyingImageProcessingAlgorithm {
 
 	public static void main(String[] args) {
-
+		//ExStart: ReadBarcodesbyApplyingImageProcessingAlgorithm
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
 		// App SID
@@ -105,7 +105,7 @@ public class ReadBarcodesbyApplyingImageProcessingAlgorithm {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		//ExEnd: ReadBarcodesbyApplyingImageProcessingAlgorithm
 	}
 
 }

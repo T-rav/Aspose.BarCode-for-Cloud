@@ -21,6 +21,7 @@ import com.aspose.storage.api.StorageApi;
 public class SetBarcodeImageMargin {
 
 	public static void main(String[] args) {
+		//ExStart: SetBarcodeImageMargin
 
 		Properties prop = new Properties();
 		String propFileName = "config.properties";
@@ -139,7 +140,7 @@ public class SetBarcodeImageMargin {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		// ExEnd:1
+		// ExEnd: SetBarcodeImageMargin
 	}
 
 }
