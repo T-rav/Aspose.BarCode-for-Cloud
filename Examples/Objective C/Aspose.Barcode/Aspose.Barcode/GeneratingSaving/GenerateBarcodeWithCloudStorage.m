@@ -20,8 +20,8 @@
     return self;
 }
 
-//ExStart:
 - (void) generateBarcodeOnAsposeCloudStorage {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"qr"
@@ -52,8 +52,8 @@
 //ExEnd:
 }
 
-//ExStart:
 - (void) generateBarcodeWithAppropriateCodeTextLocation {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -82,10 +82,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) generateBarcodeWithChecksumOption {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -114,10 +115,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) rotateBarcodeImageWithSuitableAngle {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -146,10 +148,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) setBarcodeImageHeightWidthQualitySettings {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -178,10 +181,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) setBarcodeImageMargin {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -210,10 +214,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) setBarcodeImageResolution {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -242,10 +247,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) setBarsHeightInBarcodeImage {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -274,10 +280,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) setXAndYDimensionsOfBarcode {
+//ExStart:
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -306,42 +313,11 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
-//ExStart:
 - (void) specifyBarcodeImageSaveFormat {
-    [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
-                                                          text:@"Aspose.Barcode"
-                                                          type:@"Code128"
-                                                        format:@"PNG"
-                                                   resolutionX:[NSNumber numberWithFloat:0.0]
-                                                   resolutionY:[NSNumber numberWithFloat:0.0]
-                                                    dimensionX:[NSNumber numberWithFloat:0.0]
-                                                    dimensionY:[NSNumber numberWithFloat:0.0]
-                                                  codeLocation:@"Above"
-                                                        grUnit:@"mm"
-                                                      autoSize:@"true"
-                                                     barHeight:[NSNumber numberWithFloat:0.0]
-                                                   imageHeight:[NSNumber numberWithFloat:0.0]
-                                                    imageWidth:[NSNumber numberWithFloat:0.0]
-                                                  imageQuality:@"default"
-                                                      rotAngle:[NSNumber numberWithFloat:0.0]
-                                                     topMargin:[NSNumber numberWithFloat:0.0]
-                                                  bottomMargin:[NSNumber numberWithFloat:0.0]
-                                                    leftMargin:[NSNumber numberWithFloat:0.0]
-                                                   rightMargin:[NSNumber numberWithFloat:0.0]
-                                                enableChecksum:@"Yes"
-                                                       storage:nil
-                                                        folder:nil
-                                                          file:nil
-                                             completionHandler:^(ASPBaseResponse *output, NSError *error) {
-                                                 NSLog(@"Code %@ Status %@", output.code, output.status);
-                                             }];
-//ExEnd:
-}
-
 //ExStart:
-- (void) specifyCodetextAndSymbologyForBarcode {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
                                                           type:@"Code128"
@@ -370,6 +346,39 @@
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
 //ExEnd:
+
 }
 
+- (void) specifyCodetextAndSymbologyForBarcode {
+//ExStart:
+    [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
+                                                          text:@"Aspose.Barcode"
+                                                          type:@"Code128"
+                                                        format:@"PNG"
+                                                   resolutionX:[NSNumber numberWithFloat:0.0]
+                                                   resolutionY:[NSNumber numberWithFloat:0.0]
+                                                    dimensionX:[NSNumber numberWithFloat:0.0]
+                                                    dimensionY:[NSNumber numberWithFloat:0.0]
+                                                  codeLocation:@"Above"
+                                                        grUnit:@"mm"
+                                                      autoSize:@"true"
+                                                     barHeight:[NSNumber numberWithFloat:0.0]
+                                                   imageHeight:[NSNumber numberWithFloat:0.0]
+                                                    imageWidth:[NSNumber numberWithFloat:0.0]
+                                                  imageQuality:@"default"
+                                                      rotAngle:[NSNumber numberWithFloat:0.0]
+                                                     topMargin:[NSNumber numberWithFloat:0.0]
+                                                  bottomMargin:[NSNumber numberWithFloat:0.0]
+                                                    leftMargin:[NSNumber numberWithFloat:0.0]
+                                                   rightMargin:[NSNumber numberWithFloat:0.0]
+                                                enableChecksum:@"Yes"
+                                                       storage:nil
+                                                        folder:nil
+                                                          file:nil
+                                             completionHandler:^(ASPBaseResponse *output, NSError *error) {
+                                                 NSLog(@"Code %@ Status %@", output.code, output.status);
+                                             }];
+//ExEnd:
+
+}
 @end
