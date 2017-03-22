@@ -1,4 +1,4 @@
-##Aspose.BarCode for Cloud
+## Aspose.BarCode for Cloud
 [Aspose.BarCode for Cloud](https://www.aspose.com/products/barcode/cloud) is a REST API for Linear, 2D and postal barcode generation and recognition in the cloud. API recognize and generate barcode images in a variety of formats such as JPEG, PNG, GIF, BMP, TIFF, EMF, WMF, EXIF and ICON. Barcode REST API allows to specify bar code image attributes like image width, height, border style and output image format. Barcode type and text attributes such as text location and font styles are also customizable.
 
 Being a REST API, it can be used with any language such as .NET, Java, PHP, Ruby, Rails, Python, jQuery etc and with any platform — Web, Desktop, Mobile and Cloud.
