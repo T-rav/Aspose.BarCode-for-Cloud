@@ -20,6 +20,7 @@
     return self;
 }
 
+//ExStart:
 - (void) generateBarcodeOnAsposeCloudStorage {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -48,8 +49,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) generateBarcodeWithAppropriateCodeTextLocation {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -78,8 +81,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) generateBarcodeWithChecksumOption {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -108,8 +113,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) rotateBarcodeImageWithSuitableAngle {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -138,8 +145,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) setBarcodeImageHeightWidthQualitySettings {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -168,8 +177,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) setBarcodeImageMargin {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -198,8 +209,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) setBarcodeImageResolution {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -228,8 +241,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) setBarsHeightInBarcodeImage {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -258,8 +273,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) setXAndYDimensionsOfBarcode {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -288,8 +305,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) specifyBarcodeImageSaveFormat {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -318,8 +337,10 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) specifyCodetextAndSymbologyForBarcode {
     [self.barcodeApi putBarcodeGenerateFileWithCompletionBlock:@"sample-barcode"
                                                           text:@"Aspose.Barcode"
@@ -348,6 +369,7 @@
                                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                  NSLog(@"Code %@ Status %@", output.code, output.status);
                                              }];
+//ExEnd:
 }
 
 @end

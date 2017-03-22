@@ -20,6 +20,7 @@
     return self;
 }
 
+//ExStart:
 - (void) generateABarcodeAndGetAsImageStream {
     [self.barcodeApi getBarcodeGenerateWithCompletionBlock:@"sample-barcode"
                                                       type:@"datamatrix"
@@ -32,8 +33,10 @@
                                          completionHandler:^(NSURL *output, NSError *error) {
                                              NSLog(@"%@", output);
                                          }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) generateBarcodeAndSaveImageToLocalDisk {
     [self.barcodeApi getBarcodeGenerateWithCompletionBlock:@"sample-barcode"
                                                       type:@"QR"
@@ -46,6 +49,7 @@
                                          completionHandler:^(NSURL *output, NSError *error) {
                                              NSLog(@"%@", output);
                                          }];
+//ExEnd:
 }
 
 @end

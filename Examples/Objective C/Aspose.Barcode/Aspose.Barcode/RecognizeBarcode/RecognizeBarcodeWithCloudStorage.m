@@ -20,6 +20,7 @@
     return self;
 }
 
+//ExStart:
 - (void) readBarcodeFromAsposeCloudStorage {
     NSString *fileName = @"sample-barcode.jpeg";
     [Utils uploadFile:fileName];
@@ -39,8 +40,10 @@
                                           completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                               NSLog(@"%@", output);
                                           }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) readBarcodeFromSpecificRegionOfImage {
     NSString *fileName = @"sample-barcode.jpeg";
     [Utils uploadFile:fileName];
@@ -60,8 +63,10 @@
                                           completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                               NSLog(@"%@", output);
                                           }];
+//ExEnd:
 }
 
+//ExStart:
 - (void) recognizeSpecifiedCountOfBarcodes {
     NSString *fileName = @"sample-barcode.jpeg";
     [Utils uploadFile:fileName];
@@ -81,6 +86,7 @@
                                           completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                               NSLog(@"%@", output);
                                           }];
+//ExEnd:
 }
 
 @end
