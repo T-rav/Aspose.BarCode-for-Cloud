@@ -21,6 +21,8 @@
 }
 
 - (void)readBarcodeFromExternalImageURL {
+//ExStart:ReadBarcodeFromExternalImageURL
+
     [self.barcodeApi postBarcodeRecognizeFromUrlorContentWithCompletionBlock:@""
                                                           checksumValidation:nil
                                                                     stripFnc:[NSNumber numberWithBool:NO]
@@ -30,9 +32,12 @@
                                                            completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                                                NSLog(@"%@", output);
                                                            }];
+//ExEnd:ReadBarcodeFromExternalImageURL
 }
 
 - (void)readBarcodeFromLocalImage {
+//ExStart:ReadBarcodeFromLocalImage
+
     NSString *fileName = @"sample-barcode.jpeg";
     [Utils uploadFile:fileName];
     
@@ -47,9 +52,12 @@
                                                   completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                                       NSLog(@"%@", output);
                                                   }];
+//ExEnd:ReadBarcodeFromLocalImage
 }
 
 - (void)readBarcodesByApplyingImageProcessingAlgorithm {
+//ExStart:ReadBarcodesByApplyingImageProcessingAlgorithm
+
     NSString *fileName = @"sample-barcode.jpeg";
     [Utils uploadFile:fileName];
     
@@ -65,6 +73,7 @@
                                                   completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
                                                       NSLog(@"%@", output);
                                                   }];
+//ExEnd:ReadBarcodesByApplyingImageProcessingAlgorithm
 }
 
 @end
