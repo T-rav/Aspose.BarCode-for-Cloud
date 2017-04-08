@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.After;
@@ -43,6 +45,16 @@ public class BarcodeApiTest {
     public static void tearDownClass() {
     }
     
+    private static Path getPath(Class example, String filename) {
+		final File f = new File(example.getProtectionDomain().getCodeSource().getLocation().getPath());
+		String path = f.getAbsolutePath();
+		int subPathIndex = path.indexOf("Examples");
+		String subPath = path.substring(0, subPathIndex) + "Data/" + filename;
+
+		Path p = Paths.get(subPath);
+		return p;
+	}
+    
     @Before
     public void setUp() {
 		barcode = new BarcodeApi("http://api.aspose.cloud/v1.1", apiKey, appSID);
@@ -70,7 +82,7 @@ public class BarcodeApiTest {
 		try{
 			
 		    ResponseMessage result = barcode.GetBarcodeGenerate(text, type, format, resolutionX, resolutionY, dimensionX, dimensionY, enableChecksum);
-			IOUtils.copy(result.getInputStream(), new FileOutputStream("F:/aspose/doc/sdk-review/test/test.jpeg"));
+			IOUtils.copy(result.getInputStream(), new FileOutputStream("test.jpeg"));
 			assertEquals(expResult.getStatus(),result.getStatus());
 			
 		}catch(ApiException apiException){
@@ -128,11 +140,9 @@ public class BarcodeApiTest {
 		expResult.setStatus("OK");
 		
         try{
-			file = new File(getClass().getResource("/barcodePng.png").toURI());
-            BarcodeResponseList result = barcode.PostBarcodeRecognizeFromUrlorContent(type, checksumValidation, stripFnc, rotationAngle, url, file);
+        	Path path=getPath(BarcodeApiTest.class,"/barcodePng.png");
+            BarcodeResponseList result = barcode.PostBarcodeRecognizeFromUrlorContent(type, checksumValidation, stripFnc, rotationAngle, url, path.toFile());
 			assertEquals(expResult.getStatus(),result.getStatus());
-        }catch(java.net.URISyntaxException uriExp){
-			System.out.println("URI exp:"+uriExp.getMessage());			
         }catch(ApiException apiException){
 			System.out.println("exp:"+apiException.getMessage());
             assertNull(apiException);
@@ -167,17 +177,15 @@ public class BarcodeApiTest {
         String enableChecksum = "";
         String storage = "";
         String folder = "";             
-        File file ;
                 
         SaaSposeResponse expResult = new SaaSposeResponse();
                 expResult.setStatus("OK");
                 
         try{
-                        file = new File(getClass().getResource("/barcodePng.png").toURI());
+        	Path path=getPath(BarcodeApiTest.class,"/barcodePng.png");
+                
             SaaSposeResponse result = barcode.PutBarcodeGenerateFile(name, text, type, format, resolutionX, resolutionY, dimensionX, dimensionY, codeLocation, grUnit, autoSize, barHeight, imageHeight, imageWidth, imageQuality, rotAngle, topMargin, bottomMargin, leftMargin, rightMargin, enableChecksum, storage, folder, null);
                         assertEquals(expResult.getStatus(),result.getStatus());
-        }catch(java.net.URISyntaxException uriExp){
-                        System.out.println("URI exp:"+uriExp.getMessage());                     
         }catch(ApiException apiException){
                         System.out.println("exp:"+apiException.getMessage());
             assertNull(apiException);

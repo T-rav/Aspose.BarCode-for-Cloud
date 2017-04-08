@@ -1,15 +1,14 @@
 package com.aspose.barcode.cloud.client.examples.generatingSaving.cloudStorage;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.Properties;
 
 import com.aspose.barcode.api.BarcodeApi;
+import com.aspose.barcode.cloud.client.examples.Configuration;
 import com.aspose.barcode.model.SaaSposeResponse;
 import com.aspose.storage.api.StorageApi;
 
@@ -21,47 +20,18 @@ import com.aspose.storage.api.StorageApi;
 public class GenerateBarcodewithAppropriateCodeTextLocation {
 
 	public static void main(String[] args) {
-		//ExStart: GenerateBarcodewithAppropriateCodeTextLocation
+		
 
-		Properties prop = new Properties();
-		String propFileName = "config.properties";
-		// App SID
-		String appSID = "";
-		// App Key
-		String apiKey = "";
-		// output folder
-		String outFolder = "c:\\temp\\";
-
-		InputStream inputStream = GenerateBarcodewithAppropriateCodeTextLocation.class
-				.getClassLoader().getResourceAsStream(propFileName);
-		try {
-			if (inputStream != null) {
-				prop.load(inputStream);
-				appSID = prop.getProperty("app_sid");
-				apiKey = prop.getProperty("api_key");
-				outFolder = prop.getProperty("out_folder");
-
-			} else {
-				System.out.println("property file '" + propFileName
-						+ "' not found in the classpath");
-				System.exit(1);
-			}
-		} catch (IOException ioe) {
-			System.out.println("property file '" + propFileName
-					+ "' not found in the classpath");
-			ioe.printStackTrace();
-			System.exit(1);
-		}
-
+		
 		// ExStart:1
 
 		try {
 
 			// Instantiate Aspose.Storage Cloud API SDK
-			StorageApi storageApi = new StorageApi(apiKey, appSID, true);
+			StorageApi storageApi = new StorageApi(Configuration.apiKey, Configuration.appSID, true);
 
 			// Instantiate Aspose.BarCode Cloud API SDK
-			BarcodeApi barcodeApi = new BarcodeApi(apiKey, appSID, true);
+			BarcodeApi barcodeApi = new BarcodeApi(Configuration.apiKey, Configuration.appSID, true);
 
 			// Set the barcode file name created on server.
 			String name = "sample-barcode";
@@ -133,7 +103,7 @@ public class GenerateBarcodewithAppropriateCodeTextLocation {
 				com.aspose.storage.model.ResponseMessage storageRes = storageApi
 						.GetDownload(name, null, null);
 				InputStream responseStream = storageRes.getInputStream();
-				final Path destination = Paths.get(outFolder + name + "."
+				final Path destination = Paths.get( name + "."
 						+ format);
 				Files.copy(responseStream, destination,
 						StandardCopyOption.REPLACE_EXISTING);
@@ -142,7 +112,7 @@ public class GenerateBarcodewithAppropriateCodeTextLocation {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		//ExEnd: GenerateBarcodewithAppropriateCodeTextLocation
+		//ExEnd: 1
 
 	}
 
