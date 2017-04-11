@@ -1,20 +1,19 @@
 <?php
 
+require_once realpath(__DIR__) . '/Utils.php';
+
 use Aspose\Barcode\BarcodeApi;
 use Aspose\Barcode\AsposeApp;
-use Aspose\Storage\StorageApi;
 
 class BarcodeApiTest extends PHPUnit_Framework_TestCase {
 
     protected $barcode;
-    protected $storageApi;
 
     protected function setUp()
     {        
-        AsposeApp::$appSID = "";
-        AsposeApp::$apiKey = "";
+        AsposeApp::$appSID = Utils::appSID;
+        AsposeApp::$apiKey = Utils::apiKey;
         $this->barcode = new BarcodeApi();
-	    $this->storageApi = new StorageApi();
     }
     
     public function testGetBarcodeGenerate()
@@ -27,7 +26,7 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $dimensionX = 0.0;
         $dimensionY = 0.0;		
         $enableChecksum = "";
-	
+	       
         $result = $this->barcode->GetBarcodeGenerate($text, $type, $format, $resolutionX, $resolutionY, $dimensionX, $dimensionY, $enableChecksum);
 	    $this->assertInternalType('string',$result );
     }
@@ -37,7 +36,7 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $name = 'barcode.png';
         $type = 'Code39Standard';
 
-	    $result = $this->storageApi->PutCreate($name, "", $storage="", getcwd(). '/../../../Data/' . $name);
+	    Utils::uploadFile($name);
         $result = $this->barcode->GetBarcodeRecognize($name, $type, $checksumValidation = null, $stripFnc = null, $rotationAngle = null, $barcodesCount = null, $rectX = null, $rectY = null, $rectWidth = null, $rectHeight = null, $storage = null, $folder = null);
 	    print_r($result);
         $this->assertInternalType('array', $result->Barcode);
@@ -99,7 +98,7 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
                     "StripFNC": true
                   }';
 	
-	    $result = $this->storageApi->PutCreate($name, "", $storage="", getcwd(). '/../../../Data/' . $name);
+	    Utils::uploadFile($name);
         $result = $this->barcode->PutBarcodeRecognizeFromBody($name, $type, $folder, $body);
 	    $this->assertInstanceOf('\Aspose\Barcode\Models\BarcodeResponseList', $result);
         $this->assertEquals(200, $result->Code);
@@ -120,7 +119,7 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $name = "newfile.jpg";
         $format = "";
         $folder = "";
-        $file =  getcwd(). '/../../../Data/sample.txt';
+        $file =  realpath(__DIR__ . '/../../../../..'). '/Data/sample.txt';
 	
 	   $result = $this->barcode->PutGenerateMultiple($name, $format, $folder, $file);
 	   $this->assertInstanceOf('\Aspose\Barcode\Models\SaaSposeResponse', $result);
