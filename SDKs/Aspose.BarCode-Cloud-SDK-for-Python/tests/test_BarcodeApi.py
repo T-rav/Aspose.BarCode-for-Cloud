@@ -44,7 +44,7 @@ class TestAsposeBarcodeCloud(unittest.TestCase):
     def testGetBarcodeRecognize(self):
         try:
             name = "sample-barcode.jpeg"
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
     
             response = self.barcodeApi.GetBarcodeRecognize(name)
             
@@ -74,7 +74,7 @@ class TestAsposeBarcodeCloud(unittest.TestCase):
     def testPostGenerateMultiple(self):
         try:
             
-            #response = self.barcodeApi.PostGenerateMultiple(file = './data/sample.txt')
+            #response = self.barcodeApi.PostGenerateMultiple(file = '../../../Data/sample.txt')
             #self.assertEqual(response.Code,200)
             print ""
 
@@ -108,7 +108,7 @@ class TestAsposeBarcodeCloud(unittest.TestCase):
             body.StripFNC = True
             body.ChecksumValidation = "OFF"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.barcodeApi.PutBarcodeRecognizeFromBody(name, body)
             
             self.assertIsInstance(response,BarcodeResponseList.BarcodeResponseList)
@@ -124,7 +124,7 @@ class TestAsposeBarcodeCloud(unittest.TestCase):
     def testPutGenerateMultiple(self):
         try:
             name = "newfile.jpg"
-            file = "./data/sample.txt"
+            file = "../../../Data/sample.txt"
             
             response = self.barcodeApi.PutGenerateMultiple(name, file)
             
