@@ -35,6 +35,8 @@ namespace CSharp
             //SetXAndYDimensionsOfBarcode.Run();
             //SpecifyBarcodeImageSaveFormat.Run();
             //SpecifyCodetextAndSymbologyForBarcode.Run();
+            //GenerateMultipleBarCodes.Run();
+            //GenerateImageWithMultipleBarCodes.Run();
 
             //// =====================================================
             //// =====================================================
@@ -65,8 +67,7 @@ namespace CSharp
             //ReadBarcodeFromExternalImageURL.Run();
             //ReadBarcodeFromLocalFile.Run();
             //ReadBarcodesbyApplyingImageProcessingAlgorithm.Run();
-            ReadBarcodesWithChecksum.Run();
-            
+            //ReadBarcodesWithChecksum.Run();           
             
             
             // Stop before exiting

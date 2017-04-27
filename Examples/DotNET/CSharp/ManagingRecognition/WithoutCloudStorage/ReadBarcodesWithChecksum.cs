@@ -36,6 +36,7 @@ namespace CSharp.ManagingRecognition.WithoutCloudStorage
 
             // Set special mode of barcode binarization
             body.BinarizationHints = BinarizationHints.ComplexBackground;
+            
 
             try
             {

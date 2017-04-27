@@ -5,12 +5,12 @@ namespace CSharp
 {
     class Common
     {
-        public static string APP_SID = "XXXX";
-        public static string APP_KEY = "XXXX";
+        public static string APP_SID = "xxxx";
+        public static string APP_KEY = "xxxx";
         public static string FOLDER = "";
         public static string STORAGE = "";
         public static string BASEPATH = "http://api.aspose.cloud/v1.1";
-        // public static string BASEPATH = "http://localhost:8080/v1.1";
+        //public static string BASEPATH = "http://52.89.98.97/v1.1";
         public static string OUTFOLDER = "C://temp/";
 
         public static string GetDataDir()

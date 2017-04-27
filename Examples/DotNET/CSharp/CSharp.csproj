@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="GeneratingSaving\CloudStorage\GenerateMultipleBarCodes.cs" />
+    <Compile Include="GeneratingSaving\CloudStorage\GenerateImageWithMultipleBarCodes.cs" />
     <Compile Include="ManagingRecognition\CloudStorage\ReadBarcodeFromAsposeCloudStorage.cs" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithAppropriateCodeTextLocation.cs" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithChecksumOption.cs" />
