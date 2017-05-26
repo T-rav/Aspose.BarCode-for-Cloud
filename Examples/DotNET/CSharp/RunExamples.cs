@@ -24,7 +24,7 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            CreateBarcodeAndSaveAsposeCloudStorage.Run();
+            //CreateBarcodeAndSaveAsposeCloudStorage.Run();
             //GenerateBarcodewithAppropriateCodeTextLocation.Run();
             //GenerateBarcodewithChecksumOption.Run();
             //RotateBarcodeImagewithSuitableAngle.Run();
@@ -37,6 +37,7 @@ namespace CSharp
             //SpecifyCodetextAndSymbologyForBarcode.Run();
             //GenerateMultipleBarCodes.Run();
             //GenerateImageWithMultipleBarCodes.Run();
+            GenerateCodablockFBarCode.Run();
 
             //// =====================================================
             //// =====================================================
@@ -67,7 +68,8 @@ namespace CSharp
             //ReadBarcodeFromExternalImageURL.Run();
             //ReadBarcodeFromLocalFile.Run();
             //ReadBarcodesbyApplyingImageProcessingAlgorithm.Run();
-            //ReadBarcodesWithChecksum.Run();           
+            //ReadBarcodesWithChecksum.Run();    
+            //ReadBarcodeFromRequestBody.Run();
             
             
             // Stop before exiting

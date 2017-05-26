@@ -310,6 +310,91 @@
         }
       }
       /// <summary>
+      /// Recognize barcode from an url. Recognize barcode from an url.
+      /// </summary>
+      /// <param name="type"></param>
+      /// <param name="checksumValidation"></param>
+      /// <param name="stripFnc"></param>
+      /// <param name="rotationAngle"></param>
+      /// <param name="url"></param>
+      /// <param name="file"></param>
+      /// <returns></returns>
+      public BarcodeResponseList PostBarcodeRecognizeFromRequestBody(string type, string checksumValidation, bool? stripFnc, int? rotationAngle, string body)
+      {
+          // create path and map variables
+          var ResourcePath = "/barcode/recognize/?appSid={appSid}&amp;type={type}&amp;checksumValidation={checksumValidation}&amp;stripFnc={stripFnc}&amp;rotationAngle={rotationAngle}".Replace("{format}", "json");
+          ResourcePath = Regex.Replace(ResourcePath, "\\*", "").Replace("&amp;", "&").Replace("/?", "?").Replace("toFormat={toFormat}", "format={format}");
+
+          // query params
+          var queryParams = new Dictionary<String, String>();
+          var headerParams = new Dictionary<String, String>();
+          var formParams = new Dictionary<String, object>();
+                    
+          if (type == null)
+          {
+              ResourcePath = Regex.Replace(ResourcePath, @"([&?])type=", "");
+          }
+          else
+          {
+              ResourcePath = ResourcePath.Replace("{" + "type" + "}", apiInvoker.ToPathValue(type));
+          }          
+          if (checksumValidation == null)
+          {
+              ResourcePath = Regex.Replace(ResourcePath, @"([&?])checksumValidation=", "");
+          }
+          else
+          {
+              ResourcePath = ResourcePath.Replace("{" + "checksumValidation" + "}", apiInvoker.ToPathValue(checksumValidation));
+          }
+          if (stripFnc == null)
+          {
+              ResourcePath = Regex.Replace(ResourcePath, @"([&?])stripFnc=", "");
+          }
+          else
+          {
+              ResourcePath = ResourcePath.Replace("{" + "stripFnc" + "}", apiInvoker.ToPathValue(stripFnc));
+          }
+          if (rotationAngle == null)
+          {
+              ResourcePath = Regex.Replace(ResourcePath, @"([&?])rotationAngle=", "");
+          }
+          else
+          {
+              ResourcePath = ResourcePath.Replace("{" + "rotationAngle" + "}", apiInvoker.ToPathValue(rotationAngle));
+          }    
+          try
+          {
+              if (typeof(BarcodeResponseList) == typeof(ResponseMessage))
+              {
+                  var response = apiInvoker.invokeBinaryAPI(basePath, ResourcePath, "POST", queryParams, body, headerParams, formParams);
+                  return (BarcodeResponseList)ApiInvoker.deserialize(response, typeof(BarcodeResponseList));
+              }
+              else
+              {
+                  var response = apiInvoker.invokeAPI(basePath, ResourcePath, "POST", queryParams, body, headerParams, formParams);
+                  if (response != null)
+                  {
+                      return (BarcodeResponseList)ApiInvoker.deserialize(response, typeof(BarcodeResponseList));
+                  }
+                  else
+                  {
+                      return null;
+                  }
+              }
+          }
+          catch (ApiException ex)
+          {
+              if (ex.ErrorCode == 404)
+              {
+                  return null;
+              }
+              else
+              {
+                  throw ex;
+              }
+          }
+      }
+      /// <summary>
       /// Generate multiple barcodes and return in response stream Generate multiple barcodes and return in response stream
       /// </summary>
       /// <param name="format"></param>
