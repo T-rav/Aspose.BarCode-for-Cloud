@@ -672,6 +672,52 @@ BarcodeApi.prototype.PutBarcodeRecognizeFromBody = function(name, type, folder, 
 
 	return apiClient.InvokeAPI(resourcePath, method, queryParams, postData, headerParams, files, callback);
   }
+/**
+* PutBarcodeRecognizeFromRequestBody
+* @param  (String) type  -  The barcode type. (optional) 
+* @param  (String) folder  -  The image folder. (optional) 
+* @param  (String) body  -  Encoded base64 image data. (required) 
+* @returns BarcodeResponseList (Map)
+*/
+BarcodeApi.prototype.PostBarcodeRecognizeFromRequestBody = function(type, folder, body, callback) {
+
+    var self = this;
+	
+	if( typeof body === 'undefined' || body === null && body === ''){
+		throw new Error('missing required parameters.');
+    }   	
+		
+	var resourcePath = '/barcode/recognize/?appSid={appSid}&amp;type={type}';
+	
+	resourcePath = resourcePath.replace(new RegExp('\\*', 'g'), "");
+	resourcePath = resourcePath.replace(new RegExp('&amp;', 'g'), '&');
+	resourcePath = resourcePath.replace('&amp;','&').replace("/?","?").replace("toFormat={toFormat}","format={format}").replace("{path}","{Path}");
+		
+	
+	if(typeof type !== 'undefined' &&  type !== null && type!== ''){            
+			resourcePath = resourcePath.replace("{" + "type" + "}" , type);
+	}else{
+		resourcePath = resourcePath.replace(new RegExp('[&?]type.*?(?=&|\\?|$)', 'g'), "");
+		}
+	
+	
+	
+	
+	if(this.config.debug){console.log('resourcePath :: ' + resourcePath);}
+	
+    method = 'POST'
+    queryParams = {}
+    headerParams = {}
+    formParams = {}
+    files = {}
+	postData = body;
+    
+	
+	headerParams['Accept'] = 'application/xml,application/json'
+    headerParams['Content-Type'] = 'application/json'
+
+	return apiClient.InvokeAPI(resourcePath, method, queryParams, postData, headerParams, files, callback);
+  }
     
 
 module.exports = BarcodeApi
