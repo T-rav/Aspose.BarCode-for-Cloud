@@ -32,7 +32,7 @@ $AsposeBarCodeCloud::Configuration::debug = 1;
 
 my $barcodeApi = AsposeBarCodeCloud::BarcodeApi->new();
 
-my $data_path = '../data/';
+my $data_path = '../../../Data/';
 
 
 my $name = 'sample-barcode';
