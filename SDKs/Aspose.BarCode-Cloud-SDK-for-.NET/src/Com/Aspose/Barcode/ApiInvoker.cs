@@ -126,6 +126,10 @@ namespace Com.Aspose.Barcode
       {
           return invokeAPIInternal(host, path, method, false, queryParams, body, headerParams, formParams) as string;
       }
+      public string invokeAPI(string host, string path, string method, Dictionary<String, String> queryParams, string body, Dictionary<String, String> headerParams, Dictionary<String, object> formParams)
+      {
+          return invokeAPIInternal(host, path, method, false, queryParams, body, headerParams, formParams) as string;
+      }
 
       public byte[] invokeBinaryAPI(string host, string path, string method, Dictionary<String, String> queryParams, object body, Dictionary<String, String> headerParams, Dictionary<String, object> formParams)
       {
@@ -148,8 +152,6 @@ namespace Com.Aspose.Barcode
             path = path.Replace("{appSid}", this.appSid);
 
             path = Regex.Replace(path, @"{.+?}", "");
-
-
             
 
             //var b = new StringBuilder();
@@ -195,7 +197,8 @@ namespace Com.Aspose.Barcode
                   client.Headers.Add(defaultHeaderMapItem.Key, defaultHeaderMapItem.Value);
               }
           }
-
+          //byte[] toBytes = Encoding.ASCII.GetBytes(body.ToString());
+          //client.ContentLength = toBytes.Length;
           switch (method)
           {
               case "GET":
@@ -211,9 +214,11 @@ namespace Com.Aspose.Barcode
                       }
                       if (body != null)
                       {
-                      var swRequestWriter = new StreamWriter(requestStream);
-                      swRequestWriter.Write(serialize(body));
-                      swRequestWriter.Close();
+                          
+                          //requestStream.Write(toBytes, 0, toBytes.Length);
+                          var swRequestWriter = new StreamWriter(requestStream);
+                          swRequestWriter.Write(serialize(body));
+                          swRequestWriter.Close();
                   }
                   }
                   break;
@@ -259,7 +264,124 @@ namespace Com.Aspose.Barcode
               throw new ApiException(statusCode, ex.Message);
           }
       }
+        private object invokeAPIInternal(string host, string path, string method, bool binaryResponse, Dictionary<String, String> queryParams, string body, Dictionary<String, String> headerParams, Dictionary<String, object> formParams)
+        {
 
+            path = path.Replace("{appSid}", this.appSid);
+
+            path = Regex.Replace(path, @"{.+?}", "");
+
+
+            //var b = new StringBuilder();
+
+            host = host.EndsWith("/") ? host.Substring(0, host.Length - 1) : host;
+
+            path = Sign(host + path, this.apiKey);
+
+            var client = WebRequest.Create(path);
+            client.Method = method;
+
+            byte[] formData = null;
+            if (formParams.Count > 0)
+            {
+                if (formParams.Count > 1)
+                {
+                    string formDataBoundary = String.Format("Somthing");
+                    client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
+                    formData = GetMultipartFormData(formParams, formDataBoundary);
+                }
+                else
+                {
+                    client.ContentType = "multipart/form-data";
+                    formData = GetMultipartFormData(formParams, "");
+
+                }
+                client.ContentLength = formData.Length;
+
+            }
+            else
+            {
+                client.ContentType = "application/json";
+            }
+
+            foreach (var headerParamsItem in headerParams)
+            {
+                client.Headers.Add(headerParamsItem.Key, headerParamsItem.Value);
+            }
+            foreach (var defaultHeaderMapItem in defaultHeaderMap)
+            {
+                if (!headerParams.ContainsKey(defaultHeaderMapItem.Key))
+                {
+                    client.Headers.Add(defaultHeaderMapItem.Key, defaultHeaderMapItem.Value);
+                }
+            }
+            byte[] toBytes = Encoding.ASCII.GetBytes(body);
+            client.ContentLength = toBytes.Length;
+            switch (method)
+            {
+                case "GET":
+                    break;
+                case "POST":
+                case "PUT":
+                case "DELETE":
+                    using (Stream requestStream = client.GetRequestStream())
+                    {
+                        if (formData != null)
+                        {
+                            requestStream.Write(formData, 0, formData.Length);
+                        }
+                        if (body != null)
+                        {
+
+                            requestStream.Write(toBytes, 0, toBytes.Length);
+                            //var swRequestWriter = new StreamWriter(requestStream);
+                            //swRequestWriter.Write(serialize(body));
+                            //swRequestWriter.Close();
+                        }
+                    }
+                    break;
+                default:
+                    throw new ApiException(500, "unknown method type " + method);
+            }
+
+            try
+            {
+                var webResponse = (HttpWebResponse)client.GetResponse();
+                if (webResponse.StatusCode != HttpStatusCode.OK)
+                {
+                    webResponse.Close();
+                    throw new ApiException((int)webResponse.StatusCode, webResponse.StatusDescription);
+                }
+
+                if (binaryResponse)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        CopyTo(webResponse.GetResponseStream(), memoryStream, 81920);
+                        return memoryStream.ToArray();
+                    }
+                }
+                else
+                {
+                    using (var responseReader = new StreamReader(webResponse.GetResponseStream()))
+                    {
+                        var responseData = responseReader.ReadToEnd();
+                        return responseData;
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                var response = ex.Response as HttpWebResponse;
+                int statusCode = 0;
+                if (response != null)
+                {
+                    statusCode = (int)response.StatusCode;
+                    response.Close();
+                }
+                throw new ApiException(statusCode, ex.Message);
+            }
+        }
       private static byte[] GetMultipartFormData(Dictionary<string, object> postParameters, string boundary)
       {
           Stream formDataStream = new System.IO.MemoryStream();

@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aspose.BarCode-Cloud-SDK-for-Android.iml" filepath="$PROJECT_DIR$/Aspose.BarCode-Cloud-SDK-for-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aspose.Barcode-Cloud-SDK-for-Android/aspose-cloud-barcode-android.iml" filepath="$PROJECT_DIR$/Aspose.Barcode-Cloud-SDK-for-Android/aspose-cloud-barcode-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aspose.Storage-Cloud-SDK-for-Android/Aspose.Storage-Cloud-SDK-for-Android.iml" filepath="$PROJECT_DIR$/Aspose.Storage-Cloud-SDK-for-Android/Aspose.Storage-Cloud-SDK-for-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aspose-cloud-barcode-android/aspose-cloud-barcode-android.iml" filepath="$PROJECT_DIR$/aspose-cloud-barcode-android/aspose-cloud-barcode-android.iml" />
     </modules>
   </component>
 </project>

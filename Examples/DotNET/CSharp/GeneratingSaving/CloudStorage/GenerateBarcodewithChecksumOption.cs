@@ -24,7 +24,7 @@ namespace CSharp.GeneratingSaving.CloudStorage
             String text = "AsposeBarCode";
 
             // Set Barcode Symbology
-            String type = "Code128";
+            String type = "MICR";
 
             // Set Generated Barcode Image Format
             String format = "png";

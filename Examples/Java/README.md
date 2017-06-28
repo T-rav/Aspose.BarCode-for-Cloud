@@ -1,7 +1,7 @@
-## Aspose.Words Cloud SDK for Java
-Aspose.Words Cloud SDK for Java allows you to incorporate Aspose.Words Cloud services in your Java applications quickly and easily.
+## Aspose.Barcode Cloud SDK for Java
+Aspose.Barcode Cloud SDK for Java allows you to incorporate Aspose.Barcode Cloud services in your Java applications quickly and easily.
 Installation
-You can directly include the source code of Aspose.Words Cloud SDK for Java in your own project, the source code is available from https://github.com/aspose-words/Aspose.Words-for-Cloud.
+You can directly include the source code of Aspose.Barcode Cloud SDK for Java in your own project, the source code is available from https://github.com/aspose-Barcode/Aspose.Barcode-for-Cloud.
 Alternatively, you can use Maven to include in your Java project. Below are the steps for Maven.
 Aspose Maven Repository
 ```
@@ -17,7 +17,7 @@ Aspose Maven Repository
 ```
 <dependency>
       <groupId>com.aspose</groupId>
-      <artifactId>aspose-cloud-words</artifactId>
+      <artifactId>aspose-cloud-Barcode</artifactId>
       <version>1.0.0</version>
 </dependency>
 ``` 
@@ -52,9 +52,9 @@ pom.xml
 ```
 
 1. **Direct Download**
-http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-words/
+http://maven.aspose.com/repository/repo/com/aspose/aspose-cloud-Barcode/
 1. **Source Code**
-Complete source code of Aspose.Words Cloud SDK for Jave is freely available on your favorite GitHub and Codeplex repositories.
+Complete source code of Aspose.Barcode Cloud SDK for Jave is freely available on your favorite GitHub and Codeplex repositories.
 1. **Examples**
-Please see the Aspose.Words Cloud SDK for Java Examples here.
+Please see the Aspose.Barcode Cloud SDK for Java Examples here.
 

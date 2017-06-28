@@ -33,12 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Aspose.BarCode-Cloud.1.0.3\lib\Aspose.BarCode-Cloud.dll</HintPath>
+    <Reference Include="Aspose.BarCode-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode-Cloud.1.0.5\lib\Aspose.BarCode-Cloud.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Aspose.Storage-Cloud.1.0.6\lib\Aspose.Storage-Cloud.dll</HintPath>
+    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Storage-Cloud.1.0.7\lib\Aspose.Storage-Cloud.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="GeneratingSaving\CloudStorage\GenerateCodablockFBarCode.cs" />
+    <Compile Include="GeneratingSaving\CloudStorage\GenerateMultipleBarCodes.cs" />
+    <Compile Include="GeneratingSaving\CloudStorage\GenerateImageWithMultipleBarCodes.cs" />
     <Compile Include="ManagingRecognition\CloudStorage\ReadBarcodeFromAsposeCloudStorage.cs" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithAppropriateCodeTextLocation.cs" />
     <Compile Include="GeneratingSaving\CloudStorage\GenerateBarcodewithChecksumOption.cs" />
@@ -71,6 +74,7 @@
     <Compile Include="GeneratingSaving\WithoutCloudStorage\GenerateBarcodeAndSaveImageToLocalDisk.cs" />
     <Compile Include="ManagingRecognition\CloudStorage\ReadBarcodeFromSpecificRegionOfImage.cs" />
     <Compile Include="ManagingRecognition\CloudStorage\RecognizeSpecifiedcountOfBarcodes.cs" />
+    <Compile Include="ManagingRecognition\WithoutCloudStorage\ReadBarcodeFromRequestBody.cs" />
     <Compile Include="ManagingRecognition\WithoutCloudStorage\ReadBarcodeFromExternalImageURL.cs" />
     <Compile Include="ManagingRecognition\WithoutCloudStorage\ReadBarcodeFromLocalFile.cs" />
     <Compile Include="ManagingRecognition\WithoutCloudStorage\ReadBarcodesbyApplyingImageProcessingAlgorithm.cs" />
