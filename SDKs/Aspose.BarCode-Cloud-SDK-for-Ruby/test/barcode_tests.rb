@@ -30,6 +30,13 @@ class BarcodeTests < Minitest::Test
 	    assert(response, message="Failed to generate barcode")
 	end
 
+    def test_generate_a_codablockf_type_barcode
+        opts = {text: "(01)23456789012", type: "codablockF", format: "jpg"}
+
+        response = @barcode_api.get_barcode_generate(opts)
+        assert(response, message="Failed to generate a CodablockF type barcode")
+    end
+
 	def test_post_generate_multiple
         barcode_builders_list = BarcodeBuildersList.new
         barcode_builders_list.x_step = 1
@@ -53,6 +60,14 @@ class BarcodeTests < Minitest::Test
         response = @barcode_api.post_barcode_recognize_from_urlor_content(opts)
 	    assert(response, message="Failed to recognize barcode from an url.")
 	end
+
+    def test_post_barcode_recognize_from_request_body
+
+        file_name = "barcode.png"
+        opts = {type: "Code39Standard", checksumValidation: "", stripFnc: false, rotationAngle: 0, file: File.open("../../../data/" << file_name,"r") { |io| io.read }}
+        response = @barcode_api.post_barcode_recognize_from_urlor_content(opts)
+        assert(response, message="Failed to recognize barcode from request body.")
+    end
 
 	def test_put_barcode_generate_file
 	    name = "NewBarcode.png"
