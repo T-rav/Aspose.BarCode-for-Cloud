@@ -160,7 +160,7 @@ class APIClient {
         // Make the request
         $response = curl_exec($curl);
         $response_info = curl_getinfo($curl);
-	
+
         // Handle the response
         if ($response_info['http_code'] == 0) {
             throw new Exception("TIMEOUT: api call to " . $url .

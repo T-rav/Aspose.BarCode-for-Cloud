@@ -53,6 +53,24 @@
 //ExEnd:GenerateBarcodeOnAsposeCloudStorage
 }
 
+- (void) generateACodablockFTypeBarcode {
+//ExStart:GenerateACodablockFTypeBarcode
+    
+    [self.barcodeApi getBarcodeGenerateWithCompletionBlock:@"(01)23456789012"
+                                                      type:@"codablockF"
+                                                    format:@"jpg"
+                                               resolutionX:nil
+                                               resolutionY:nil
+                                                dimensionX:nil
+                                                dimensionY:nil
+                                            enableChecksum:nil
+                                         completionHandler:^(NSURL *output, NSError *error) {
+                                             NSLog(@"%@", output);
+                                         }];
+    
+//ExEnd:GenerateACodablockFTypeBarcode
+}
+    
 - (void) generateBarcodeWithAppropriateCodeTextLocation {
 //ExStart:GenerateBarcodeWithAppropriateCodeTextLocation
 
@@ -120,6 +138,23 @@
 //ExEnd:GenerateBarcodeWithChecksumOption
 }
 
+- (void) postBarcodeRecognizeFromRequestBody {
+//ExStart:PostBarcodeRecognizeFromRequestBody
+    NSString *fileName = @"barcode.png";
+    NSURL *pathToFile = [[NSBundle mainBundle] URLForResource:[fileName stringByDeletingPathExtension] withExtension:[fileName pathExtension]];
+    
+    [self.barcodeApi postBarcodeRecognizeFromUrlorContentWithCompletionBlock:@"Code39Standard"
+                                                          checksumValidation:@""
+                                                                    stripFnc:[NSNumber numberWithBool:NO]
+                                                               rotationAngle:[NSNumber numberWithInt:0]
+                                                                         url:nil
+                                                                        file:pathToFile
+                                                           completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
+                                                               NSLog(@"Code %@ Status %@", output.code, output.status);
+                                                           }];
+//ExEnd:PostBarcodeRecognizeFromRequestBody
+}
+    
 - (void) rotateBarcodeImageWithSuitableAngle {
 //ExStart:RotateBarcodeImageWithSuitableAngle
 

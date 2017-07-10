@@ -75,6 +75,30 @@
         }
     }];
 }
+    
+- (void)testGenerateACodablockFTypeBarcode {
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@""];
+    
+    [self.barcodeApi getBarcodeGenerateWithCompletionBlock:@"(01)23456789012"
+                                                      type:@"codablockF"
+                                                    format:@"jpg"
+                                               resolutionX:nil
+                                               resolutionY:nil
+                                                dimensionX:nil
+                                                dimensionY:nil
+                                            enableChecksum:nil
+                                         completionHandler:^(NSURL *output, NSError *error) {
+                                             XCTAssertNotNil(output, @"Failed to generate a CodablockF type barcode");
+                                             [expectation fulfill];
+                                         }];
+    
+    [self waitForExpectationsWithTimeout:180.0 handler:^(NSError *error) {
+        if (error) {
+            NSLog(@"Timeout Error: %@", error);
+        }
+    }];
+}
 
 - (void)testPutBarcodeGenerateFile {
     
@@ -207,6 +231,32 @@
     }];
 }
 
+- (void)testPostBarcodeRecognizeFromRequestBody {
+        
+    XCTestExpectation *expectation = [self expectationWithDescription:@""];
+    
+    NSString *fileName = @"barcode.png";
+    NSURL *pathToFile = [[NSBundle mainBundle] URLForResource:[fileName stringByDeletingPathExtension] withExtension:[fileName pathExtension]];
+    
+    [self.barcodeApi postBarcodeRecognizeFromUrlorContentWithCompletionBlock:@"Code39Standard"
+                                                              checksumValidation:@""
+                                                                        stripFnc:[NSNumber numberWithBool:NO]
+                                                                   rotationAngle:[NSNumber numberWithInt:0]
+                                                                             url:nil
+                                                                            file:pathToFile
+                                                               completionHandler:^(ASPBarcodeResponseList *output, NSError *error) {
+                                                                   XCTAssertNotNil(output, @"Failed to recognize barcode from request body.");
+                                                                   XCTAssertEqualObjects(output.status, @"OK");
+                                                                   [expectation fulfill];
+                                                               }];
+        
+    [self waitForExpectationsWithTimeout:180.0 handler:^(NSError *error) {
+        if (error) {
+            NSLog(@"Timeout Error: %@", error);
+        }
+    }];
+}
+    
 - (void)testGetBarcodeRecognize {
     
     NSString *fileName = @"barcode.png";

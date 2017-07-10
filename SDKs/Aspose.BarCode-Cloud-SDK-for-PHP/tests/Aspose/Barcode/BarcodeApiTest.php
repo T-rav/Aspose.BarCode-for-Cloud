@@ -30,6 +30,19 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $result = $this->barcode->GetBarcodeGenerate($text, $type, $format, $resolutionX, $resolutionY, $dimensionX, $dimensionY, $enableChecksum);
 	    $this->assertInternalType('string',$result );
     }
+
+    public function testGenerateACodablockFTypeBarcode()
+    {
+        $text = "(01)23456789012";
+        $type = "codablockF";
+        $format = "jpg";
+           
+        $result = $this->barcode->GetBarcodeGenerate($text, $type, $format, $resolutionX = null, $resolutionY = null, $dimensionX = null, $dimensionY = null, $enableChecksum = null);
+        $fh = fopen(realpath(__DIR__ . '/../../../../..') . '/Data/Output/barcode_out.jpg', 'w');
+        fwrite($fh, $result);
+        fclose($fh);
+        $this->assertFileExists(realpath(__DIR__ . '/../../../../..') . '/Data/Output/barcode_out.jpg');
+    }
              
     public function testGetBarcodeRecognize()
     {  
@@ -38,7 +51,6 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
 
 	    Utils::uploadFile($name);
         $result = $this->barcode->GetBarcodeRecognize($name, $type, $checksumValidation = null, $stripFnc = null, $rotationAngle = null, $barcodesCount = null, $rectX = null, $rectY = null, $rectWidth = null, $rectHeight = null, $storage = null, $folder = null);
-	    print_r($result);
         $this->assertInternalType('array', $result->Barcode);
 	    $this->assertInstanceOf('\Aspose\Barcode\Models\BarcodeResponseList', $result);
     }
@@ -52,6 +64,20 @@ class BarcodeApiTest extends PHPUnit_Framework_TestCase {
         $this->assertInternalType('array', $result->Barcode);
     }
     
+    public function testPostBarcodeRecognizeFromRequestBody()
+    {  
+        $fileName = 'barcode.png';
+        $file = realpath(__DIR__ . '/../../../../..') . '/Data/' . $fileName;
+
+        $type = 'Code39Standard';
+        $checksumValidation = "";
+        $stripFnc = false;
+        $rotationAngle = 0;
+
+        $result = $this->barcode->PostBarcodeRecognizeFromUrlorContent($type, $checksumValidation, $stripFnc, $rotationAngle, $url = null, $file);
+        $this->assertInstanceOf('\Aspose\Barcode\Models\BarcodeResponseList', $result);
+    }
+
     public function testPutBarcodeGenerateFile()
     {
         $name = 'barcode-generate.png';
