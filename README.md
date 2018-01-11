@@ -1,9 +1,9 @@
 ## Aspose.BarCode for Cloud
-[Aspose.BarCode for Cloud](https://www.aspose.com/products/barcode/cloud) is a REST API for Linear, 2D and postal barcode generation and recognition in the cloud. API recognize and generate barcode images in a variety of formats such as JPEG, PNG, GIF, BMP, TIFF, EMF, WMF, EXIF and ICON. Barcode REST API allows to specify bar code image attributes like image width, height, border style and output image format. Barcode type and text attributes such as text location and font styles are also customizable.
+[Aspose.BarCode for Cloud](https://products.aspose.cloud/barcode/cloud) is a REST API for Linear, 2D and postal barcode generation and recognition in the cloud. API recognize and generate barcode images in a variety of formats such as JPEG, PNG, GIF, BMP, TIFF, EMF, WMF, EXIF and ICON. Barcode REST API allows to specify bar code image attributes like image width, height, border style and output image format. Barcode type and text attributes such as text location and font styles are also customizable.
 
 Being a REST API, it can be used with any language such as .NET, Java, PHP, Ruby, Rails, Python, jQuery etc and with any platform — Web, Desktop, Mobile and Cloud.
 
-This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for [Aspose.BarCode for Cloud](https://www.aspose.com/products/barcode/cloud) to help you learn and write your own applications.
+This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for [Aspose.BarCode for Cloud](https://products.aspose.cloud/barcode/cloud) to help you learn and write your own applications.
 
 [Data](Data) folder at the root contains input files which both Examples and SDKs (Unit test case project) used. It is mandatory that you download the Data folder.
 
@@ -32,8 +32,8 @@ Directory | Description
 
 ## Resources
 
-+ **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.BarCode for Cloud](http://www.aspose.com/cloud/barcode-api.aspx)
-+ **Documentation:** [Aspose.BarCode for Cloud Documentation](http://www.aspose.com/docs/display/barcodecloud/Home)
-+ **Forum:** [Aspose.BarCode for Cloud Forum](http://www.aspose.com/community/forums/aspose.barcode-product-family/193/showforum.aspx)
-+ **Blog:** [Aspose.BarCode for Cloud Blog](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family.html)
++ **Website:** [www.aspose.cloud](http://www.aspose.cloud)
++ **Product Home:** [Aspose.BarCode for Cloud](https://products.aspose.cloud/barcode/cloud)
++ **Documentation:** [Aspose.BarCode for Cloud Documentation](https://docs.aspose.cloud/display/barcodecloud/Home)
++ **Forum:** [Aspose.BarCode for Cloud Forum](https://forum.aspose.cloud/)
++ **Blog:** [Aspose.BarCode for Cloud Blog](https://blog.aspose.cloud/category/aspose-products/aspose-barcode-product-family/)
