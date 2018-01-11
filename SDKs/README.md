@@ -1,5 +1,5 @@
 # Aspose.BarCode for Cloud SDKs
-This folder contains SDKs for [Aspose.BarCode for Cloud](http://www.aspose.com/cloud/barcode-api.aspx) for various platforms.
+This folder contains SDKs for [Aspose.BarCode for Cloud](https://products.aspose.cloud/barcode/cloud) for various platforms.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-barcode/Aspose.BarCode-for-Cloud/archive/master.zip">
